@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>ML-DL-kFold验证</title>
+      <link href="/2022/04/15/ml-dl-kfold-yan-zheng/"/>
+      <url>/2022/04/15/ml-dl-kfold-yan-zheng/</url>
+      
+        <content type="html"><![CDATA[<h3 id="k-折验证"><a href="#k-折验证" class="headerlink" title="k 折验证"></a>k 折验证</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_folds</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> num_splits<span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment"># we create a new column called kfold and fill it with -1</span>    data<span class="token punctuation">[</span><span class="token string">"fold"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>        <span class="token comment"># the next step is to randomize the rows of the data</span>    <span class="token comment"># data = data.sample(frac=1).reset_index(drop=True)</span>    <span class="token comment"># calculate number of bins by Sturge's rule</span>    <span class="token comment"># I take the floor of the value, you can also</span>    <span class="token comment"># just round it</span>    <span class="token comment"># num_bins = int(np.floor(1 + np.log2(len(data))))</span>        <span class="token comment"># bin targets</span>    data<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token string">"bins"</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>cut<span class="token punctuation">(</span>        data<span class="token punctuation">[</span><span class="token string">"score"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> bins<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">False</span>    <span class="token punctuation">)</span>        <span class="token comment"># initiate the kfold class from model_selection module</span>    kf <span class="token operator">=</span> StratifiedKFold<span class="token punctuation">(</span>n_splits<span class="token operator">=</span>num_splits<span class="token punctuation">,</span> shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>        <span class="token comment"># fill the new kfold column</span>    <span class="token comment"># note that, instead of targets, we use bins!</span>    <span class="token keyword">for</span> f<span class="token punctuation">,</span> <span class="token punctuation">(</span>t_<span class="token punctuation">,</span> v_<span class="token punctuation">)</span> <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>kf<span class="token punctuation">.</span>split<span class="token punctuation">(</span>X<span class="token operator">=</span>data<span class="token punctuation">,</span> y<span class="token operator">=</span>data<span class="token punctuation">.</span>bins<span class="token punctuation">.</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>        data<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>v_<span class="token punctuation">,</span> <span class="token string">'fold'</span><span class="token punctuation">]</span> <span class="token operator">=</span> f        <span class="token comment"># drop the bins column</span>    data <span class="token operator">=</span> data<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">"bins"</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>    <span class="token comment"># return dataframe with folds</span>    <span class="token keyword">return</span> data<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/04/13/hello-world/"/>
       <url>/2022/04/13/hello-world/</url>
@@ -176,25 +189,6 @@
     
     
     <entry>
-      <title>PE-更新日记</title>
-      <link href="/2022/03/31/pe-geng-xin-ri-ji-1/"/>
-      <url>/2022/03/31/pe-geng-xin-ri-ji-1/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/PE-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AE%B0-1/image-20220403130826695.png" alt="image-20220403130826695"></p><p><img src="/PE-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AE%B0-1/image-20220403135246620.png" alt="image-20220403135246620"></p><p><img src="/PE-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AE%B0-1/image-20220403135458164.png" alt="image-20220403135458164"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Turing award </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ML-DL-循环神经网络</title>
       <link href="/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/"/>
       <url>/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</url>
@@ -328,31 +322,6 @@
     
     
     <entry>
-      <title>PE-更新日记</title>
-      <link href="/2022/03/25/pe-geng-xin-ri-ji/"/>
-      <url>/2022/03/25/pe-geng-xin-ri-ji/</url>
-      
-        <content type="html"><![CDATA[<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>不在做一个优柔寡断、磨磨蹭蹭的该死的天枰，极端的世界没有错，要么不做，要么就要做到最好，我可不想 time out 的时候才反馈到已经流失了一些重要的东西</p><p>————————————————————————</p><p>最近我才反应回来，我是干计算机方面的，不是一个物理学家或者是数学家，做好我自己分内的事就已经很棒了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Personal </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 日记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>PE-Lists</title>
       <link href="/2022/03/25/pe-lists/"/>
       <url>/2022/03/25/pe-lists/</url>
@@ -372,31 +341,6 @@
             <tag> Personal </tag>
             
             <tag> Willing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PE-周期性活动</title>
-      <link href="/2022/03/24/pe-zhou-qi-xing-huo-dong/"/>
-      <url>/2022/03/24/pe-zhou-qi-xing-huo-dong/</url>
-      
-        <content type="html"><![CDATA[<h4 id="写一点小小的制约来防止熵减"><a href="#写一点小小的制约来防止熵减" class="headerlink" title="写一点小小的制约来防止熵减"></a>写一点小小的制约来防止熵减</h4><p>1.我想，每周可以的话，就外出一段时间走一走</p><p>2.仅仅一个是不够的，要培养第二个精神世界——绘画，不定时创作一幅作品</p><p>3.人是要运动的，不然拿什么去拼搏，有空就好好的锻炼身体，熬过那些可爱的人</p><p>4.世界杯球赛，关注英超曼联</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Personal </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> personal </tag>
             
         </tags>
       
@@ -453,56 +397,6 @@
             <tag> kaggle </tag>
             
             <tag> ML </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PE-近期自我定位</title>
-      <link href="/2022/03/14/pe-jin-qi-zi-wo-ding-wei/"/>
-      <url>/2022/03/14/pe-jin-qi-zi-wo-ding-wei/</url>
-      
-        <content type="html"><![CDATA[<h4 id="近期自我评价"><a href="#近期自我评价" class="headerlink" title="近期自我评价"></a>近期自我评价</h4><p>以下从两点来判断我是否有科研潜力</p><p>————以带目的性的决定去做的事绝不是什么好事，我以为我干的工作比较白净，却还是沾了一点灰尘，谨记每天要拥抱一次太阳，以免忘记初衷。</p><p>1.角色定位</p><p>性格解读：对有科研的想法的人情绪应该要趋向于平稳某个方面，不能有自我消耗的产生，总要学会控制自己的情绪，巧的是之前我那激进状态就非常滑稽，搞笑，后来想不应该在这样下去了，自己都管不好，还去批判他人，但现在还是有很多坏毛病，比如对不太努力、积极的人一直不太感冒。自我驱动这一块我是OK的，估计让部分人以我这个角度、环境来考虑这些抉择问题，都会有些不知所措，所以在判断情势和科研方向我会有着一些自己的优势，再就是对于理解问题，我是更愿意以自己的方式去了解、摸索的，而不是别人来讲给我听，主要也听不下去（看人），这在我看来有很大的弊病，不能有效的和别人合作，后面我会慢慢改回来</p><p>专业解读：不谈及大学以前的专业积累，因为大多数内容有些简单。每提及专业课程，我的脑海里都会冒出数据结构、算法、操作系统这些字眼，因为知道学校考这些会比较简单，所以我也没去花费什么精力在课程上面，回顾这些，很多人都说要参加什么ACM竞赛之类的，对此我做了一个优化判断，如果我高中有竞赛经历，那么我会去积极参加，这是其一，我所在的高校对ICPC/CCPC重视程度很高且生源很好，组队会获得金牌/银牌几率比较大，那么我也会积极参加，但可惜的这两方面都没有优势， 贸然的参与这些并不能给我带来很好的收益，即使我的个人能力较强（现在的竞赛比拼的是资源，不是个人主义），所以我在大二开学时就想明白不去参加了，要把目光投向其他领域，比如数据竞赛 - kaggle / 天池，那里比拼的是机器 / 深度学习的应用，学会如何调用模型、调参和融合模型，需要修读高年级课程，这对我来说是具备优势的，但这些 competitions 关键在于不能一直活跃在数据竞赛上，因为这些偏向于应用，作用的领域不同会偏离以后的学业轨道，而我只是需要一张以后加分的牌。</p><p>​    现在回到话题，目前我所掌握的专业知识有什么优势：我问自己一个严肃的问题，我目前适合做研究吗，目前修读的软件工程适合做研究吗，我的回答很明显 - “不是”，大一虽然在图书馆博览群书，给自己找了一些还不错的方向，比如网络安全、Linux操作系统设计，Python网络爬虫，无线WIFI攻击等，多偏向网络方面，但没有给自己带来很大的圈子影响力，其实这里我也无法判断是否给自己带来什么影响，提前摸清行业的规则？知道自己想要什么？也都算一点点吧，所以在我这个时间，这个位置来考虑学业问题，已经开始不管不顾了（主要缘由是目前所接触的都能让我清晰的看到终点），为什么会有这些压力，自己总说非常佛系的，每天上课划水度过（已经非常熟悉了 ）&amp;&amp; 自己的骄傲，学校没有导师可以联系（非研究），导致很多东西要靠自己摸索，还有一个要命的痛点是，自己还非常看不起一些事和人，疲惫于交流，又是一个臭毛病，哎。。。</p><p>————这段有一个关于网安的补充吐槽点</p><p>在这里我吐槽一下自己，以前受市面上无良 Hacker 行为的荼毒影响，高四不顾自己学业（有着不错的成绩）跑去整网络攻击，攻击师生楼栋路由器、校园 wifi ，认为自己超酷，是全校最 fashion 的人，干了很多比较奇怪的行为，才知道这些并不能给自己带来快速成长，比新生代农名工还 low ，也是目前我觉得 <u>网络安全</u> 就是一个表演节目，即使是前几个月传出 某公司被泄露，一个hacker 作案团队转走 ￥6亿，我也无动于衷</p><p>2.价值影响</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Personal </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Personal </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PE-一些事情的观点</title>
-      <link href="/2022/03/12/pe-yi-xie-shi-qing-de-guan-dian/"/>
-      <url>/2022/03/12/pe-yi-xie-shi-qing-de-guan-dian/</url>
-      
-        <content type="html"><![CDATA[<p>特摄初期男二状况，BOSS剧情角色定位，仙侠酒瓮游手好闲，西部牛仔东拼西凑，hacker鄙视极致思想</p><p>一些事情实际接触了才会给脑皮层深层理解，像前一段时间我总估摸着要去一趟线下实体店打牌，然而在实体店呆了3-4小时，出来的第一个想法是以后就不来看他们打牌了，这样的经历并不值得很留恋，其实当时还是觉得没有达到我想象中的那般模样，有一些落差。</p><p>—————————吐槽自己————————</p><p>把压攒在心里的所有想法写出来后才忽得自己也不是那么的行</p><p>—————————————————————</p><h4 id="why-amp-amp-what"><a href="#why-amp-amp-what" class="headerlink" title="why &amp;&amp; what"></a>why &amp;&amp; what</h4><p>—No-rules</p><p>现在面临两个不太好抉择的选项：（QC = 量子计算 &amp;&amp; AI == 人工智能 &amp;&amp; CS = 计算机科学）</p><p>c1是在我学术生涯前期做AI方面的工作，再从侧面来理解QC的使用方式，c2是直接开始深入QC的研究</p><p>——但我更倾向c1，QC所需要的不仅仅要怎么实现，它还有着很多可能性，例如宇宙的理论和QC或许有一些巧妙而神秘的联系、用QC来加速ML &amp; DL的计算也证明是可以成立的。</p><p>但无论从哪个接手，他们的区别和间接收益差别都很大的，缘由是我的专业图谱里cs模块的储蓄占据了六成以上，而QC和AI都属于交叉学科，前者所涉及要掌握的基础学科和我目前了解相隔较远，可恶的是，这个方向和cs大部分还都牵扯不上多大关系，搞物理的需要cs部分背景，搞cs的物理背景又非常薄弱，但往往获得 turing award 的都有 phy || math 背景，因为cs不需要太多的math条件，所以此处小结一点就是 赚钱 == cs ,  拿奖 == phy || math ，还吐槽一点-至于网安，那不过是表演节目罢了，好笑的是我曾经还干过这老本行。</p><h4 id="以下从短暂近期成果（5-years-）来考虑这两个选项："><a href="#以下从短暂近期成果（5-years-）来考虑这两个选项：" class="headerlink" title="以下从短暂近期成果（5 years ）来考虑这两个选项："></a>以下从短暂近期成果（5 years ）来考虑这两个选项：</h4>]]></content>
-      
-      
-      <categories>
-          
-          <category> Personal </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 不喜欢code的蟹 </tag>
             
         </tags>
       

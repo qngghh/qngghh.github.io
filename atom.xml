@@ -6,7 +6,7 @@
   <link href="https://www.kitx86.com/atom.xml" rel="self"/>
   
   <link href="https://www.kitx86.com/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2022-04-14T19:18:05.328Z</updated>
   <id>https://www.kitx86.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ML-DL-kFold验证</title>
+    <link href="https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/"/>
+    <id>https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</id>
+    <published>2022-04-14T19:17:12.000Z</published>
+    <updated>2022-04-14T19:18:05.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;k-折验证&quot;&gt;&lt;a href=&quot;#k-折验证&quot; class=&quot;headerlink&quot; title=&quot;k 折验证&quot;&gt;&lt;/a&gt;k 折验证&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-python&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -221,30 +242,6 @@ import</summary>
   </entry>
   
   <entry>
-    <title>PE-更新日记</title>
-    <link href="https://www.kitx86.com/2022/03/31/pe-geng-xin-ri-ji-1/"/>
-    <id>https://www.kitx86.com/2022/03/31/pe-geng-xin-ri-ji-1/</id>
-    <published>2022-03-31T15:52:58.000Z</published>
-    <updated>2022-04-03T10:12:04.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/PE-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AE%B0-1/image-20220403130826695.png&quot; alt=&quot;image-20220403130826695&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Turing award" scheme="https://www.kitx86.com/tags/Turing-award/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ML-DL-循环神经网络</title>
     <link href="https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/"/>
     <id>https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</id>
@@ -374,31 +371,6 @@ import</summary>
   </entry>
   
   <entry>
-    <title>PE-更新日记</title>
-    <link href="https://www.kitx86.com/2022/03/25/pe-geng-xin-ri-ji/"/>
-    <id>https://www.kitx86.com/2022/03/25/pe-geng-xin-ri-ji/</id>
-    <published>2022-03-25T07:55:34.000Z</published>
-    <updated>2022-03-28T06:45:07.654Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;不在做一个优柔寡断、磨磨蹭蹭的该死的天枰，极端的世界没有错，要么不做，要么就要做到最好，我可不想 time out</summary>
-        
-      
-    
-    
-    
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
-    
-    
-    <category term="日记" scheme="https://www.kitx86.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PE-Lists</title>
     <link href="https://www.kitx86.com/2022/03/25/pe-lists/"/>
     <id>https://www.kitx86.com/2022/03/25/pe-lists/</id>
@@ -422,31 +394,6 @@ import</summary>
     <category term="Personal" scheme="https://www.kitx86.com/tags/Personal/"/>
     
     <category term="Willing" scheme="https://www.kitx86.com/tags/Willing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PE-周期性活动</title>
-    <link href="https://www.kitx86.com/2022/03/24/pe-zhou-qi-xing-huo-dong/"/>
-    <id>https://www.kitx86.com/2022/03/24/pe-zhou-qi-xing-huo-dong/</id>
-    <published>2022-03-24T08:05:20.000Z</published>
-    <updated>2022-03-28T06:44:34.237Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写一点小小的制约来防止熵减&quot;&gt;&lt;a href=&quot;#写一点小小的制约来防止熵减&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
-    
-    
-    <category term="personal" scheme="https://www.kitx86.com/tags/personal/"/>
     
   </entry>
   
@@ -507,27 +454,79 @@ import</summary>
   </entry>
   
   <entry>
-    <title>PE-近期自我定位</title>
-    <link href="https://www.kitx86.com/2022/03/14/pe-jin-qi-zi-wo-ding-wei/"/>
-    <id>https://www.kitx86.com/2022/03/14/pe-jin-qi-zi-wo-ding-wei/</id>
-    <published>2022-03-14T05:42:36.000Z</published>
-    <updated>2022-03-28T06:44:52.287Z</updated>
+    <title>ML-DL-logistic回归基本概念</title>
+    <link href="https://www.kitx86.com/2022/03/11/ml-dl-logistic-hui-gui-ji-ben-gai-nian/"/>
+    <id>https://www.kitx86.com/2022/03/11/ml-dl-logistic-hui-gui-ji-ben-gai-nian/</id>
+    <published>2022-03-10T16:14:31.000Z</published>
+    <updated>2022-04-11T04:32:30.532Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;近期自我评价&quot;&gt;&lt;a href=&quot;#近期自我评价&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h4 id=&quot;logistic回归&quot;&gt;&lt;a href=&quot;#logistic回归&quot; class=&quot;headerlink&quot; title=&quot;logistic回归&quot;&gt;&lt;/a&gt;logistic回归&lt;/h4&gt;&lt;pre class=&quot;line-numbers</summary>
         
       
     
     
     
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
     
     
-    <category term="Personal" scheme="https://www.kitx86.com/tags/Personal/"/>
+    <category term="机器学习" scheme="https://www.kitx86.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QC-Solutions</title>
+    <link href="https://www.kitx86.com/2022/03/10/qc-solutions/"/>
+    <id>https://www.kitx86.com/2022/03/10/qc-solutions/</id>
+    <published>2022-03-10T12:39:13.000Z</published>
+    <updated>2022-03-14T05:42:46.271Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;一、Realize-global-information&quot;&gt;&lt;a href=&quot;#一、Realize-global-information&quot; class=&quot;headerlink&quot; title=&quot;一、Realize global</summary>
+        
+      
+    
+    
+    
+    <category term="QC" scheme="https://www.kitx86.com/categories/QC/"/>
+    
+    
+    <category term="QCQI" scheme="https://www.kitx86.com/tags/QCQI/"/>
+    
+    <category term="data" scheme="https://www.kitx86.com/tags/data/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-kaggle-Part1</title>
+    <link href="https://www.kitx86.com/2022/03/09/ml-dl-kaggle-part1/"/>
+    <id>https://www.kitx86.com/2022/03/09/ml-dl-kaggle-part1/</id>
+    <published>2022-03-08T17:48:41.000Z</published>
+    <updated>2022-03-11T20:19:37.347Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;kaggle里要如何融合模型及一般的操作方式&quot;&gt;&lt;a href=&quot;#kaggle里要如何融合模型及一般的操作方式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+    <category term="kaggle" scheme="https://www.kitx86.com/tags/kaggle/"/>
     
   </entry>
   
