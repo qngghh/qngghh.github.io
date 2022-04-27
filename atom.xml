@@ -2,19 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Supernova</title>
   
-  <subtitle>深得设计师小兔子的衣钵，小器件大容器，我辈义不容辞</subtitle>
+  <subtitle>托马仕回旋加速喷气式千年断更怪</subtitle>
   <link href="https://www.kitx86.com/atom.xml" rel="self"/>
   
   <link href="https://www.kitx86.com/"/>
-  <updated>2022-04-14T19:18:05.328Z</updated>
+  <updated>2022-04-26T15:28:27.098Z</updated>
   <id>https://www.kitx86.com/</id>
   
   <author>
-    <name>边缘烟灰色</name>
+    <name>藕丝泥霸</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ML-DL-神经网络解释</title>
+    <link href="https://www.kitx86.com/2022/04/26/ml-dl-shen-jing-wang-luo-jie-shi/"/>
+    <id>https://www.kitx86.com/2022/04/26/ml-dl-shen-jing-wang-luo-jie-shi/</id>
+    <published>2022-04-26T15:26:19.000Z</published>
+    <updated>2022-04-26T15:28:27.098Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PE-DiaryUpdate</title>
+    <link href="https://www.kitx86.com/2022/04/26/pe-diaryupdate/"/>
+    <id>https://www.kitx86.com/2022/04/26/pe-diaryupdate/</id>
+    <published>2022-04-26T06:39:01.000Z</published>
+    <updated>2022-04-26T15:42:45.781Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;昔日风景&quot;&gt;&lt;a href=&quot;#昔日风景&quot; class=&quot;headerlink&quot; title=&quot;昔日风景&quot;&gt;&lt;/a&gt;昔日风景&lt;/h3&gt;&lt;p&gt;年轻的时候当然觉得干 hacker</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ML-DL-kFold验证</title>
@@ -144,7 +178,7 @@ import</summary>
     <link href="https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/"/>
     <id>https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</id>
     <published>2022-04-07T00:46:47.000Z</published>
-    <updated>2022-04-07T05:35:17.736Z</updated>
+    <updated>2022-04-26T06:32:17.636Z</updated>
     
     
       
@@ -192,7 +226,7 @@ import</summary>
     <link href="https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/"/>
     <id>https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/</id>
     <published>2022-04-02T15:20:41.000Z</published>
-    <updated>2022-04-04T16:40:27.198Z</updated>
+    <updated>2022-04-26T06:39:11.871Z</updated>
     
     
       
@@ -348,7 +382,7 @@ import</summary>
     <link href="https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/"/>
     <id>https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/</id>
     <published>2022-03-25T10:35:26.000Z</published>
-    <updated>2022-04-12T04:09:31.436Z</updated>
+    <updated>2022-04-17T09:41:44.116Z</updated>
     
     
       
@@ -375,7 +409,7 @@ import</summary>
     <link href="https://www.kitx86.com/2022/03/25/pe-lists/"/>
     <id>https://www.kitx86.com/2022/03/25/pe-lists/</id>
     <published>2022-03-25T04:02:15.000Z</published>
-    <updated>2022-04-11T04:22:42.339Z</updated>
+    <updated>2022-04-27T08:40:48.566Z</updated>
     
     
       
@@ -475,58 +509,6 @@ import</summary>
     
     
     <category term="机器学习" scheme="https://www.kitx86.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>QC-Solutions</title>
-    <link href="https://www.kitx86.com/2022/03/10/qc-solutions/"/>
-    <id>https://www.kitx86.com/2022/03/10/qc-solutions/</id>
-    <published>2022-03-10T12:39:13.000Z</published>
-    <updated>2022-03-14T05:42:46.271Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;一、Realize-global-information&quot;&gt;&lt;a href=&quot;#一、Realize-global-information&quot; class=&quot;headerlink&quot; title=&quot;一、Realize global</summary>
-        
-      
-    
-    
-    
-    <category term="QC" scheme="https://www.kitx86.com/categories/QC/"/>
-    
-    
-    <category term="QCQI" scheme="https://www.kitx86.com/tags/QCQI/"/>
-    
-    <category term="data" scheme="https://www.kitx86.com/tags/data/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-kaggle-Part1</title>
-    <link href="https://www.kitx86.com/2022/03/09/ml-dl-kaggle-part1/"/>
-    <id>https://www.kitx86.com/2022/03/09/ml-dl-kaggle-part1/</id>
-    <published>2022-03-08T17:48:41.000Z</published>
-    <updated>2022-03-11T20:19:37.347Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;kaggle里要如何融合模型及一般的操作方式&quot;&gt;&lt;a href=&quot;#kaggle里要如何融合模型及一般的操作方式&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="kaggle" scheme="https://www.kitx86.com/tags/kaggle/"/>
     
   </entry>
   
