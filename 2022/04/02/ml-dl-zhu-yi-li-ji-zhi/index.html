@@ -3,9 +3,11 @@
 
 
 <head>
+
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <meta charset="utf-8">
     <meta name="keywords" content="ML-DL-注意力机制, kitx86,kit,x86">
-    <meta name="description" content="业余画家 &amp; 业余音乐鉴赏家！">
+    <meta name="description" content="小派过气画家">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,6 +21,7 @@
     <title>ML-DL-注意力机制 | Supernova</title>
     <link rel="icon" type="image/gif" href="/favicon.gif">
 
+    
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
@@ -48,6 +51,28 @@
 
 
 <body>
+
+    
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="configure-border-1">
+                <div class="configure-core"></div>
+            </div>
+            <div class="configure-border-2">
+                <div class="configure-core"></div>
+            </div>
+            <div class="loading-word">加载中...</div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function(){
+            document.body.style.overflow = 'auto';
+            document.getElementById('loading-box').classList.add("loaded")
+        }, false)
+    </script>
+    
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -179,7 +204,7 @@
         <div class="logo-name">Supernova</div>
         <div class="logo-desc">
             
-            业余画家 &amp; 业余音乐鉴赏家！
+            小派过气画家
             
         </div>
     </div>
@@ -548,6 +573,11 @@
         <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
@@ -1014,6 +1044,8 @@
 
 
 
+    
+ 
     <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
@@ -1280,8 +1312,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -1332,3 +1362,16 @@ $(function () {
 </body>
 
 </html>
+
+
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\js\snow.js"></script>
+
+<!-- 数字雨 --
+<canvas id="canvas" width="1440" height="900" ></canvas>
+<script type="text/javascript" src="/js/DigitalRain.js"></script>    
+
+    >

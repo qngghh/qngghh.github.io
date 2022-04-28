@@ -3,9 +3,11 @@
 
 
 <head>
+
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <meta charset="utf-8">
     <meta name="keywords" content="About, kitx86,kit,x86">
-    <meta name="description" content="业余画家 &amp; 业余音乐鉴赏家！">
+    <meta name="description" content="小派过气画家">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,6 +21,7 @@
     <title>About | Supernova</title>
     <link rel="icon" type="image/gif" href="/favicon.gif">
 
+    
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
@@ -48,6 +51,28 @@
 
 
 <body>
+
+    
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="configure-border-1">
+                <div class="configure-core"></div>
+            </div>
+            <div class="configure-border-2">
+                <div class="configure-core"></div>
+            </div>
+            <div class="loading-word">加载中...</div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function(){
+            document.body.style.overflow = 'auto';
+            document.getElementById('loading-box').classList.add("loaded")
+        }, false)
+    </script>
+    
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -179,7 +204,7 @@
         <div class="logo-name">Supernova</div>
         <div class="logo-desc">
             
-            业余画家 &amp; 业余音乐鉴赏家！
+            小派过气画家
             
         </div>
     </div>
@@ -435,7 +460,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">27</a></span>
+    <span class="count"><a href="/tags">28</a></span>
     <span class="name">Tags</span>
 </div>
 
@@ -465,7 +490,7 @@
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">27</a></span>
+    <span class="count"><a href="/tags">28</a></span>
     <span class="name">Tags</span>
 </div>
 
@@ -667,7 +692,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"ML-DL","value":9},{"name":"Personal","value":4},{"name":"QC","value":1}],
+                data: [{"name":"Personal","value":4},{"name":"ML-DL","value":9},{"name":"QC","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -691,7 +716,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["kaggle","深度学习","机器学习","循环神经网络","ML","竞赛模板","常用tricks","pytorch","paper","deep learning"]
+                data: ["kaggle","深度学习","机器学习","循环神经网络","Personal","ML","竞赛模板","常用tricks","pytorch","paper"]
             }
         ],
         yAxis: [
@@ -746,6 +771,8 @@
 </main>
 
 
+    
+ 
     <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
@@ -1012,8 +1039,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -1064,3 +1089,16 @@ $(function () {
 </body>
 
 </html>
+
+
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\js\snow.js"></script>
+
+<!-- 数字雨 --
+<canvas id="canvas" width="1440" height="900" ></canvas>
+<script type="text/javascript" src="/js/DigitalRain.js"></script>    
+
+    >

@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"data\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/03/10/qc-solutions/",
+            "url": "https://www.kitx86.com/2022/03/10/qc-solutions/",
+            "title": "QC-Solutions",
+            "date_published": "2022-03-10T12:39:13.000Z",
+            "content_html": "<h4 id=\"一、Realize-global-information\"><a href=\"#一、Realize-global-information\" class=\"headerlink\" title=\"一、Realize global information\"></a>一、Realize global information</h4><p>Quantum Computation and Quantum Information by Nielsen and Chuang(QCQI)</p>\n<p>—QCQI Solutions(<a href=\"https://serab.net/docs/qcqi\">https://serab.net/docs/qcqi</a>)</p>\n<p>量子通信和量子计算-李承祖</p>\n<p>量子计算导论-谭晓青、宋婷婷、翁建</p>\n<p>————————————————————————</p>\n<p>闲余读物（忽略不计）：量子计算机编程：从入门到实践-埃里克…</p>\n<h4 id=\"二、Verification-platform-with-using-lib\"><a href=\"#二、Verification-platform-with-using-lib\" class=\"headerlink\" title=\"二、Verification platform with using lib\"></a>二、Verification platform with using lib</h4><p>IBM Quantum</p>\n<h4 id=\"三、Concerning-subjects\"><a href=\"#三、Concerning-subjects\" class=\"headerlink\" title=\"三、Concerning subjects\"></a>三、Concerning subjects</h4><p>Math : Linear algebra &amp;&amp; Calculus &amp;&amp; Probability theory &amp;&amp; Group &amp;&amp;  Matrix &amp;&amp; Number theory &amp;&amp; Function analysis  (needing to master many subjects) </p>\n<p>Computer Science : basic information process and program with python…etc </p>\n<p>Physical : Quantum mechanics </p>\n<p>PS : might need a method of mathematical physics to understand better in these different subjects </p>\n<h4 id=\"四、QC-amp-amp-QI-in-funny-point-field\"><a href=\"#四、QC-amp-amp-QI-in-funny-point-field\" class=\"headerlink\" title=\"四、QC &amp;&amp; QI in funny point field\"></a>四、QC &amp;&amp; QI in funny point field</h4><p>ML : have some acceleration algos is more interesting .HHL/QSVD/QPCA/QSVM ..&gt; QNN</p>\n<p>Acceleration classical algorithm :  in these algos , shor is the famous, but after understanding the principle inside,  final found this direction is a big pit </p>\n<p>————</p>\n<p>last words is my little immature opinion，QC algos is a bit rubbish ingredient inside,  very strange, you don’t know how come from where, and it is described using complex number, lead to questions become more complicated. </p>\n",
+            "tags": [
+                "QCQI",
+                "data"
+            ]
+        }
+    ]
+}

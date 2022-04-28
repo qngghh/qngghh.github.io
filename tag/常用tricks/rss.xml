@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;常用tricks&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Mon, 11 Apr 2022 12:24:15 +0800</pubDate>
+        <lastBuildDate>Mon, 11 Apr 2022 12:24:15 +0800</lastBuildDate>
+        <category>Personal</category>
+        <category>kaggle</category>
+        <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>pytorch</category>
+        <category>深度学习</category>
+        <category>机器学习</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>CNN</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>data vistualtion</category>
+        <category>Willing</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>论文写作</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</guid>
+            <title>ML-DL-KaggleCompeTem</title>
+            <link>https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</link>
+            <category>kaggle</category>
+            <category>竞赛模板</category>
+            <category>常用tricks</category>
+            <pubDate>Mon, 11 Apr 2022 12:24:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;1、The-most-common-classes-CV&#34;&gt;&lt;a href=&#34;#1、The-most-common-classes-CV&#34; class=&#34;headerlink&#34; title=&#34;1、The most common classes - CV&#34;&gt;&lt;/a&gt;1、The most common classes - CV&lt;/h2&gt;&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;p&gt;补充细分类别&lt;/p&gt;
+&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 以USPPPM为例子&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Dataset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    
+    
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CFG&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    
+    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2、The-second-classes-NLP&#34;&gt;&lt;a href=&#34;#2、The-second-classes-NLP&#34; class=&#34;headerlink&#34; title=&#34;2、The second classes - NLP&#34;&gt;&lt;/a&gt;2、The second classes - NLP&lt;/h2&gt;&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;p&gt;补充细分类别&lt;/p&gt;
+&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;3、Machine-learning-Competitions&#34;&gt;&lt;a href=&#34;#3、Machine-learning-Competitions&#34; class=&#34;headerlink&#34; title=&#34;3、Machine learning Competitions&#34;&gt;&lt;/a&gt;3、Machine learning Competitions&lt;/h2&gt; ]]></description>
+        </item>
+    </channel>
+</rss>

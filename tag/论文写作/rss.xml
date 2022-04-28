@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;论文写作&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Thu, 07 Apr 2022 08:46:47 +0800</pubDate>
+        <lastBuildDate>Thu, 07 Apr 2022 08:46:47 +0800</lastBuildDate>
+        <category>Personal</category>
+        <category>kaggle</category>
+        <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>pytorch</category>
+        <category>深度学习</category>
+        <category>机器学习</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>CNN</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>data vistualtion</category>
+        <category>Willing</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>论文写作</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</guid>
+            <title>PE-论文写作</title>
+            <link>https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</link>
+            <category>论文写作</category>
+            <pubDate>Thu, 07 Apr 2022 08:46:47 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;论文写作要求&#34;&gt;&lt;a href=&#34;#论文写作要求&#34; class=&#34;headerlink&#34; title=&#34;论文写作要求&#34;&gt;&lt;/a&gt;论文写作要求&lt;/h2&gt;&lt;p&gt;1.标题 + 作者&lt;/p&gt;
+&lt;p&gt;2.摘要 - Abstract&lt;/p&gt;
+&lt;p&gt;3.导言 - Introduction &lt;/p&gt;
+&lt;p&gt;4.相关工作 - Related Work&lt;/p&gt;
+&lt;p&gt;Example : 5.模型 - Deep Residual Learning - 5.1 &amp;gt; 5.2 …&lt;/p&gt;
+&lt;p&gt;6.理论&lt;/p&gt;
+&lt;p&gt;7.实验 + 总结 - Experiments + Conclusion&lt;/p&gt;
+&lt;p&gt;8.评论&lt;/p&gt;
+&lt;p&gt;引用：References&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

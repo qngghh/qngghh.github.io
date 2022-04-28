@@ -1,0 +1,30 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"循环神经网络\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/",
+            "url": "https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/",
+            "title": "ML-DL-注意力机制",
+            "date_published": "2022-04-02T15:20:41.000Z",
+            "content_html": "<h2 id=\"注意力机制-Attention-Mechanism\"><a href=\"#注意力机制-Attention-Mechanism\" class=\"headerlink\" title=\"注意力机制 - Attention Mechanism\"></a>注意力机制 - Attention Mechanism</h2><h3 id=\"一、attention-这项工作的出现\"><a href=\"#一、attention-这项工作的出现\" class=\"headerlink\" title=\"一、attention 这项工作的出现\"></a>一、attention 这项工作的出现</h3><h3 id=\"二、针对注意力机制所包含的一些区分\"><a href=\"#二、针对注意力机制所包含的一些区分\" class=\"headerlink\" title=\"二、针对注意力机制所包含的一些区分\"></a>二、针对注意力机制所包含的一些区分</h3><p>1、软注意，侧重于吸取的信息相对来说会偏向全面</p>\n<p>2、硬注意，会直接舍弃部分信息来保留计算的轻便</p>\n<p>3、自注意机制，由输入权重来相互作用，其实这样的状况是由内部来决定，</p>\n<p>预训练模型看起来和 Transformer 有着很大的干系，可以说是语言模型的核心网络，</p>\n<p>transformer 在我这里给出的解释是，一段话作为输入，首先将输入中的各个词在self-attention 机制下变成词向量，同时会含有一连串的每一个词的位置向量 （ 不行，我完全是跟着别人走的）</p>\n",
+            "tags": [
+                "深度学习",
+                "循环神经网络"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
+            "url": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
+            "title": "ML-DL-循环神经网络",
+            "date_published": "2022-03-28T06:37:08.000Z",
+            "content_html": "",
+            "tags": [
+                "RNN",
+                "循环神经网络"
+            ]
+        }
+    ]
+}

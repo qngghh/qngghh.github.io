@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"data vistualtion\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/",
+            "url": "https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/",
+            "title": "ML-Dl-DataVisualtion",
+            "date_published": "2022-04-08T13:30:11.000Z",
+            "content_html": "<pre class=\"line-numbers language-none\"><code class=\"language-none\">import pandas as pd\npd.plotting.register_matplotlib_converters()\nimport matplotlib.pyplot as plt\n%matplotlib inline\nimport seaborn as sns<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n",
+            "tags": [
+                "data vistualtion"
+            ]
+        }
+    ]
+}

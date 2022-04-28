@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"竞赛模板\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/",
+            "url": "https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/",
+            "title": "ML-DL-KaggleCompeTem",
+            "date_published": "2022-04-11T04:24:15.000Z",
+            "content_html": "<h2 id=\"1、The-most-common-classes-CV\"><a href=\"#1、The-most-common-classes-CV\" class=\"headerlink\" title=\"1、The most common classes - CV\"></a>1、The most common classes - CV</h2><p>——————————————————————</p>\n<p>补充细分类别</p>\n<p>——————————————————————</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token comment\"># 以USPPPM为例子</span>\n<span class=\"token keyword\">class</span> <span class=\"token class-name\">Dataset</span><span class=\"token punctuation\">:</span>\n    \n    \n<span class=\"token keyword\">class</span> <span class=\"token class-name\">CFG</span><span class=\"token punctuation\">:</span>\n\n    \n    <span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<h2 id=\"2、The-second-classes-NLP\"><a href=\"#2、The-second-classes-NLP\" class=\"headerlink\" title=\"2、The second classes - NLP\"></a>2、The second classes - NLP</h2><p>——————————————————————</p>\n<p>补充细分类别</p>\n<p>——————————————————————</p>\n<pre class=\"line-numbers language-none\"><code class=\"language-none\"><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<h2 id=\"3、Machine-learning-Competitions\"><a href=\"#3、Machine-learning-Competitions\" class=\"headerlink\" title=\"3、Machine learning Competitions\"></a>3、Machine learning Competitions</h2>",
+            "tags": [
+                "kaggle",
+                "竞赛模板",
+                "常用tricks"
+            ]
+        }
+    ]
+}

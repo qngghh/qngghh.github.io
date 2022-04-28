@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"rnn\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
+            "url": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
+            "title": "ML-DL-循环神经网络",
+            "date_published": "2022-03-28T06:37:08.000Z",
+            "content_html": "",
+            "tags": [
+                "RNN",
+                "循环神经网络"
+            ]
+        }
+    ]
+}

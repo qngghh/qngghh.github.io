@@ -3,9 +3,11 @@
 
 
 <head>
+
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <meta charset="utf-8">
     <meta name="keywords" content="Tag: neural network, kitx86,kit,x86">
-    <meta name="description" content="业余画家 &amp; 业余音乐鉴赏家！">
+    <meta name="description" content="小派过气画家">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,6 +21,7 @@
     <title>Tag: neural network | Supernova</title>
     <link rel="icon" type="image/gif" href="/favicon.gif">
 
+    
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
@@ -48,6 +51,28 @@
 
 
 <body>
+
+    
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="configure-border-1">
+                <div class="configure-core"></div>
+            </div>
+            <div class="configure-border-2">
+                <div class="configure-core"></div>
+            </div>
+            <div class="loading-word">加载中...</div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function(){
+            document.body.style.overflow = 'auto';
+            document.getElementById('loading-box').classList.add("loaded")
+        }, false)
+    </script>
+    
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -179,7 +204,7 @@
         <div class="logo-name">Supernova</div>
         <div class="logo-desc">
             
-            业余画家 &amp; 业余音乐鉴赏家！
+            小派过气画家
             
         </div>
     </div>
@@ -418,10 +443,19 @@
             <div class="tag-chips">
                 
                 
+                <a href="/tags/Personal/" title="Personal: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Personal" style="background-color: #F9EBEA;">Personal
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/kaggle/" title="kaggle: 4">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="kaggle" style="background-color: #F9EBEA;">kaggle
+                            data-tagname="kaggle" style="background-color: #F5EEF8;">kaggle
                         <span class="tag-length">4</span>
                     </span>
                 </a>
@@ -430,7 +464,7 @@
                 <a href="/tags/ML/" title="ML: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="ML" style="background-color: #F5EEF8;">ML
+                            data-tagname="ML" style="background-color: #D5F5E3;">ML
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -439,7 +473,7 @@
                 <a href="/tags/%E7%AB%9E%E8%B5%9B%E6%A8%A1%E6%9D%BF/" title="竞赛模板: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="竞赛模板" style="background-color: #D5F5E3;">竞赛模板
+                            data-tagname="竞赛模板" style="background-color: #E8F8F5;">竞赛模板
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -448,7 +482,7 @@
                 <a href="/tags/%E5%B8%B8%E7%94%A8tricks/" title="常用tricks: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="常用tricks" style="background-color: #E8F8F5;">常用tricks
+                            data-tagname="常用tricks" style="background-color: #FEF9E7;">常用tricks
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -457,7 +491,7 @@
                 <a href="/tags/pytorch/" title="pytorch: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="pytorch" style="background-color: #FEF9E7;">pytorch
+                            data-tagname="pytorch" style="background-color: #F8F9F9;">pytorch
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -466,7 +500,7 @@
                 <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" title="深度学习: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="深度学习" style="background-color: #F8F9F9;">深度学习
+                            data-tagname="深度学习" style="background-color: #82E0AA;">深度学习
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -475,7 +509,7 @@
                 <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" title="机器学习: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="机器学习" style="background-color: #82E0AA;">机器学习
+                            data-tagname="机器学习" style="background-color: #D7BDE2;">机器学习
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -484,7 +518,7 @@
                 <a href="/tags/paper/" title="paper: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="paper" style="background-color: #D7BDE2;">paper
+                            data-tagname="paper" style="background-color: #A3E4D7;">paper
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -493,7 +527,7 @@
                 <a href="/tags/deep-learning/" title="deep learning: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="deep learning" style="background-color: #A3E4D7;">deep learning
+                            data-tagname="deep learning" style="background-color: #85C1E9;">deep learning
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -502,7 +536,7 @@
                 <a href="/tags/neural-network/" title="neural network: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="neural network" style="background-color: #85C1E9;">neural network
+                            data-tagname="neural network" style="background-color: #F8C471;">neural network
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -511,7 +545,7 @@
                 <a href="/tags/SGD/" title="SGD: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="SGD" style="background-color: #F8C471;">SGD
+                            data-tagname="SGD" style="background-color: #F9E79F;">SGD
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -520,7 +554,7 @@
                 <a href="/tags/RMSProp/" title="RMSProp: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="RMSProp" style="background-color: #F9E79F;">RMSProp
+                            data-tagname="RMSProp" style="background-color: #85C1E9;">RMSProp
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -580,15 +614,6 @@
                 </a>
                 
                 
-                <a href="/tags/Personal/" title="Personal: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Personal" style="background-color: #FFF;">Personal
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/Willing/" title="Willing: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -602,6 +627,24 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="MSRA" style="background-color: #D7BDE2;">MSRA
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%BE%AE%E8%BD%AF%E4%BA%9A%E6%B4%B2%E7%A0%94%E7%A9%B6%E9%99%A2/" title="微软亚洲研究院: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="微软亚洲研究院" style="background-color: #D7BDE2;">微软亚洲研究院
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/" title="论文写作: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="论文写作" style="background-color: #F9EBEA;">论文写作
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -629,15 +672,6 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="独立自制" style="background-color: #F9EBEA;">独立自制
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/" title="论文写作: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="论文写作" style="background-color: #F9EBEA;">论文写作
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -709,6 +743,8 @@
 
 
 
+    
+ 
     <footer class="page-footer bg-color">
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
@@ -975,8 +1011,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -1027,3 +1061,16 @@ $(function () {
 </body>
 
 </html>
+
+
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\js\snow.js"></script>
+
+<!-- 数字雨 --
+<canvas id="canvas" width="1440" height="900" ></canvas>
+<script type="text/javascript" src="/js/DigitalRain.js"></script>    
+
+    >

@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"adam\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/",
+            "url": "https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/",
+            "title": "ML-DL-优化算法疑问",
+            "date_published": "2022-04-07T09:14:18.000Z",
+            "content_html": "<h4 id=\"优化算法疑问\"><a href=\"#优化算法疑问\" class=\"headerlink\" title=\"优化算法疑问\"></a>优化算法疑问</h4>",
+            "tags": [
+                "SGD",
+                "RMSProp",
+                "Adam"
+            ]
+        }
+    ]
+}

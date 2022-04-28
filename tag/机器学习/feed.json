@@ -1,0 +1,30 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"机器学习\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/",
+            "url": "https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/",
+            "title": "ML-DL-Pytorch实现",
+            "date_published": "2022-03-26T14:35:40.000Z",
+            "content_html": "<h4 id=\"Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现\"><a href=\"#Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现\" class=\"headerlink\" title=\"Declaration ：借鉴了 d2l (https://zh.d2l.ai)的pytorch实现\"></a>Declaration ：借鉴了 d2l (<a href=\"https://zh.d2l.ai)的pytorch实现/\">https://zh.d2l.ai)的pytorch实现</a></h4>",
+            "tags": [
+                "pytorch",
+                "深度学习",
+                "机器学习"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/03/11/ml-dl-logistic-hui-gui-ji-ben-gai-nian/",
+            "url": "https://www.kitx86.com/2022/03/11/ml-dl-logistic-hui-gui-ji-ben-gai-nian/",
+            "title": "ML-DL-logistic回归基本概念",
+            "date_published": "2022-03-10T16:14:31.000Z",
+            "content_html": "<h4 id=\"logistic回归\"><a href=\"#logistic回归\" class=\"headerlink\" title=\"logistic回归\"></a>logistic回归</h4><pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token comment\">##  基础函数库</span>\n<span class=\"token keyword\">import</span> numpy <span class=\"token keyword\">as</span> np \n\n<span class=\"token comment\">## 导入画图库</span>\n<span class=\"token keyword\">import</span> matplotlib<span class=\"token punctuation\">.</span>pyplot <span class=\"token keyword\">as</span> plt\n<span class=\"token keyword\">import</span> seaborn <span class=\"token keyword\">as</span> sns\n\n<span class=\"token comment\">## 导入逻辑回归模型函数</span>\n<span class=\"token keyword\">from</span> sklearn<span class=\"token punctuation\">.</span>linear_model <span class=\"token keyword\">import</span> LogisticRegression<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n",
+            "tags": [
+                "机器学习"
+            ]
+        }
+    ]
+}

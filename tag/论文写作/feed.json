@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"论文写作\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/",
+            "url": "https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/",
+            "title": "PE-论文写作",
+            "date_published": "2022-04-07T00:46:47.000Z",
+            "content_html": "<h2 id=\"论文写作要求\"><a href=\"#论文写作要求\" class=\"headerlink\" title=\"论文写作要求\"></a>论文写作要求</h2><p>1.标题 + 作者</p>\n<p>2.摘要 - Abstract</p>\n<p>3.导言 - Introduction </p>\n<p>4.相关工作 - Related Work</p>\n<p>Example : 5.模型 - Deep Residual Learning - 5.1 &gt; 5.2 …</p>\n<p>6.理论</p>\n<p>7.实验 + 总结 - Experiments + Conclusion</p>\n<p>8.评论</p>\n<p>引用：References</p>\n",
+            "tags": [
+                "论文写作"
+            ]
+        }
+    ]
+}
