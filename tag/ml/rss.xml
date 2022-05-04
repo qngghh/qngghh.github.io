@@ -7,7 +7,6 @@
         <language>en</language>
         <pubDate>Thu, 17 Mar 2022 12:08:09 +0800</pubDate>
         <lastBuildDate>Thu, 17 Mar 2022 12:08:09 +0800</lastBuildDate>
-        <category>Personal</category>
         <category>kaggle</category>
         <category>ML</category>
         <category>竞赛模板</category>
@@ -21,22 +20,23 @@
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
-        <category>CNN</category>
         <category>RNN</category>
         <category>循环神经网络</category>
+        <category>CNN</category>
         <category>常见数据处理</category>
         <category>data vistualtion</category>
+        <category>Personal</category>
         <category>Willing</category>
-        <category>MSRA</category>
-        <category>微软亚洲研究院</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
         <category>论文写作</category>
-        <category>QCQI</category>
-        <category>data</category>
         <category>饲养记</category>
         <category>荒诞的故事</category>
+        <category>QCQI</category>
+        <category>data</category>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/03/17/ml-dl-asamplemodel/</guid>
             <title>ML-DL-ASampleModel</title>
