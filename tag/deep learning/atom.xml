@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;deep learning&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-04-02T03:41:23.000Z</updated>
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="RNN" />
+    <category term="循环神经网络" />
+    <category term="常见数据处理" />
+    <category term="data vistualtion" />
+    <category term="Willing" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="论文写作" />
+    <category term="QCQI" />
+    <category term="data" />
+    <category term="饲养记" />
+    <category term="荒诞的故事" />
+    <entry>
+        <id>https://www.kitx86.com/2022/04/02/ml-dl-readingpaper/</id>
+        <title>ML-DL-ReadingPaper</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/04/02/ml-dl-readingpaper/"/>
+        <content type="html">&lt;h2 id=&#34;Awesome-Deep-Learning-amp-Quantum-Computing&#34;&gt;&lt;a href=&#34;#Awesome-Deep-Learning-amp-Quantum-Computing&#34; class=&#34;headerlink&#34; title=&#34;Awesome Deep Learning &amp;amp; Quantum Computing&#34;&gt;&lt;/a&gt;Awesome Deep Learning &amp;amp; Quantum Computing&lt;/h2&gt;&lt;p&gt;我的小仓库😎😎 : &lt;a href=&#34;https://www.aliyundrive.com/s/CELiSXuKc8e&#34;&gt;https://www.aliyundrive.com/s/CELiSXuKc8e&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不错的github地址：&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;深度学习&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap&#34;&gt;https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mli/paper-reading&#34;&gt;https://github.com/mli/paper-reading&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;量子计算&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/desireevl/awesome-quantum-computing&#34;&gt;https://github.com/desireevl/awesome-quantum-computing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;一、Convolutional-Neural-Networks-CNN&#34;&gt;&lt;a href=&#34;#一、Convolutional-Neural-Networks-CNN&#34; class=&#34;headerlink&#34; title=&#34;一、Convolutional Neural Networks - CNN&#34;&gt;&lt;/a&gt;一、Convolutional Neural Networks - CNN&lt;/h3&gt;&lt;h3 id=&#34;二、Recurrent-Neural-Network-RNN&#34;&gt;&lt;a href=&#34;#二、Recurrent-Neural-Network-RNN&#34; class=&#34;headerlink&#34; title=&#34;二、Recurrent Neural Network - RNN&#34;&gt;&lt;/a&gt;二、Recurrent Neural Network - RNN&lt;/h3&gt;&lt;h3 id=&#34;三、Reinforcement-Learning-RNN&#34;&gt;&lt;a href=&#34;#三、Reinforcement-Learning-RNN&#34; class=&#34;headerlink&#34; title=&#34;三、Reinforcement Learning - RNN&#34;&gt;&lt;/a&gt;三、Reinforcement Learning - RNN&lt;/h3&gt;&lt;h3 id=&#34;四、Graph-Neural-Learning-GNN&#34;&gt;&lt;a href=&#34;#四、Graph-Neural-Learning-GNN&#34; class=&#34;headerlink&#34; title=&#34;四、Graph Neural Learning - GNN&#34;&gt;&lt;/a&gt;四、Graph Neural Learning - GNN&lt;/h3&gt;</content>
+        <category term="paper" />
+        <category term="deep learning" />
+        <category term="neural network" />
+        <updated>2022-04-02T03:41:23.000Z</updated>
+    </entry>
+</feed>

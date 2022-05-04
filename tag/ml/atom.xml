@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;ml&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-03-17T04:08:09.000Z</updated>
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="RNN" />
+    <category term="循环神经网络" />
+    <category term="常见数据处理" />
+    <category term="data vistualtion" />
+    <category term="Willing" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="论文写作" />
+    <category term="QCQI" />
+    <category term="data" />
+    <category term="饲养记" />
+    <category term="荒诞的故事" />
+    <entry>
+        <id>https://www.kitx86.com/2022/03/17/ml-dl-asamplemodel/</id>
+        <title>ML-DL-ASampleModel</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/03/17/ml-dl-asamplemodel/"/>
+        <content type="html">&lt;h4 id=&#34;在-kaggle-上写的一个简陋模型&#34;&gt;&lt;a href=&#34;#在-kaggle-上写的一个简陋模型&#34; class=&#34;headerlink&#34; title=&#34;在 kaggle 上写的一个简陋模型&#34;&gt;&lt;/a&gt;在 kaggle 上写的一个简陋模型&lt;/h4&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; numpy &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; np &lt;span class=&#34;token comment&#34;&gt;# linear algebra&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; pandas &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; pd &lt;span class=&#34;token comment&#34;&gt;# data processing, CSV file I/O (e.g. pd.read_csv)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; sklearn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tree &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; DecisionTreeRegressor  &lt;span class=&#34;token comment&#34;&gt;# 决策树&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; sklearn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;metrics &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; mean_absolute_error &lt;span class=&#34;token comment&#34;&gt;# 绝对均值误差&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; sklearn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;model_selection &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; train_test_split &lt;span class=&#34;token comment&#34;&gt;# 训练测试分离&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; sklearn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ensemble &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; RandomForestRegressor &lt;span class=&#34;token comment&#34;&gt;# 随机森林&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 读入数据&lt;/span&gt;
+train &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;read_csv&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;./train.csv&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;read_csv&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;./test.csv&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;describe&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 训练集的统计&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;describe&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 要预测  SalePrice&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;columns  &lt;span class=&#34;token comment&#34;&gt;# check columns infos&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;columns &lt;span class=&#34;token comment&#34;&gt;# here have benn means to  predict &#34;SalePrice&#34;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;feature_names &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;LotArea&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;YearBuilt&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;1stFlrSF&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;2ndFlrSF&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                 &lt;span class=&#34;token string&#34;&gt;&#34;FullBath&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;BedroomAbvGr&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;TotRmsAbvGrd&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+X &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;feature_names&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SalePrice&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;X&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;describe&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;wrong_model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; DecisionTreeRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# build model&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# fit the model&lt;/span&gt;
+wrong_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# make predictions&lt;/span&gt;
+predictions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; wrong_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;predictions&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# split in and uncomment&lt;/span&gt;
+train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; val_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; train_y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; val_y &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train_test_split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# specify the model&lt;/span&gt;
+after_model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; DecisionTreeRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# fit after_model with training data.&lt;/span&gt;
+after_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;val_predictions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; after_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_predictions&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;val_mae &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; mean_absolute_error&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_predictions&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_mae&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# we will write the mean_absolute_error as a function&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;get_mae&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;max_leaf_nodes&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; DecisionTreeRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;max_leaf_nodes&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;max_leaf_nodes&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    preds_val &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    mae &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; mean_absolute_error&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;preds_val&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; mae&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;candidate_max_leaf_nodes &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;250&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;500&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# write loop to find the ideal tree size&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# intermediate for loop writing&lt;/span&gt;
+
+scores &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;leaf_size&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; get_mae&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;leaf_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_y&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; leaf_size &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; candidate_max_leaf_nodes&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;
+best_tree_size &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;scores&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;key &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; scores&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;best_tree_size&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# write the final model with fill n arguments&lt;/span&gt;
+final_model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; DecisionTreeRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;max_leaf_nodes&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;best_tree_size&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+final_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+final_test &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; final_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+final_test&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# try use the rf-model&lt;/span&gt;
+rf_model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; RandomForestRegressor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+rf_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;train_X&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;train_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# this is me write down a corresponding right trick&lt;/span&gt;
+rf_val_mae &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; mean_absolute_error&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rf_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;val_X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;val_y&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+rf_val_mae&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;final_predictions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; rf_model&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;predict&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# check the predictions&lt;/span&gt;
+final_predictions&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;output &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;DataFrame&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Id&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; test_data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Id&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                       &lt;span class=&#34;token string&#34;&gt;&#39;SalePrice&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; test_preds&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+output&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;to_csv&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;submission.csv&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; index&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;提交&#34;&gt;&lt;a href=&#34;#提交&#34; class=&#34;headerlink&#34; title=&#34;提交&#34;&gt;&lt;/a&gt;提交&lt;/h4&gt;</content>
+        <category term="kaggle" />
+        <category term="ML" />
+        <updated>2022-03-17T04:08:09.000Z</updated>
+    </entry>
+</feed>

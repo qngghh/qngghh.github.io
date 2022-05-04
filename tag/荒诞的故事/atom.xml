@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;荒诞的故事&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-02-16T10:21:23.000Z</updated>
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="RNN" />
+    <category term="循环神经网络" />
+    <category term="常见数据处理" />
+    <category term="data vistualtion" />
+    <category term="Willing" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="论文写作" />
+    <category term="QCQI" />
+    <category term="data" />
+    <category term="饲养记" />
+    <category term="荒诞的故事" />
+    <entry>
+        <id>https://www.kitx86.com/2022/02/16/pl-dreammemory/</id>
+        <title>PL-DreamMemory</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/02/16/pl-dreammemory/"/>
+        <content type="html">&lt;h5 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;1.记起一个梦，很有意思的，是一个小精灵游荡四方，似乎是在一家店，做了一些奇妙的事，她习惯站在我的右肩上，有时候是袖子里，她父亲很强壮，为什么会是这样呢，离开时瞒着父亲，本应该回家的，最后偷偷摸摸又钻进了我的袖子，这样的一个可爱的小家伙，路途遥远漫长，应该会有一些乐趣&lt;/p&gt;
+</content>
+        <category term="荒诞的故事" />
+        <updated>2022-02-16T10:21:23.000Z</updated>
+    </entry>
+</feed>

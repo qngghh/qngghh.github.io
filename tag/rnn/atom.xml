@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;rnn&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-03-28T06:37:08.000Z</updated>
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="RNN" />
+    <category term="循环神经网络" />
+    <category term="常见数据处理" />
+    <category term="data vistualtion" />
+    <category term="Willing" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="论文写作" />
+    <category term="QCQI" />
+    <category term="data" />
+    <category term="饲养记" />
+    <category term="荒诞的故事" />
+    <entry>
+        <id>https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</id>
+        <title>ML-DL-循环神经网络</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/"/>
+        <content type="html"></content>
+        <category term="RNN" />
+        <category term="循环神经网络" />
+        <updated>2022-03-28T06:37:08.000Z</updated>
+    </entry>
+</feed>

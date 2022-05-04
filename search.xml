@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title>PE-鸟类饲养记</title>
+      <link href="/2022/05/04/pe-niao-lei-si-yang-ji/"/>
+      <url>/2022/05/04/pe-niao-lei-si-yang-ji/</url>
+      
+        <content type="html"><![CDATA[<h3 id="我亲爱的挣扎的小白虎皮："><a href="#我亲爱的挣扎的小白虎皮：" class="headerlink" title="我亲爱的挣扎的小白虎皮："></a>我亲爱的挣扎的小白虎皮：</h3><p>看起来似乎好活泼好动，却毫不为我所提供的豪华别墅和大餐所动，满眼都是崇尚外面的点滴一方世界，留不住的也会莫名的流露出一丝丝不忍心。</p><p>自私的热切关心并不会改变什么，我并不失落，因为这结果我可以预见，另一种结果是毫不留情直接炖了，依赖达尔文所说的生物进化的基础是自然选择，这并不残忍</p><p>但为什么产生了一点点空虚呢，解析不出来。</p><p>——————————————————</p><p>从一只鸟的观察升华到人际交流，关心会对一个人付出自己脆落的琉璃心，即使是孤赖调皮的人也不例外。</p><p><img src="/2022/05/04/pe-niao-lei-si-yang-ji/IMG_20220504_155927.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Personal </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 饲养记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PE-朕之旨意</title>
+      <link href="/2022/05/02/pe-zhen-zhi-zhi-yi/"/>
+      <url>/2022/05/02/pe-zhen-zhi-zhi-yi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="弧线摇篮"><a href="#弧线摇篮" class="headerlink" title="弧线摇篮"></a>弧线摇篮</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Personal </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PE-DiaryUpdate</title>
+      <link href="/2022/05/02/pe-diaryupdate-1/"/>
+      <url>/2022/05/02/pe-diaryupdate-1/</url>
+      
+        <content type="html"><![CDATA[<h3 id="今日吐槽"><a href="#今日吐槽" class="headerlink" title="今日吐槽"></a>今日吐槽</h3><p>每天早上迷糊的排队抢显卡，干巴巴的日子很苦涩，只有错开时间才能等到，现在是早上 0.36，在排队等 TPU</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Personal </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ML-DL-神经网络解释</title>
       <link href="/2022/04/26/ml-dl-shen-jing-wang-luo-jie-shi/"/>
       <url>/2022/04/26/ml-dl-shen-jing-wang-luo-jie-shi/</url>
@@ -21,7 +84,7 @@
       <link href="/2022/04/26/pe-diaryupdate/"/>
       <url>/2022/04/26/pe-diaryupdate/</url>
       
-        <content type="html"><![CDATA[<h3 id="往日续谈"><a href="#往日续谈" class="headerlink" title="往日续谈"></a>往日续谈</h3><p>年轻的时候当然会觉得做 hacker是最帅的，会敲代码懂原理，危险而又迷人的神秘背影怎能不让人心动。</p><p>我才回味起我的本职工作是一件很惊讶的事情，修习技能从厨房烧菜料理到独立游戏开发，从音乐弹琴画画到时序建模预测未来，从编译系统底层内核到量子计算机状态演化，窥视宇宙秘密，探索生物免疫，上知历史名人八卦，下知宿舍各类鸟叫，一手炼丹修仙诅咒玄学。</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="往日续谈"><a href="#往日续谈" class="headerlink" title="往日续谈"></a>往日续谈</h3><p>年轻的时候当然会觉得做 hacker是最帅的，会敲代码懂原理，危险而又迷人的神秘背影怎能不让人心动。</p><p>我才回味起我的本职工作是一件很惊讶的事情，修习技能从厨房烧菜料理到独立游戏开发，从音乐弹琴画画到时序建模预测未来，从编译系统底层内核到量子计算机状态演化，窥视宇宙秘密，探索生物免疫，上知历史名人八卦，下知宿舍各类咆哮，一手炼丹修仙诅咒玄学。</p>]]></content>
       
       
       
@@ -36,6 +99,12 @@
       
         <content type="html"><![CDATA[<h3 id="k-折验证"><a href="#k-折验证" class="headerlink" title="k 折验证"></a>k 折验证</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_folds</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> num_splits<span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment"># we create a new column called kfold and fill it with -1</span>    data<span class="token punctuation">[</span><span class="token string">"fold"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>        <span class="token comment"># the next step is to randomize the rows of the data</span>    <span class="token comment"># data = data.sample(frac=1).reset_index(drop=True)</span>    <span class="token comment"># calculate number of bins by Sturge's rule</span>    <span class="token comment"># I take the floor of the value, you can also</span>    <span class="token comment"># just round it</span>    <span class="token comment"># num_bins = int(np.floor(1 + np.log2(len(data))))</span>        <span class="token comment"># bin targets</span>    data<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token string">"bins"</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>cut<span class="token punctuation">(</span>        data<span class="token punctuation">[</span><span class="token string">"score"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> bins<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">False</span>    <span class="token punctuation">)</span>        <span class="token comment"># initiate the kfold class from model_selection module</span>    kf <span class="token operator">=</span> StratifiedKFold<span class="token punctuation">(</span>n_splits<span class="token operator">=</span>num_splits<span class="token punctuation">,</span> shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">)</span>        <span class="token comment"># fill the new kfold column</span>    <span class="token comment"># note that, instead of targets, we use bins!</span>    <span class="token keyword">for</span> f<span class="token punctuation">,</span> <span class="token punctuation">(</span>t_<span class="token punctuation">,</span> v_<span class="token punctuation">)</span> <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>kf<span class="token punctuation">.</span>split<span class="token punctuation">(</span>X<span class="token operator">=</span>data<span class="token punctuation">,</span> y<span class="token operator">=</span>data<span class="token punctuation">.</span>bins<span class="token punctuation">.</span>values<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>        data<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>v_<span class="token punctuation">,</span> <span class="token string">'fold'</span><span class="token punctuation">]</span> <span class="token operator">=</span> f        <span class="token comment"># drop the bins column</span>    data <span class="token operator">=</span> data<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">"bins"</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>    <span class="token comment"># return dataframe with folds</span>    <span class="token keyword">return</span> data<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> ML-DL </category>
+          
+      </categories>
       
       
     </entry>
@@ -63,6 +132,12 @@
         <content type="html"><![CDATA[<h2 id="1、The-most-common-classes-CV"><a href="#1、The-most-common-classes-CV" class="headerlink" title="1、The most common classes - CV"></a>1、The most common classes - CV</h2><p>补充细分类别</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 以USPPPM为例子</span><span class="token keyword">class</span> <span class="token class-name">Dataset</span><span class="token punctuation">:</span>        <span class="token keyword">class</span> <span class="token class-name">CFG</span><span class="token punctuation">:</span>        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2、The-second-classes-NLP"><a href="#2、The-second-classes-NLP" class="headerlink" title="2、The second classes - NLP"></a>2、The second classes - NLP</h2><p>——————————————————————</p><p>补充细分类别</p><p>——————————————————————</p><pre class="line-numbers language-none"><code class="language-none"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="3、Machine-learning-Competitions"><a href="#3、Machine-learning-Competitions" class="headerlink" title="3、Machine learning Competitions"></a>3、Machine learning Competitions</h2>]]></content>
       
       
+      <categories>
+          
+          <category> ML-DL </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -85,6 +160,12 @@
       
         <content type="html"><![CDATA[<pre class="line-numbers language-none"><code class="language-none">import pandas as pdpd.plotting.register_matplotlib_converters()import matplotlib.pyplot as plt%matplotlib inlineimport seaborn as sns<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> ML-DL </category>
+          
+      </categories>
       
       
         <tags>
@@ -159,6 +240,12 @@
         <content type="html"><![CDATA[<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="切片操作的小块解释"><a href="#切片操作的小块解释" class="headerlink" title="切片操作的小块解释"></a>切片操作的小块解释</h3><ul><li>[-1]：获取最后一个元素，类似于matlab中的end；</li><li>[:-1]：除了最后一个元素，获取其他所有的元素；</li><li>[::-1]：对第一个到最后一个元素进行倒序之后取出；</li><li>[n::-1]：对第一个到第n个元素进行倒序后取出</li></ul><h2 id="enumerate"><a href="#enumerate" class="headerlink" title="enumerate()"></a>enumerate()</h2><p>enumerate() 函数用于将一个可遍历的数据对象组合成一个索引序列，同时列出数据和数据下标</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">train_score <span class="token operator">=</span> train<span class="token punctuation">[</span><span class="token string">'score'</span><span class="token punctuation">]</span><span class="token keyword">del</span> train<span class="token punctuation">[</span><span class="token string">'score'</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> ML-DL </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -171,6 +258,12 @@
       
         <content type="html"><![CDATA[<h2 id="注意力机制-Attention-Mechanism"><a href="#注意力机制-Attention-Mechanism" class="headerlink" title="注意力机制 - Attention Mechanism"></a>注意力机制 - Attention Mechanism</h2><h3 id="一、attention-这项工作的出现"><a href="#一、attention-这项工作的出现" class="headerlink" title="一、attention 这项工作的出现"></a>一、attention 这项工作的出现</h3><h3 id="二、针对注意力机制所包含的一些区分"><a href="#二、针对注意力机制所包含的一些区分" class="headerlink" title="二、针对注意力机制所包含的一些区分"></a>二、针对注意力机制所包含的一些区分</h3><p>1、软注意，侧重于吸取的信息相对来说会偏向全面</p><p>2、硬注意，会直接舍弃部分信息来保留计算的轻便</p><p>3、自注意机制，由输入权重来相互作用，其实这样的状况是由内部来决定，</p><p>预训练模型看起来和 Transformer 有着很大的干系，可以说是语言模型的核心网络，</p><p>transformer 在我这里给出的解释是，一段话作为输入，首先将输入中的各个词在self-attention 机制下变成词向量，同时会含有一连串的每一个词的位置向量 （ 不行，我完全是跟着别人走的）</p>]]></content>
       
+      
+      <categories>
+          
+          <category> ML-DL </category>
+          
+      </categories>
       
       
         <tags>
@@ -251,7 +344,7 @@
       
       <categories>
           
-          <category> ML-DL </category>
+          <category> Personal </category>
           
       </categories>
       
@@ -354,7 +447,7 @@
       <link href="/2022/03/25/pe-lists/"/>
       <url>/2022/03/25/pe-lists/</url>
       
-        <content type="html"><![CDATA[<h4 id="One-Resolution（"><a href="#One-Resolution（" class="headerlink" title="One-Resolution（)"></a>One-Resolution（)</h4><p>check method : aspect / entry / weight</p><p>娱乐：和朋友一起参加一次啤酒节 / 3</p><p>娱乐：养两只宠物，一只橘猫，一只边牧 / 3</p><p>娱乐：独自进行一次朝圣 / 2</p><p>娱乐：一定要旁观参加一次 DEFCON 会议，弥补遗憾 / 3</p><p>娱乐：希望去参加赛车比赛  / 3</p><p>工作：去拜访 gilbert strang，在数学这方面他给我造成了一些影响，主要是他看起来比较有趣  / 4</p><p>工作：研究生想去微软亚洲研究所（MSRA）实习 ，实习方向大致是 强化学习..AI系统开发/研究../ 5</p><p>工作：去 google 42层工作一段时间，另外有可能就去 google brain lab 那里看看，张张领域见识，领教各界大神风采 / 5</p><p>工作：博士阶段能在 MIT 那里做一段研究，导师： aram harrow，原因是近些年 HHL 那篇paper 较为出名，组也在招人 / 5</p><p>工作：希望有一个在学业上一直挑我毛病的”朋友“，科研对手 / 6</p><p>工作：毕业前完成我的小设计</p><p>工作：本科完成一本英文 <em>数据挖掘 、深度学习</em> 翻译</p><p>~~后续补充</p><p>————————————————————————</p>]]></content>
+        <content type="html"><![CDATA[<h4 id="One-Resolution（"><a href="#One-Resolution（" class="headerlink" title="One-Resolution（)"></a>One-Resolution（)</h4><p>check method : aspect / entry / weight</p><p>娱乐：和朋友一起参加一次啤酒节 / 3</p><p>娱乐：养两只宠物，一只橘猫，一只边牧 / 3</p><p>娱乐：独自进行一次朝圣 / 2</p><p>娱乐：一定要旁观参加一次 DEFCON 会议，弥补遗憾 / 3</p><p>娱乐：希望去参加赛车比赛  / 3</p><p>工作：去拜访 gilbert strang，在数学这方面他给我造成了一些影响，主要是他看起来比较有趣  / 4</p><p>工作：研究生想去微软亚洲研究所（MSRA）实习 ，实习方向大致是 强化学习..AI系统开发/研究 / 5</p><p>工作：去 google 42层工作一段时间，另外有可能就去 google brain lab 那里看看，张张领域见识，领教各界大神风采 / 5</p><p>工作：博士阶段能在 MIT 那里做一段研究，导师： aram harrow，原因是近些年 HHL 那篇paper 较为出名，组也在招人 / 5</p><p>工作：希望有一个在学业上一直挑我毛病的”朋友“，科研对手 / 6</p><p>工作：毕业前完成我的设计 / 3</p><p>工作：毕业前在kaggle上级别达到 grandmaster ,这个可能会改变，不确定因素 / 4</p><p>娱乐：每天蹭朋友车在夕阳下弹一首符合心情的民谣回家（不喜欢开车，但喜欢开塞车，无证驾驶！）</p><p>有一定资产后去收养一群孤儿，</p><p>~~后续补充</p><p>————————————————————————</p><p>最大最大的奢望就是 诺贝尔物理奖或者图灵奖 / max</p><p>还有很多很多坏毛病，不想改了。</p>]]></content>
       
       
       <categories>
@@ -502,6 +595,31 @@
         <tags>
             
             <tag> kaggle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PL-DreamMemory</title>
+      <link href="/2022/02/16/pl-dreammemory/"/>
+      <url>/2022/02/16/pl-dreammemory/</url>
+      
+        <content type="html"><![CDATA[<h5 id=""><a href="#" class="headerlink" title=""></a></h5><p>1.记起一个梦，很有意思的，是一个小精灵游荡四方，似乎是在一家店，做了一些奇妙的事，她习惯站在我的右肩上，有时候是袖子里，她父亲很强壮，为什么会是这样呢，离开时瞒着父亲，本应该回家的，最后偷偷摸摸又钻进了我的袖子，这样的一个可爱的小家伙，路途遥远漫长，应该会有一些乐趣</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Personal </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 荒诞的故事 </tag>
             
         </tags>
       

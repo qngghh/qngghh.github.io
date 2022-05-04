@@ -5,36 +5,115 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Thu, 07 Apr 2022 17:14:18 +0800</pubDate>
-        <lastBuildDate>Thu, 07 Apr 2022 17:14:18 +0800</lastBuildDate>
+        <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
+        <lastBuildDate>Fri, 15 Apr 2022 03:17:12 +0800</lastBuildDate>
         <category>Personal</category>
         <category>kaggle</category>
         <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
         <category>pytorch</category>
         <category>深度学习</category>
         <category>机器学习</category>
-        <category>竞赛模板</category>
-        <category>常用tricks</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
-        <category>常见数据处理</category>
         <category>CNN</category>
         <category>RNN</category>
         <category>循环神经网络</category>
+        <category>常见数据处理</category>
         <category>data vistualtion</category>
+        <category>Willing</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>Willing</category>
         <category>论文写作</category>
-        <category>MSRA</category>
-        <category>微软亚洲研究院</category>
         <category>QCQI</category>
         <category>data</category>
+        <category>饲养记</category>
+        <category>荒诞的故事</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</guid>
+            <title>ML-DL-kFold验证</title>
+            <link>https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</link>
+            <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;k-折验证&#34;&gt;&lt;a href=&#34;#k-折验证&#34; class=&#34;headerlink&#34; title=&#34;k 折验证&#34;&gt;&lt;/a&gt;k 折验证&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;create_folds&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_splits&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# we create a new column called kfold and fill it with -1&lt;/span&gt;
+    data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fold&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# the next step is to randomize the rows of the data&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# data = data.sample(frac=1).reset_index(drop=True)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# calculate number of bins by Sturge&#39;s rule&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# I take the floor of the value, you can also&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# just round it&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# num_bins = int(np.floor(1 + np.log2(len(data))))&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# bin targets&lt;/span&gt;
+    data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cut&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+        data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;score&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; bins&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; labels&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# initiate the kfold class from model_selection module&lt;/span&gt;
+    kf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;n_splits&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;num_splits&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; shuffle&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# fill the new kfold column&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# note that, instead of targets, we use bins!&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; f&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;t_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; v_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kf&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;bins&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;values&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;v_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;fold&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; f
+    
+    &lt;span class=&#34;token comment&#34;&gt;# drop the bins column&lt;/span&gt;
+    data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# return dataframe with folds&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; data&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</guid>
+            <title>ML-DL-KaggleCompeTem</title>
+            <link>https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</link>
+            <category>kaggle</category>
+            <category>竞赛模板</category>
+            <category>常用tricks</category>
+            <pubDate>Mon, 11 Apr 2022 12:24:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;1、The-most-common-classes-CV&#34;&gt;&lt;a href=&#34;#1、The-most-common-classes-CV&#34; class=&#34;headerlink&#34; title=&#34;1、The most common classes - CV&#34;&gt;&lt;/a&gt;1、The most common classes - CV&lt;/h2&gt;&lt;p&gt;补充细分类别&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 以USPPPM为例子&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Dataset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    
+    
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CFG&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    
+    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2、The-second-classes-NLP&#34;&gt;&lt;a href=&#34;#2、The-second-classes-NLP&#34; class=&#34;headerlink&#34; title=&#34;2、The second classes - NLP&#34;&gt;&lt;/a&gt;2、The second classes - NLP&lt;/h2&gt;&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;p&gt;补充细分类别&lt;/p&gt;
+&lt;p&gt;——————————————————————&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;3、Machine-learning-Competitions&#34;&gt;&lt;a href=&#34;#3、Machine-learning-Competitions&#34; class=&#34;headerlink&#34; title=&#34;3、Machine learning Competitions&#34;&gt;&lt;/a&gt;3、Machine learning Competitions&lt;/h2&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/</guid>
+            <title>ML-Dl-DataVisualtion</title>
+            <link>https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/</link>
+            <category>data vistualtion</category>
+            <pubDate>Fri, 08 Apr 2022 21:30:11 +0800</pubDate>
+            <description><![CDATA[ &lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/</guid>
             <title>ML-DL-优化算法疑问</title>
@@ -44,6 +123,37 @@
             <category>Adam</category>
             <pubDate>Thu, 07 Apr 2022 17:14:18 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;优化算法疑问&#34;&gt;&lt;a href=&#34;#优化算法疑问&#34; class=&#34;headerlink&#34; title=&#34;优化算法疑问&#34;&gt;&lt;/a&gt;优化算法疑问&lt;/h4&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/</guid>
+            <title>ML-DL-python用法注意</title>
+            <link>https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/</link>
+            <pubDate>Mon, 04 Apr 2022 10:02:31 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Python&#34;&gt;&lt;a href=&#34;#Python&#34; class=&#34;headerlink&#34; title=&#34;Python&#34;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;h3 id=&#34;切片操作的小块解释&#34;&gt;&lt;a href=&#34;#切片操作的小块解释&#34; class=&#34;headerlink&#34; title=&#34;切片操作的小块解释&#34;&gt;&lt;/a&gt;切片操作的小块解释&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[-1]：获取最后一个元素，类似于matlab中的end；&lt;/li&gt;
+&lt;li&gt;[:-1]：除了最后一个元素，获取其他所有的元素；&lt;/li&gt;
+&lt;li&gt;[::-1]：对第一个到最后一个元素进行倒序之后取出；&lt;/li&gt;
+&lt;li&gt;[n::-1]：对第一个到第n个元素进行倒序后取出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enumerate&#34;&gt;&lt;a href=&#34;#enumerate&#34; class=&#34;headerlink&#34; title=&#34;enumerate()&#34;&gt;&lt;/a&gt;enumerate()&lt;/h2&gt;&lt;p&gt;enumerate() 函数用于将一个可遍历的数据对象组合成一个索引序列，同时列出数据和数据下标&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;train_score &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;score&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;score&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/</guid>
+            <title>ML-DL-注意力机制</title>
+            <link>https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/</link>
+            <category>深度学习</category>
+            <category>循环神经网络</category>
+            <pubDate>Sat, 02 Apr 2022 23:20:41 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;注意力机制-Attention-Mechanism&#34;&gt;&lt;a href=&#34;#注意力机制-Attention-Mechanism&#34; class=&#34;headerlink&#34; title=&#34;注意力机制 - Attention Mechanism&#34;&gt;&lt;/a&gt;注意力机制 - Attention Mechanism&lt;/h2&gt;&lt;h3 id=&#34;一、attention-这项工作的出现&#34;&gt;&lt;a href=&#34;#一、attention-这项工作的出现&#34; class=&#34;headerlink&#34; title=&#34;一、attention 这项工作的出现&#34;&gt;&lt;/a&gt;一、attention 这项工作的出现&lt;/h3&gt;&lt;h3 id=&#34;二、针对注意力机制所包含的一些区分&#34;&gt;&lt;a href=&#34;#二、针对注意力机制所包含的一些区分&#34; class=&#34;headerlink&#34; title=&#34;二、针对注意力机制所包含的一些区分&#34;&gt;&lt;/a&gt;二、针对注意力机制所包含的一些区分&lt;/h3&gt;&lt;p&gt;1、软注意，侧重于吸取的信息相对来说会偏向全面&lt;/p&gt;
+&lt;p&gt;2、硬注意，会直接舍弃部分信息来保留计算的轻便&lt;/p&gt;
+&lt;p&gt;3、自注意机制，由输入权重来相互作用，其实这样的状况是由内部来决定，&lt;/p&gt;
+&lt;p&gt;预训练模型看起来和 Transformer 有着很大的干系，可以说是语言模型的核心网络，&lt;/p&gt;
+&lt;p&gt;transformer 在我这里给出的解释是，一段话作为输入，首先将输入中的各个词在self-attention 机制下变成词向量，同时会含有一连串的每一个词的位置向量 （ 不行，我完全是跟着别人走的）&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/04/02/ml-dl-readingpaper/</guid>
@@ -70,16 +180,6 @@
             <category>循环神经网络</category>
             <pubDate>Mon, 28 Mar 2022 14:37:08 +0800</pubDate>
             <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/</guid>
-            <title>ML-DL-Pytorch实现</title>
-            <link>https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/</link>
-            <category>pytorch</category>
-            <category>深度学习</category>
-            <category>机器学习</category>
-            <pubDate>Sat, 26 Mar 2022 22:35:40 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现&#34;&gt;&lt;a href=&#34;#Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现&#34; class=&#34;headerlink&#34; title=&#34;Declaration ：借鉴了 d2l (https://zh.d2l.ai)的pytorch实现&#34;&gt;&lt;/a&gt;Declaration ：借鉴了 d2l (&lt;a href=&#34;https://zh.d2l.ai)的pytorch实现/&#34;&gt;https://zh.d2l.ai)的pytorch实现&lt;/a&gt;&lt;/h4&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/03/26/ml-dl-juan-ji-shen-jing-wang-luo/</guid>
