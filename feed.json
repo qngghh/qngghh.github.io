@@ -5,11 +5,21 @@
     "home_page_url": "https://www.kitx86.com",
     "items": [
         {
+            "id": "https://www.kitx86.com/2022/05/07/pe-update-2/",
+            "url": "https://www.kitx86.com/2022/05/07/pe-update-2/",
+            "title": "PE-update-2",
+            "date_published": "2022-05-07T08:35:00.000Z",
+            "content_html": "<h4 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h4><p>今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有很多想去做。</p>\n<p>想建立一个工作室，想去创业，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究</p>\n",
+            "tags": [
+                "日记"
+            ]
+        },
+        {
             "id": "https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/",
             "url": "https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/",
             "title": "PE-鸟类饲养记",
             "date_published": "2022-05-04T08:38:21.000Z",
-            "content_html": "<h3 id=\"我亲爱的挣扎的小白虎皮：\"><a href=\"#我亲爱的挣扎的小白虎皮：\" class=\"headerlink\" title=\"我亲爱的挣扎的小白虎皮：\"></a>我亲爱的挣扎的小白虎皮：</h3><p>看起来似乎好活泼好动，却毫不为我所提供的豪华别墅和大餐所动，满眼都是崇尚外面的点滴一方世界，留不住的也会莫名的流露出一丝丝不忍心。</p>\n<p>自私的热切关心并不会改变什么，我并不失落，因为这结果我可以预见，另一种结果是毫不留情直接炖了，依赖达尔文所说的生物进化的基础是自然选择，这并不残忍</p>\n<p>但为什么产生了一点点空虚呢，解析不出来。</p>\n<p>——————————————————</p>\n<p>从一只鸟的观察升华到人际交流，关心会对一个人付出自己脆落的琉璃心，即使是孤赖调皮的人也不例外。</p>\n<p><img src=\"/2022/05/04/pe-niao-lei-si-yang-ji/IMG_20220504_155927.jpg\"></p>\n",
+            "content_html": "<h3 id=\"亲爱的挣扎的小白虎皮：\"><a href=\"#亲爱的挣扎的小白虎皮：\" class=\"headerlink\" title=\"亲爱的挣扎的小白虎皮：\"></a>亲爱的挣扎的小白虎皮：</h3><p>看起来似乎好活泼好动，却毫不为我所提供的豪华别墅和大餐所动，满眼都是崇尚外面的点滴一方世界，留不住的也会莫名的流露出一丝丝不忍心。</p>\n<p>自私的热切关心并不会改变什么，我并不失落，因为这结果我可以预见，另一种结果是毫不留情直接炖了，依赖达尔文所说的生物进化的基础是自然选择，这并不残忍</p>\n<p>但为什么产生了一点点空虚呢，解析不出来。</p>\n<p>——————————————————</p>\n<p>从一只鸟的观察升华到人际交流，关心会对一个人付出自己脆落的琉璃心，即使是孤赖调皮的人也不例外。</p>\n<p><img src=\"/IMG_20220504_155927.jpg\"></p>\n",
             "tags": [
                 "饲养记"
             ]
@@ -23,12 +33,14 @@
             "tags": []
         },
         {
-            "id": "https://www.kitx86.com/2022/05/02/pe-diaryupdate-1/",
-            "url": "https://www.kitx86.com/2022/05/02/pe-diaryupdate-1/",
-            "title": "PE-DiaryUpdate",
+            "id": "https://www.kitx86.com/2022/05/02/pe-update-0/",
+            "url": "https://www.kitx86.com/2022/05/02/pe-update-0/",
+            "title": "PE-update-0",
             "date_published": "2022-05-01T16:34:01.000Z",
             "content_html": "<h3 id=\"今日吐槽\"><a href=\"#今日吐槽\" class=\"headerlink\" title=\"今日吐槽\"></a>今日吐槽</h3><p>每天早上迷糊的排队抢显卡，干巴巴的日子很苦涩，只有错开时间才能等到，现在是早上 0.36，在排队等 TPU</p>\n",
-            "tags": []
+            "tags": [
+                "日记"
+            ]
         },
         {
             "id": "https://www.kitx86.com/2022/04/26/ml-dl-shen-jing-wang-luo-jie-shi/",
@@ -39,12 +51,14 @@
             "tags": []
         },
         {
-            "id": "https://www.kitx86.com/2022/04/26/pe-diaryupdate/",
-            "url": "https://www.kitx86.com/2022/04/26/pe-diaryupdate/",
-            "title": "PE-DiaryUpdate",
+            "id": "https://www.kitx86.com/2022/04/26/pe-update-1/",
+            "url": "https://www.kitx86.com/2022/04/26/pe-update-1/",
+            "title": "PE-update-1",
             "date_published": "2022-04-26T06:39:01.000Z",
             "content_html": "<h3 id=\"往日续谈\"><a href=\"#往日续谈\" class=\"headerlink\" title=\"往日续谈\"></a>往日续谈</h3><p>年轻的时候当然会觉得做 hacker是最帅的，会敲代码懂原理，危险而又迷人的神秘背影怎能不让人心动。</p>\n<p>我才回味起我的本职工作是一件很惊讶的事情，修习技能从厨房烧菜料理到独立游戏开发，从音乐弹琴画画到时序建模预测未来，从编译系统底层内核到量子计算机状态演化，窥视宇宙秘密，探索生物免疫，上知历史名人八卦，下知宿舍各类咆哮，一手炼丹修仙诅咒玄学。</p>\n",
-            "tags": []
+            "tags": [
+                "日记"
+            ]
         },
         {
             "id": "https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/",
@@ -190,17 +204,6 @@
             "tags": [
                 "kaggle",
                 "常见数据处理"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/03/25/pe-lists/",
-            "url": "https://www.kitx86.com/2022/03/25/pe-lists/",
-            "title": "PE-Lists",
-            "date_published": "2022-03-25T04:02:15.000Z",
-            "content_html": "<h4 id=\"One-Resolution（\"><a href=\"#One-Resolution（\" class=\"headerlink\" title=\"One-Resolution（)\"></a>One-Resolution（)</h4><p>check method : aspect / entry / weight</p>\n<p>娱乐：和朋友一起参加一次啤酒节 / 3</p>\n<p>娱乐：养两只宠物，一只橘猫，一只边牧 / 3</p>\n<p>娱乐：独自进行一次朝圣 / 2</p>\n<p>娱乐：一定要旁观参加一次 DEFCON 会议，弥补遗憾 / 3</p>\n<p>娱乐：希望去参加赛车比赛  / 3</p>\n<p>工作：去拜访 gilbert strang，在数学这方面他给我造成了一些影响，主要是他看起来比较有趣  / 4</p>\n<p>工作：研究生想去微软亚洲研究所（MSRA）实习 ，实习方向大致是 强化学习..AI系统开发/研究 / 5</p>\n<p>工作：去 google 42层工作一段时间，另外有可能就去 google brain lab 那里看看，张张领域见识，领教各界大神风采 / 5</p>\n<p>工作：博士阶段能在 MIT 那里做一段研究，导师： aram harrow，原因是近些年 HHL 那篇paper 较为出名，组也在招人 / 5</p>\n<p>工作：希望有一个在学业上一直挑我毛病的”朋友“，科研对手 / 6</p>\n<p>工作：毕业前完成我的设计 / 3</p>\n<p>工作：毕业前在kaggle上级别达到 grandmaster ,这个可能会改变，不确定因素 / 4</p>\n<p>娱乐：每天蹭朋友车在夕阳下弹一首符合心情的民谣回家（不喜欢开车，但喜欢开塞车，无证驾驶！）</p>\n<p>有一定资产后去收养一群孤儿，</p>\n<p>~~后续补充</p>\n<p>————————————————————————</p>\n<p>最大最大的奢望就是 诺贝尔物理奖或者图灵奖 / max</p>\n<p>还有很多很多坏毛病，不想改了。</p>\n",
-            "tags": [
-                "Personal",
-                "Willing"
             ]
         }
     ]

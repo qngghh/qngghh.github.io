@@ -6,7 +6,7 @@
   <link href="https://www.kitx86.com/atom.xml" rel="self"/>
   
   <link href="https://www.kitx86.com/"/>
-  <updated>2022-05-04T15:45:33.062Z</updated>
+  <updated>2022-05-07T08:48:16.281Z</updated>
   <id>https://www.kitx86.com/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PE-update-2</title>
+    <link href="https://www.kitx86.com/2022/05/07/pe-update-2/"/>
+    <id>https://www.kitx86.com/2022/05/07/pe-update-2/</id>
+    <published>2022-05-07T08:35:00.000Z</published>
+    <updated>2022-05-07T08:48:16.281Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
+    
+    
+    <category term="日记" scheme="https://www.kitx86.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PE-鸟类饲养记</title>
     <link href="https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/"/>
     <id>https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/</id>
     <published>2022-05-04T08:38:21.000Z</published>
-    <updated>2022-05-04T15:45:33.062Z</updated>
+    <updated>2022-05-07T08:48:35.467Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;我亲爱的挣扎的小白虎皮：&quot;&gt;&lt;a href=&quot;#我亲爱的挣扎的小白虎皮：&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;亲爱的挣扎的小白虎皮：&quot;&gt;&lt;a href=&quot;#亲爱的挣扎的小白虎皮：&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -65,11 +90,11 @@
   </entry>
   
   <entry>
-    <title>PE-DiaryUpdate</title>
-    <link href="https://www.kitx86.com/2022/05/02/pe-diaryupdate-1/"/>
-    <id>https://www.kitx86.com/2022/05/02/pe-diaryupdate-1/</id>
+    <title>PE-update-0</title>
+    <link href="https://www.kitx86.com/2022/05/02/pe-update-0/"/>
+    <id>https://www.kitx86.com/2022/05/02/pe-update-0/</id>
     <published>2022-05-01T16:34:01.000Z</published>
-    <updated>2022-05-01T16:37:16.494Z</updated>
+    <updated>2022-05-07T08:38:02.686Z</updated>
     
     
       
@@ -84,6 +109,8 @@
     
     <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
     
+    
+    <category term="日记" scheme="https://www.kitx86.com/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
@@ -101,11 +128,11 @@
   </entry>
   
   <entry>
-    <title>PE-DiaryUpdate</title>
-    <link href="https://www.kitx86.com/2022/04/26/pe-diaryupdate/"/>
-    <id>https://www.kitx86.com/2022/04/26/pe-diaryupdate/</id>
+    <title>PE-update-1</title>
+    <link href="https://www.kitx86.com/2022/04/26/pe-update-1/"/>
+    <id>https://www.kitx86.com/2022/04/26/pe-update-1/</id>
     <published>2022-04-26T06:39:01.000Z</published>
-    <updated>2022-04-28T07:11:15.746Z</updated>
+    <updated>2022-05-07T08:38:23.568Z</updated>
     
     
       
@@ -118,6 +145,10 @@
     
     
     
+    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
+    
+    
+    <category term="日记" scheme="https://www.kitx86.com/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
@@ -465,7 +496,7 @@ import</summary>
     <link href="https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/"/>
     <id>https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/</id>
     <published>2022-03-25T10:35:26.000Z</published>
-    <updated>2022-04-17T09:41:44.116Z</updated>
+    <updated>2022-05-05T17:27:37.580Z</updated>
     
     
       
@@ -484,33 +515,6 @@ import</summary>
     <category term="kaggle" scheme="https://www.kitx86.com/tags/kaggle/"/>
     
     <category term="常见数据处理" scheme="https://www.kitx86.com/tags/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PE-Lists</title>
-    <link href="https://www.kitx86.com/2022/03/25/pe-lists/"/>
-    <id>https://www.kitx86.com/2022/03/25/pe-lists/</id>
-    <published>2022-03-25T04:02:15.000Z</published>
-    <updated>2022-04-28T10:16:38.851Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;One-Resolution（&quot;&gt;&lt;a href=&quot;#One-Resolution（&quot; class=&quot;headerlink&quot; title=&quot;One-Resolution（)&quot;&gt;&lt;/a&gt;One-Resolution（)&lt;/h4&gt;&lt;p&gt;check method :</summary>
-        
-      
-    
-    
-    
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
-    
-    
-    <category term="Personal" scheme="https://www.kitx86.com/tags/Personal/"/>
-    
-    <category term="Willing" scheme="https://www.kitx86.com/tags/Willing/"/>
     
   </entry>
   

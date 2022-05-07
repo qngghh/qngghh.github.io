@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"日记\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/05/07/pe-update-2/",
+            "url": "https://www.kitx86.com/2022/05/07/pe-update-2/",
+            "title": "PE-update-2",
+            "date_published": "2022-05-07T08:35:00.000Z",
+            "content_html": "<h4 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h4><p>今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有很多想去做。</p>\n<p>想建立一个工作室，想去创业，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究</p>\n",
+            "tags": [
+                "日记"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/02/pe-update-0/",
+            "url": "https://www.kitx86.com/2022/05/02/pe-update-0/",
+            "title": "PE-update-0",
+            "date_published": "2022-05-01T16:34:01.000Z",
+            "content_html": "<h3 id=\"今日吐槽\"><a href=\"#今日吐槽\" class=\"headerlink\" title=\"今日吐槽\"></a>今日吐槽</h3><p>每天早上迷糊的排队抢显卡，干巴巴的日子很苦涩，只有错开时间才能等到，现在是早上 0.36，在排队等 TPU</p>\n",
+            "tags": [
+                "日记"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/04/26/pe-update-1/",
+            "url": "https://www.kitx86.com/2022/04/26/pe-update-1/",
+            "title": "PE-update-1",
+            "date_published": "2022-04-26T06:39:01.000Z",
+            "content_html": "<h3 id=\"往日续谈\"><a href=\"#往日续谈\" class=\"headerlink\" title=\"往日续谈\"></a>往日续谈</h3><p>年轻的时候当然会觉得做 hacker是最帅的，会敲代码懂原理，危险而又迷人的神秘背影怎能不让人心动。</p>\n<p>我才回味起我的本职工作是一件很惊讶的事情，修习技能从厨房烧菜料理到独立游戏开发，从音乐弹琴画画到时序建模预测未来，从编译系统底层内核到量子计算机状态演化，窥视宇宙秘密，探索生物免疫，上知历史名人八卦，下知宿舍各类咆哮，一手炼丹修仙诅咒玄学。</p>\n",
+            "tags": [
+                "日记"
+            ]
+        }
+    ]
+}
