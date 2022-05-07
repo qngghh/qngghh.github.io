@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;论文写作&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-04-07T00:46:47.000Z</updated>
+    <category term="日记" />
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="常见数据处理" />
+    <category term="循环神经网络" />
+    <category term="data vistualtion" />
+    <category term="RNN" />
+    <category term="Willing" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="微不足道的贡献" />
+    <category term="论文写作" />
+    <category term="荒诞的故事" />
+    <category term="饲养记" />
+    <category term="QCQI" />
+    <category term="data" />
+    <entry>
+        <id>https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</id>
+        <title>PE-论文写作</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/"/>
+        <content type="html">&lt;h2 id=&#34;论文写作要求&#34;&gt;&lt;a href=&#34;#论文写作要求&#34; class=&#34;headerlink&#34; title=&#34;论文写作要求&#34;&gt;&lt;/a&gt;论文写作要求&lt;/h2&gt;&lt;p&gt;1.标题 + 作者&lt;/p&gt;
+&lt;p&gt;2.摘要 - Abstract&lt;/p&gt;
+&lt;p&gt;3.导言 - Introduction &lt;/p&gt;
+&lt;p&gt;4.相关工作 - Related Work&lt;/p&gt;
+&lt;p&gt;Example : 5.模型 - Deep Residual Learning - 5.1 &amp;gt; 5.2 …&lt;/p&gt;
+&lt;p&gt;6.理论&lt;/p&gt;
+&lt;p&gt;7.实验 + 总结 - Experiments + Conclusion&lt;/p&gt;
+&lt;p&gt;8.评论&lt;/p&gt;
+&lt;p&gt;引用：References&lt;/p&gt;
+</content>
+        <category term="论文写作" />
+        <updated>2022-04-07T00:46:47.000Z</updated>
+    </entry>
+</feed>

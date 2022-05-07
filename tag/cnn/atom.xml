@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;cnn&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-03-26T07:28:39.000Z</updated>
+    <category term="日记" />
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="常见数据处理" />
+    <category term="循环神经网络" />
+    <category term="data vistualtion" />
+    <category term="RNN" />
+    <category term="Willing" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="微不足道的贡献" />
+    <category term="论文写作" />
+    <category term="荒诞的故事" />
+    <category term="饲养记" />
+    <category term="QCQI" />
+    <category term="data" />
+    <entry>
+        <id>https://www.kitx86.com/2022/03/26/ml-dl-juan-ji-shen-jing-wang-luo/</id>
+        <title>ML-DL-卷积神经网络</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/03/26/ml-dl-juan-ji-shen-jing-wang-luo/"/>
+        <content type="html">&lt;h2 id=&#34;一、卷积神经网络类&#34;&gt;&lt;a href=&#34;#一、卷积神经网络类&#34; class=&#34;headerlink&#34; title=&#34;一、卷积神经网络类&#34;&gt;&lt;/a&gt;一、卷积神经网络类&lt;/h2&gt;&lt;h4 id=&#34;1、简要解释&#34;&gt;&lt;a href=&#34;#1、简要解释&#34; class=&#34;headerlink&#34; title=&#34;1、简要解释&#34;&gt;&lt;/a&gt;1、简要解释&lt;/h4&gt;&lt;p&gt;用途-处理图像数据、表格数据&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;kaggle竞赛选择：图像识别，目标检测-边缘检测，语义分割&lt;/u&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 构造一个二维卷积层，它具有1个输出通道和形状为（1，2）的卷积核&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 二维卷积核 参数形式 (批量大小，通道，高度，宽度)&lt;/span&gt;
+conv2d &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; bias&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;特性：空间不变性&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;平移不变性&lt;/em&gt;（translation invariance）：不管检测对象出现在图像中的哪个位置，神经网络的前面几层应该对相同的图像区域具有相似的反应，即为“平移不变性”。&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;局部性&lt;/em&gt;（locality）：神经网络的前面几层应该只探索输入图像中的局部区域，而不过度在意图像中相隔较远区域的关系，这就是“局部性”原则。最终，可以聚合这些局部特征，以在整个图像级别进行预测。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;输出的卷积层 - 》 特征映射&lt;/p&gt;
+&lt;p&gt;感受野：指前向传播中可能影响 x 计算的所有元素&lt;/p&gt;
+&lt;p&gt;“卷积”被定义为 $$(f * g)(\mathbf{x}) = \int f(\mathbf{z}) g(\mathbf{x}-\mathbf{z}) d\mathbf{z}.$$&lt;/p&gt;
+&lt;h4 id=&#34;2、卷积神经网络——LeNet&#34;&gt;&lt;a href=&#34;#2、卷积神经网络——LeNet&#34; class=&#34;headerlink&#34; title=&#34;2、卷积神经网络——LeNet&#34;&gt;&lt;/a&gt;2、卷积神经网络——LeNet&lt;/h4&gt;&lt;p&gt;LeNet（LeNet-5）由两个部分组成：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;卷积编码器：由两个卷积层组成;&lt;/li&gt;
+&lt;li&gt;全连接层密集块：由三个全连接层组成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/ML-Dl-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/lenet.svg&#34; alt=&#34;lenet&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;小结&#34;&gt;&lt;a href=&#34;#小结&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;卷积神经网络（CNN）是一类使用卷积层的网络。&lt;/li&gt;
+&lt;li&gt;在卷积神经网络中，我们组合使用卷积层、非线性激活函数和汇聚层。&lt;/li&gt;
+&lt;li&gt;为了构造高性能的卷积神经网络，我们通常对卷积层进行排列，逐渐降低其表示的空间分辨率，同时增加通道数。&lt;/li&gt;
+&lt;li&gt;在传统的卷积神经网络中，卷积块编码得到的表征在输出之前需由一个或多个全连接层进行处理。&lt;/li&gt;
+&lt;li&gt;LeNet是最早发布的卷积神经网络之一。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;考查&#34;&gt;&lt;a href=&#34;#考查&#34; class=&#34;headerlink&#34; title=&#34;考查&#34;&gt;&lt;/a&gt;考查&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;将平均汇聚层替换为最大汇聚层，会发生什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;尝试构建一个基于LeNet的更复杂的网络，以提高其准确性。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;调整卷积窗口大小。&lt;/li&gt;
+&lt;li&gt;调整输出通道的数量。&lt;/li&gt;
+&lt;li&gt;调整激活函数（如ReLU）。&lt;/li&gt;
+&lt;li&gt;调整卷积层的数量。&lt;/li&gt;
+&lt;li&gt;调整全连接层的数量。&lt;/li&gt;
+&lt;li&gt;调整学习率和其他训练细节（例如，初始化和轮数）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在MNIST数据集上尝试以上改进的网络。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示不同输入（例如毛衣和外套）时，LeNet第一层和第二层的激活值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;二、现代卷积神经网络&#34;&gt;&lt;a href=&#34;#二、现代卷积神经网络&#34; class=&#34;headerlink&#34; title=&#34;二、现代卷积神经网络&#34;&gt;&lt;/a&gt;二、现代卷积神经网络&lt;/h2&gt;&lt;h3 id=&#34;1、AlexNet&#34;&gt;&lt;a href=&#34;#1、AlexNet&#34; class=&#34;headerlink&#34; title=&#34;1、AlexNet&#34;&gt;&lt;/a&gt;1、AlexNet&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;AlexNet。它是第一个在大规模视觉竞赛中击败传统计算机视觉模型的大型神经网络；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用重复块的网络（VGG）。它利用许多重复的神经网络块；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;网络中的网络（NiN）。它重复使用由卷积层和1×1卷积层（用来代替全连接层）来构建深层网络;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;含并行连结的网络（GoogLeNet）。它使用并行连结的网络，通过不同窗口大小的卷积层和最大汇聚层来并行抽取信息；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;残差网络（ResNet）。它通过残差块构建跨层的数据通道，是计算机视觉中最流行的体系架构；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;稠密连接网络（DenseNet）。它的计算成本很高，但给我们带来了更好的效果。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;学习表征观摩图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/ML-Dl-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/filters.png&#34; alt=&#34;filters&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/ML-Dl-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/alexnet.svg&#34; alt=&#34;alexnet&#34;&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; torch
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; torch &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; nn
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; d2l &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; torch &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; d2l
+
+net &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Sequential&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 这里，我们使用一个11*11的更大窗口来捕捉对象。&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 同时，步幅为4，以减少输出的高度和宽度。&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 另外，输出通道的数目远大于LeNet&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;96&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stride&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; padding&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;MaxPool2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stride&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 减小卷积窗口，使用填充为2来使得输入与输出的高和宽一致，且增大输出通道数&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;96&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; padding&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;MaxPool2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stride&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 使用三个连续的卷积层和较小的卷积窗口。&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 除了最后的卷积层，输出通道的数量进一步增加。&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 在前两个卷积层之后，汇聚层不用于减少输入的高度和宽度&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;384&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; padding&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;384&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;384&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; padding&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Conv2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;384&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; padding&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;MaxPool2d&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kernel_size&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stride&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Flatten&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 这里，全连接层的输出数量是LeNet中的好几倍。使用dropout层来减轻过拟合&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Linear&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;6400&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4096&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Dropout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;p&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Linear&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4096&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4096&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;ReLU&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Dropout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;p&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 最后是输出层。由于这里使用Fashion-MNIST，所以用类别数为10，而非论文中的1000&lt;/span&gt;
+    nn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Linear&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4096&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;观察网络每一层输出架构&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;X &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;randn&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;224&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;224&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; layer &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; net&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    X&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;layer&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;layer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__class__&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__name__&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;output shape:\t&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;X&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;shape&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&#34;line-numbers language-markdown&#34; data-language=&#34;markdown&#34;&gt;&lt;code class=&#34;language-markdown&#34;&gt;Conv2d output shape:	 torch.Size([1, 96, 54, 54])
+ReLU output shape:	 torch.Size([1, 96, 54, 54])
+MaxPool2d output shape:	 torch.Size([1, 96, 26, 26])
+Conv2d output shape:	 torch.Size([1, 256, 26, 26])
+ReLU output shape:	 torch.Size([1, 256, 26, 26])
+MaxPool2d output shape:	 torch.Size([1, 256, 12, 12])
+Conv2d output shape:	 torch.Size([1, 384, 12, 12])
+ReLU output shape:	 torch.Size([1, 384, 12, 12])
+Conv2d output shape:	 torch.Size([1, 384, 12, 12])
+ReLU output shape:	 torch.Size([1, 384, 12, 12])
+Conv2d output shape:	 torch.Size([1, 256, 12, 12])
+ReLU output shape:	 torch.Size([1, 256, 12, 12])
+MaxPool2d output shape:	 torch.Size([1, 256, 5, 5])
+Flatten output shape:	 torch.Size([1, 6400])
+Linear output shape:	 torch.Size([1, 4096])
+ReLU output shape:	 torch.Size([1, 4096])
+Dropout output shape:	 torch.Size([1, 4096])
+Linear output shape:	 torch.Size([1, 4096])
+ReLU output shape:	 torch.Size([1, 4096])
+Dropout output shape:	 torch.Size([1, 4096])
+Linear output shape:	 torch.Size([1, 10])&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;p&gt;使用更小的学习速率训练，这是因为网络更深更广、图像分辨率更高，训练卷积神经网络就更昂贵。&lt;/p&gt;
+&lt;h4 id=&#34;小结-1&#34;&gt;&lt;a href=&#34;#小结-1&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;AlexNet的架构与LeNet相似，但使用了更多的卷积层和更多的参数来拟合大规模的ImageNet数据集。&lt;/li&gt;
+&lt;li&gt;今天，AlexNet已经被更有效的架构所超越，但它是从浅层网络到深层网络的关键一步。&lt;/li&gt;
+&lt;li&gt;尽管AlexNet的代码只比LeNet多出几行，但学术界花了很多年才接受深度学习这一概念，并应用其出色的实验结果。这也是由于缺乏有效的计算工具。&lt;/li&gt;
+&lt;li&gt;Dropout、ReLU和预处理是提升计算机视觉任务性能的其他关键步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;练习&#34;&gt;&lt;a href=&#34;#练习&#34; class=&#34;headerlink&#34; title=&#34;练习&#34;&gt;&lt;/a&gt;练习&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;试着增加迭代轮数。对比LeNet的结果有什么不同？为什么？&lt;/li&gt;
+&lt;li&gt;AlexNet对于Fashion-MNIST数据集来说可能太复杂了。&lt;ol&gt;
+&lt;li&gt;尝试简化模型以加快训练速度，同时确保准确性不会显著下降。&lt;/li&gt;
+&lt;li&gt;设计一个更好的模型，可以直接在28×28图像上工作。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;修改批量大小，并观察模型精度和GPU显存变化。&lt;/li&gt;
+&lt;li&gt;分析了AlexNet的计算性能。&lt;ol&gt;
+&lt;li&gt;在AlexNet中主要是哪部分占用显存？&lt;/li&gt;
+&lt;li&gt;在AlexNet中主要是哪部分需要更多的计算？&lt;/li&gt;
+&lt;li&gt;计算结果时显存带宽如何？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;将dropout和ReLU应用于LeNet-5，效果有提升吗？再试试预处理会怎么样？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2、使用块的网络：-VGG-和AlexNet-没有很大的差别&#34;&gt;&lt;a href=&#34;#2、使用块的网络：-VGG-和AlexNet-没有很大的差别&#34; class=&#34;headerlink&#34; title=&#34;2、使用块的网络： VGG (和AlexNet 没有很大的差别)&#34;&gt;&lt;/a&gt;2、使用块的网络： VGG (和AlexNet 没有很大的差别)&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/ML-Dl-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/vgg.svg&#34; alt=&#34;vgg&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;小结-2&#34;&gt;&lt;a href=&#34;#小结-2&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;VGG-11使用可复用的卷积块构造网络。不同的VGG模型可通过每个块中卷积层数量和输出通道数量的差异来定义。&lt;/li&gt;
+&lt;li&gt;块的使用导致网络定义的非常简洁。使用块可以有效地设计复杂的网络。&lt;/li&gt;
+&lt;li&gt;在VGG论文中，Simonyan和Ziserman尝试了各种架构。特别是他们发现深层且窄的卷积（即3×3）比较浅层且宽的卷积更有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3、网络中的网络-NiN&#34;&gt;&lt;a href=&#34;#3、网络中的网络-NiN&#34; class=&#34;headerlink&#34; title=&#34;3、网络中的网络 - NiN&#34;&gt;&lt;/a&gt;3、网络中的网络 - NiN&lt;/h4&gt;</content>
+        <category term="CNN" />
+        <updated>2022-03-26T07:28:39.000Z</updated>
+    </entry>
+</feed>

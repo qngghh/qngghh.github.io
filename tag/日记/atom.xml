@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.kitx86.com</id>
+    <title>Supernova • Posts by &#34;日记&#34; tag</title>
+    <link href="https://www.kitx86.com" />
+    <updated>2022-05-07T08:35:00.000Z</updated>
+    <category term="日记" />
+    <category term="Personal" />
+    <category term="kaggle" />
+    <category term="ML" />
+    <category term="竞赛模板" />
+    <category term="常用tricks" />
+    <category term="pytorch" />
+    <category term="深度学习" />
+    <category term="机器学习" />
+    <category term="paper" />
+    <category term="deep learning" />
+    <category term="neural network" />
+    <category term="SGD" />
+    <category term="RMSProp" />
+    <category term="Adam" />
+    <category term="CNN" />
+    <category term="常见数据处理" />
+    <category term="循环神经网络" />
+    <category term="data vistualtion" />
+    <category term="RNN" />
+    <category term="Willing" />
+    <category term="游戏制作" />
+    <category term="音游跑酷" />
+    <category term="独立自制" />
+    <category term="MSRA" />
+    <category term="微软亚洲研究院" />
+    <category term="微不足道的贡献" />
+    <category term="论文写作" />
+    <category term="荒诞的故事" />
+    <category term="饲养记" />
+    <category term="QCQI" />
+    <category term="data" />
+    <entry>
+        <id>https://www.kitx86.com/2022/05/07/pe-update-2/</id>
+        <title>PE-update-2</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/05/07/pe-update-2/"/>
+        <content type="html">&lt;h4 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有很多想去做。&lt;/p&gt;
+&lt;p&gt;想建立一个工作室，想去创业，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究&lt;/p&gt;
+</content>
+        <category term="日记" />
+        <updated>2022-05-07T08:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.kitx86.com/2022/05/02/pe-update-0/</id>
+        <title>PE-update-0</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/05/02/pe-update-0/"/>
+        <content type="html">&lt;h3 id=&#34;今日吐槽&#34;&gt;&lt;a href=&#34;#今日吐槽&#34; class=&#34;headerlink&#34; title=&#34;今日吐槽&#34;&gt;&lt;/a&gt;今日吐槽&lt;/h3&gt;&lt;p&gt;每天早上迷糊的排队抢显卡，干巴巴的日子很苦涩，只有错开时间才能等到，现在是早上 0.36，在排队等 TPU&lt;/p&gt;
+</content>
+        <category term="日记" />
+        <updated>2022-05-01T16:34:01.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://www.kitx86.com/2022/04/26/pe-update-1/</id>
+        <title>PE-update-1</title>
+        <link rel="alternate" href="https://www.kitx86.com/2022/04/26/pe-update-1/"/>
+        <content type="html">&lt;h3 id=&#34;往日续谈&#34;&gt;&lt;a href=&#34;#往日续谈&#34; class=&#34;headerlink&#34; title=&#34;往日续谈&#34;&gt;&lt;/a&gt;往日续谈&lt;/h3&gt;&lt;p&gt;年轻的时候当然会觉得做 hacker是最帅的，会敲代码懂原理，危险而又迷人的神秘背影怎能不让人心动。&lt;/p&gt;
+&lt;p&gt;我才回味起我的本职工作是一件很惊讶的事情，修习技能从厨房烧菜料理到独立游戏开发，从音乐弹琴画画到时序建模预测未来，从编译系统底层内核到量子计算机状态演化，窥视宇宙秘密，探索生物免疫，上知历史名人八卦，下知宿舍各类咆哮，一手炼丹修仙诅咒玄学。&lt;/p&gt;
+</content>
+        <category term="日记" />
+        <updated>2022-04-26T06:39:01.000Z</updated>
+    </entry>
+</feed>
