@@ -7,6 +7,8 @@
         <language>en</language>
         <pubDate>Sat, 07 May 2022 16:35:00 +0800</pubDate>
         <lastBuildDate>Sat, 07 May 2022 16:35:00 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>Personal</category>
         <category>kaggle</category>
         <category>ML</category>
         <category>竞赛模板</category>
@@ -17,25 +19,24 @@
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
-        <category>RNN</category>
-        <category>循环神经网络</category>
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
         <category>CNN</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
         <category>常见数据处理</category>
-        <category>Personal</category>
-        <category>Willing</category>
         <category>data vistualtion</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>日记</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
+        <category>微不足道的贡献</category>
         <category>论文写作</category>
         <category>饲养记</category>
-        <category>荒诞的故事</category>
         <category>QCQI</category>
         <category>data</category>
         <item>
@@ -66,8 +67,11 @@
             <guid isPermalink="true">https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/</guid>
             <title>PE-朕之旨意</title>
             <link>https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/</link>
+            <category>微不足道的贡献</category>
             <pubDate>Mon, 02 May 2022 15:37:26 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;弧线摇篮&#34;&gt;&lt;a href=&#34;#弧线摇篮&#34; class=&#34;headerlink&#34; title=&#34;弧线摇篮&#34;&gt;&lt;/a&gt;弧线摇篮&lt;/h3&gt; ]]></description>
+            <description><![CDATA[ &lt;h3 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;以后写一点书吧&lt;/p&gt;
+&lt;p&gt;[研究者的手绘本：异构世界]&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/05/02/pe-update-0/</guid>
@@ -265,7 +269,7 @@ import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers
 &lt;p&gt;&lt;a href=&#34;https://github.com/mli/paper-reading&#34;&gt;https://github.com/mli/paper-reading&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;u&gt;量子计算&lt;/u&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/desireevl/awesome-quantum-computing&#34;&gt;https://github.com/desireevl/awesome-quantum-computing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;一、Convolutional-Neural-Networks-CNN&#34;&gt;&lt;a href=&#34;#一、Convolutional-Neural-Networks-CNN&#34; class=&#34;headerlink&#34; title=&#34;一、Convolutional Neural Networks - CNN&#34;&gt;&lt;/a&gt;一、Convolutional Neural Networks - CNN&lt;/h3&gt;&lt;h3 id=&#34;二、Recurrent-Neural-Network-RNN&#34;&gt;&lt;a href=&#34;#二、Recurrent-Neural-Network-RNN&#34; class=&#34;headerlink&#34; title=&#34;二、Recurrent Neural Network - RNN&#34;&gt;&lt;/a&gt;二、Recurrent Neural Network - RNN&lt;/h3&gt;&lt;h3 id=&#34;三、Reinforcement-Learning-RNN&#34;&gt;&lt;a href=&#34;#三、Reinforcement-Learning-RNN&#34; class=&#34;headerlink&#34; title=&#34;三、Reinforcement Learning - RNN&#34;&gt;&lt;/a&gt;三、Reinforcement Learning - RNN&lt;/h3&gt;&lt;h3 id=&#34;四、Graph-Neural-Learning-GNN&#34;&gt;&lt;a href=&#34;#四、Graph-Neural-Learning-GNN&#34; class=&#34;headerlink&#34; title=&#34;四、Graph Neural Learning - GNN&#34;&gt;&lt;/a&gt;四、Graph Neural Learning - GNN&lt;/h3&gt; ]]></description>
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</guid>
