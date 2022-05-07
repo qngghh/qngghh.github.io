@@ -34,11 +34,11 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: rgba(100,100,100,0);
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 h1 {
