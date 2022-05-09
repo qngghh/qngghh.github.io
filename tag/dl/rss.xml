@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;dl&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
+        <lastBuildDate>Fri, 15 Apr 2022 03:17:12 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>Personal</category>
+        <category>pytorch</category>
+        <category>深度学习</category>
+        <category>机器学习</category>
+        <category>kaggle</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>ML</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>data vistualtion</category>
+        <category>Noince</category>
+        <category>advance</category>
+        <category>DL</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>论文写作</category>
+        <category>微不足道的贡献</category>
+        <category>饲养记</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</guid>
+            <title>ML-DL-kFold验证</title>
+            <link>https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</link>
+            <category>ML</category>
+            <category>DL</category>
+            <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;k-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;create_folds&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_splits&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# we create a new column called kfold and fill it with -1&lt;/span&gt;
+    data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fold&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# the next step is to randomize the rows of the data&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# data = data.sample(frac=1).reset_index(drop=True)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# calculate number of bins by Sturge&#39;s rule&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# I take the floor of the value, you can also&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# just round it&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# num_bins = int(np.floor(1 + np.log2(len(data))))&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# bin targets&lt;/span&gt;
+    data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cut&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+        data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;score&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; bins&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; labels&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# initiate the kfold class from model_selection module&lt;/span&gt;
+    kf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;n_splits&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;num_splits&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; shuffle&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&#34;token comment&#34;&gt;# fill the new kfold column&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# note that, instead of targets, we use bins!&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; f&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;t_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; v_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kf&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;bins&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;values&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;v_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;fold&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; f
+    
+    &lt;span class=&#34;token comment&#34;&gt;# drop the bins column&lt;/span&gt;
+    data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# return dataframe with folds&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; data&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+ ]]></description>
+        </item>
+    </channel>
+</rss>

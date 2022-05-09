@@ -511,9 +511,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/ML/">
+                                <span class="chip bg-color">ML</span>
+                            </a>
+                        
+                            <a href="/tags/DL/">
+                                <span class="chip bg-color">DL</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -541,14 +549,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-30
+                    2022-05-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    148
+                    258
                 </div>
                 
 
@@ -583,7 +591,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="k-折验证"><a href="#k-折验证" class="headerlink" title="k 折验证"></a>k 折验证</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_folds</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> num_splits<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <h3 id="训练方法"><a href="#训练方法" class="headerlink" title="训练方法"></a>训练方法</h3><p>k-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_folds</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> num_splits<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># we create a new column called kfold and fill it with -1</span>
     data<span class="token punctuation">[</span><span class="token string">"fold"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
     
@@ -677,7 +686,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/ML/">
+                                    <span class="chip bg-color">ML</span>
+                                </a>
+                            
+                                <a href="/tags/DL/">
+                                    <span class="chip bg-color">DL</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1072,7 +1089,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.8k</span>&nbsp;字
+                class="white-color">18.8k</span>&nbsp;字
             
             
             

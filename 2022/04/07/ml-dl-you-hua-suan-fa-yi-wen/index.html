@@ -553,21 +553,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-07
+                    2022-05-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6
+                    624
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -595,7 +595,115 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="优化算法疑问"><a href="#优化算法疑问" class="headerlink" title="优化算法疑问"></a>优化算法疑问</h4>
+                <h4 id="优化算法疑问"><a href="#优化算法疑问" class="headerlink" title="优化算法疑问"></a>优化算法疑问</h4><p>前一段时间了解了用于梯度下降的优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv 会诞生出一篇新的关于使用小批量优化梯度的华丽文章</p>
+<p>下面的算法记录和调包侠行为无异，对于有基础的道友可以跳到代码部分</p>
+<p>1.朴素的 SGD</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">SGD</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>params<span class="token punctuation">,</span>self<span class="token punctuation">.</span>grads <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            params<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-=</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2.物理世界的 Momentum</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Momentum</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">,</span>momentum<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>momentum <span class="token operator">=</span> momentum
+        self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>v <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment"># v point to direct vector</span>
+            <span class="token keyword">for</span> param <span class="token keyword">in</span> params<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>v<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>momentum <span class="token operator">*</span> self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            params<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>3.不知道该怎么描述 Nesterov</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Nesterov</span><span class="token punctuation">:</span>
+    <span class="token comment"># 这个方法不太熟悉</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">,</span>momentum<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>momentum <span class="token operator">=</span> momentum
+        self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>v <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token keyword">for</span> param <span class="token keyword">in</span> params<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>v<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>momentum <span class="token operator">*</span> self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            params<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>4.大家普遍使用的 AdaGrad</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">AdaGrad</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>h <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>h <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>h <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token keyword">for</span> param <span class="token keyword">in</span> params<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>h<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+            params<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-=</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token punctuation">(</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>self<span class="token punctuation">.</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1e-7</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>5.也是大家常使用的 RMSprop</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">RMSprop</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__int__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">,</span>decay_rate<span class="token operator">=</span><span class="token number">0.99</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>decay_rate <span class="token operator">=</span> decay_rate
+        self<span class="token punctuation">.</span>h <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>h <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>h <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token keyword">for</span> param <span class="token keyword">in</span> params<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>h<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*=</span> self<span class="token punctuation">.</span>decay_rate
+                self<span class="token punctuation">.</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>decay_rate<span class="token punctuation">)</span> <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                params<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-=</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token punctuation">(</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>self<span class="token punctuation">.</span>h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1e-7</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>6.还是大家常使用的 Adam </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Adam</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>lr<span class="token operator">=</span><span class="token number">0.001</span><span class="token punctuation">,</span>beta1<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">,</span>beta2<span class="token operator">=</span><span class="token number">0.999</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>lr <span class="token operator">=</span> lr
+        self<span class="token punctuation">.</span>beta1 <span class="token operator">=</span> beta1
+        self<span class="token punctuation">.</span>beta2 <span class="token operator">=</span> beta2
+        self<span class="token punctuation">.</span><span class="token builtin">iter</span> <span class="token operator">=</span> <span class="token number">0</span>
+        self<span class="token punctuation">.</span>m <span class="token operator">=</span> <span class="token boolean">None</span>
+        self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>params<span class="token punctuation">,</span>grads<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>m <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>m<span class="token punctuation">,</span> self<span class="token punctuation">.</span>v <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token keyword">for</span> param <span class="token keyword">in</span> params<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>m<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>v<span class="token punctuation">.</span>append<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros_like<span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span><span class="token builtin">iter</span> <span class="token operator">+=</span> <span class="token number">1</span>
+        lr_t <span class="token operator">=</span> self<span class="token punctuation">.</span>lr <span class="token operator">*</span> np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token number">1.0</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>beta2<span class="token operator">**</span>self<span class="token punctuation">.</span><span class="token builtin">iter</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">1.0</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>beta1<span class="token operator">**</span>self<span class="token punctuation">.</span><span class="token builtin">iter</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>m<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>beta1<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>m<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>beta2<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>grads<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">**</span><span class="token number">2</span> <span class="token operator">-</span> self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+            params <span class="token operator">-=</span> lr_t <span class="token operator">*</span> self<span class="token punctuation">.</span>m<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token punctuation">(</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>self<span class="token punctuation">.</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1e-7</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h4><p>代码源自： 斋藤康毅的《深度学习进阶：自然语言处理》，有兴趣的道友可以去翻看，很好的一本书。</p>
+
                 
             </div>
             <hr/>
@@ -1077,7 +1185,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.8k</span>&nbsp;字
+                class="white-color">18.8k</span>&nbsp;字
             
             
             

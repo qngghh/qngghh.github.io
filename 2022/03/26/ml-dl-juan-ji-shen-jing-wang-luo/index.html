@@ -517,6 +517,10 @@
                                 <span class="chip bg-color">CNN</span>
                             </a>
                         
+                            <a href="/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">卷积神经网络</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -545,14 +549,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-05
+                    2022-05-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.9k
+                    2k
                 </div>
                 
 
@@ -587,8 +591,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、卷积神经网络类"><a href="#一、卷积神经网络类" class="headerlink" title="一、卷积神经网络类"></a>一、卷积神经网络类</h2><h4 id="1、简要解释"><a href="#1、简要解释" class="headerlink" title="1、简要解释"></a>1、简要解释</h4><p>用途-处理图像数据、表格数据</p>
-<p><u>kaggle竞赛选择：图像识别，目标检测-边缘检测，语义分割</u></p>
+                <h3 id="一、卷积神经网络的诞生"><a href="#一、卷积神经网络的诞生" class="headerlink" title="一、卷积神经网络的诞生"></a>一、卷积神经网络的诞生</h3><p>1.对该类型网络的研究都源于其他人的，一样的内容就不在过多的赘述：[图像学的内容不太感兴趣]</p>
+<p>主要用途：处理图像数据、表格数据等等</p>
+<p><u>竞赛可选择：图像识别，目标检测-边缘检测，语义分割</u></p>
+<p>在对 DNN 的架构添加了 卷积 layer 后就是 CNN ，这就是 CNN 的由来，但 卷积的操作方式有些奇怪的行为让人大跌眼镜</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 构造一个二维卷积层，它具有1个输出通道和形状为（1，2）的卷积核</span>
 
 <span class="token comment"># 二维卷积核 参数形式 (批量大小，通道，高度，宽度)</span>
@@ -600,10 +606,10 @@ conv2d <span class="token operator">=</span> nn<span class="token punctuation">.
 <li><em>平移不变性</em>（translation invariance）：不管检测对象出现在图像中的哪个位置，神经网络的前面几层应该对相同的图像区域具有相似的反应，即为“平移不变性”。</li>
 <li><em>局部性</em>（locality）：神经网络的前面几层应该只探索输入图像中的局部区域，而不过度在意图像中相隔较远区域的关系，这就是“局部性”原则。最终，可以聚合这些局部特征，以在整个图像级别进行预测。</li>
 </ol>
-<p>输出的卷积层 - 》 特征映射</p>
+<p>输出的卷积层 &gt; 特征映射</p>
 <p>感受野：指前向传播中可能影响 x 计算的所有元素</p>
-<p>“卷积”被定义为 $$(f * g)(\mathbf{x}) = \int f(\mathbf{z}) g(\mathbf{x}-\mathbf{z}) d\mathbf{z}.$$</p>
-<h4 id="2、卷积神经网络——LeNet"><a href="#2、卷积神经网络——LeNet" class="headerlink" title="2、卷积神经网络——LeNet"></a>2、卷积神经网络——LeNet</h4><p>LeNet（LeNet-5）由两个部分组成：</p>
+<p>2、卷积神经网络之LeNet</p>
+<p>LeNet（LeNet-5）由两个部分组成：</p>
 <ul>
 <li>卷积编码器：由两个卷积层组成;</li>
 <li>全连接层密集块：由三个全连接层组成。</li>
@@ -805,6 +811,10 @@ Linear output shape:	 torch.Size([1, 10])<span aria-hidden="true" class="line-nu
                             
                                 <a href="/tags/CNN/">
                                     <span class="chip bg-color">CNN</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">卷积神经网络</span>
                                 </a>
                             
                         </div>
@@ -1221,7 +1231,7 @@ Linear output shape:	 torch.Size([1, 10])<span aria-hidden="true" class="line-nu
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.8k</span>&nbsp;字
+                class="white-color">18.8k</span>&nbsp;字
             
             
             
