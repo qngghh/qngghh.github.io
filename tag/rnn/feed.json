@@ -5,11 +5,11 @@
     "home_page_url": "https://www.kitx86.com",
     "items": [
         {
-            "id": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
-            "url": "https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/",
-            "title": "ML-DL-循环神经网络",
-            "date_published": "2022-03-28T06:37:08.000Z",
-            "content_html": "",
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/",
+            "title": "ML-DL-循环神经网络基础",
+            "date_published": "2022-05-09T15:05:28.000Z",
+            "content_html": "<h2 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h2><p>模型的演变：</p>\n<p>自回归—-隐变量自回归—-</p>\n<p>一元语法，二元语法，三元语法——词元频率</p>\n<p>困惑度</p>\n",
             "tags": [
                 "RNN",
                 "循环神经网络"

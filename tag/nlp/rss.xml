@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;nlp&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Mon, 09 May 2022 20:49:54 +0800</pubDate>
+        <lastBuildDate>Mon, 09 May 2022 20:49:54 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>Personal</category>
+        <category>生物学</category>
+        <category>kaggle</category>
+        <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
+        <category>data vistualtion</category>
+        <category>Noince</category>
+        <category>advance</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>微不足道的贡献</category>
+        <category>论文写作</category>
+        <category>饲养记</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</guid>
+            <title>ML-Dl-自然语言处理疑问</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</link>
+            <category>深度学习</category>
+            <category>NLP</category>
+            <pubDate>Mon, 09 May 2022 20:49:54 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;1.机器翻译任务中如何解决未登录词的翻译问题？&lt;/p&gt;
+&lt;p&gt;2.解决翻译任务中双语料不足的方法？&lt;/p&gt;
+&lt;p&gt;3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比 Transformer有什么好的新意？&lt;/p&gt;
+&lt;p&gt;4.在文本段落编码是如何结合问题信息？好处是什么？&lt;/p&gt;
+&lt;p&gt;5.如何对文本中词的位置信息进行编码？&lt;/p&gt;
+&lt;p&gt;6.语言模型的任务形式是什么？语言模型如何提升其它自然语言处理任务的效果？&lt;/p&gt;
+&lt;p&gt;7.常见的词嵌入模型？它们之间联系和区别？&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</guid>
+            <title>ML-DL-自然语言处理基础</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</link>
+            <category>深度学习</category>
+            <category>NLP</category>
+            <pubDate>Mon, 09 May 2022 20:48:15 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+    </channel>
+</rss>

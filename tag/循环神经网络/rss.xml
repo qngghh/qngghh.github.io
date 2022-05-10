@@ -5,44 +5,59 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Sat, 02 Apr 2022 23:20:41 +0800</pubDate>
-        <lastBuildDate>Sat, 02 Apr 2022 23:20:41 +0800</lastBuildDate>
+        <pubDate>Mon, 09 May 2022 23:05:28 +0800</pubDate>
+        <lastBuildDate>Mon, 09 May 2022 23:05:28 +0800</lastBuildDate>
         <category>日记</category>
         <category>Personal</category>
-        <category>pytorch</category>
-        <category>深度学习</category>
-        <category>机器学习</category>
+        <category>生物学</category>
         <category>kaggle</category>
+        <category>ML</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
-        <category>ML</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
         <category>RNN</category>
         <category>循环神经网络</category>
         <category>常见数据处理</category>
-        <category>SGD</category>
-        <category>RMSProp</category>
-        <category>Adam</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
         <category>data vistualtion</category>
         <category>Noince</category>
         <category>advance</category>
-        <category>DL</category>
-        <category>荒诞的故事</category>
-        <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
+        <category>微不足道的贡献</category>
+        <category>论文写作</category>
+        <category>饲养记</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
-        <category>微不足道的贡献</category>
-        <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</guid>
+            <title>ML-DL-循环神经网络基础</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</link>
+            <category>RNN</category>
+            <category>循环神经网络</category>
+            <pubDate>Mon, 09 May 2022 23:05:28 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;模型的演变：&lt;/p&gt;
+&lt;p&gt;自回归—-隐变量自回归—-&lt;/p&gt;
+&lt;p&gt;一元语法，二元语法，三元语法——词元频率&lt;/p&gt;
+&lt;p&gt;困惑度&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/</guid>
             <title>ML-DL-注意力机制</title>
@@ -56,15 +71,6 @@
 &lt;p&gt;预训练模型看起来和 Transformer 有着很大的干系，可以说是语言模型的核心网络，&lt;/p&gt;
 &lt;p&gt;transformer 在我这里给出的解释是，一段话作为输入，首先将输入中的各个词在self-attention 机制下变成词向量，同时会含有一连串的每一个词的位置向量 （ 不行，我完全是跟着别人走的）&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</guid>
-            <title>ML-DL-循环神经网络</title>
-            <link>https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</link>
-            <category>RNN</category>
-            <category>循环神经网络</category>
-            <pubDate>Mon, 28 Mar 2022 14:37:08 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
         </item>
     </channel>
 </rss>

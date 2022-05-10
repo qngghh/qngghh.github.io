@@ -5,6 +5,59 @@
     "home_page_url": "https://www.kitx86.com",
     "items": [
         {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
+            "title": "ML-DL-计算机听觉疑问",
+            "date_published": "2022-05-09T13:07:56.000Z",
+            "content_html": "<p>1.音频信息识别常用的数据集有哪些？</p>\n<p>2.音频信息提取特征中常用的梅尔频率倒谱系数的计算</p>\n<p>3.常见的音频识别算法</p>\n",
+            "tags": [
+                "深度学习",
+                "CH"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/",
+            "title": "ML-Dl-自然语言处理疑问",
+            "date_published": "2022-05-09T12:49:54.000Z",
+            "content_html": "<p>1.机器翻译任务中如何解决未登录词的翻译问题？</p>\n<p>2.解决翻译任务中双语料不足的方法？</p>\n<p>3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比 Transformer有什么好的新意？</p>\n<p>4.在文本段落编码是如何结合问题信息？好处是什么？</p>\n<p>5.如何对文本中词的位置信息进行编码？</p>\n<p>6.语言模型的任务形式是什么？语言模型如何提升其它自然语言处理任务的效果？</p>\n<p>7.常见的词嵌入模型？它们之间联系和区别？</p>\n",
+            "tags": [
+                "深度学习",
+                "NLP"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/",
+            "title": "ML-DL-自然语言处理基础",
+            "date_published": "2022-05-09T12:48:15.000Z",
+            "content_html": "",
+            "tags": [
+                "深度学习",
+                "NLP"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/",
+            "title": "ML-DL-前向神经网络基础",
+            "date_published": "2022-05-09T12:28:36.000Z",
+            "content_html": "",
+            "tags": [
+                "深度学习"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/",
+            "title": "ML-DL-循环神经网络中的部分问题",
+            "date_published": "2022-05-09T11:44:48.000Z",
+            "content_html": "<p>1.RNN 的结构及参数更新方式？</p>\n<p>2.使用 CNN 对序列数据建模？</p>\n<p>3.dropout能缓解过拟合？</p>\n<p>4.RNN 怎样去使用 dropout？</p>\n<p>5.RNN 中出现的长期依赖状况？</p>\n<p>6.针对长期以来问题在 RNN 实现 LSTM 功能？</p>\n<p>7.GRU 用两个门控单元就控制了时间序列的记忆及遗忘行为？ </p>\n<p>8.用RNN来实现 Seq2Seq 映射</p>\n<p>9.Seq2Seq 在编码-解码中会存在信息丢失？有什么好的解决方案</p>\n",
+            "tags": [
+                "深度学习"
+            ]
+        },
+        {
             "id": "https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/",
             "url": "https://www.kitx86.com/2022/04/02/ml-dl-zhu-yi-li-ji-zhi/",
             "title": "ML-DL-注意力机制",
@@ -13,18 +66,6 @@
             "tags": [
                 "深度学习",
                 "循环神经网络"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/",
-            "url": "https://www.kitx86.com/2022/03/26/ml-dl-pytorch-shi-xian/",
-            "title": "ML-DL-Pytorch实现",
-            "date_published": "2022-03-26T14:35:40.000Z",
-            "content_html": "<h4 id=\"Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现\"><a href=\"#Declaration-：借鉴了-d2l-https-zh-d2l-ai-的pytorch实现\" class=\"headerlink\" title=\"Declaration ：借鉴了 d2l (https://zh.d2l.ai)的pytorch实现\"></a>Declaration ：借鉴了 d2l (<a href=\"https://zh.d2l.ai)的pytorch实现/\">https://zh.d2l.ai)的pytorch实现</a></h4>",
-            "tags": [
-                "pytorch",
-                "深度学习",
-                "机器学习"
             ]
         }
     ]

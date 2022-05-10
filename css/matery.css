@@ -34,11 +34,11 @@
 }
 
 body {
-    background-color: rgba(100,100,100,0);
+    background-color: #eaeaea;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 h1 {
@@ -101,7 +101,7 @@ blockquote {
 }
 
 pre {
-    padding: 2rem 1rem 1rem 1rem !important;
+    padding: 2rem 1rem 1rem 3rem !important;
     border-radius: 0.35rem;
     -moz-tab-size: 4;
       -o-tab-size: 4;
@@ -243,7 +243,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #8098a7 50%, #8098a7 50%);
+    background-image: linear-gradient(to right, #5cfad8 0%, #5efe84 50%);
 }
 
 .text-color {
@@ -251,7 +251,7 @@ mark {
 }
 
 .white-color {
-    color: rgb(223, 215, 215);
+    color: #fff;
 }
 
 .progress-bar {
@@ -496,12 +496,14 @@ header .go-back i {
     transform: translate3d(0px, 0px, 0px);
 }
 
+
 .index-cover {
     height: 100vh;
 }
 
 .post-cover {
     height: 40vh !important;
+    background-size: cover;
 }
 
 .bg-cover:after {
@@ -532,6 +534,7 @@ header .go-back i {
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
+    
 }
 
 .bg-cover .description {
@@ -546,6 +549,7 @@ header .go-back i {
     font-size: 2.5rem;
     font-weight: 400;
 }
+
 /*
 @-webkit-keyframes rainbow {
 
@@ -639,6 +643,7 @@ header .go-back i {
     }
 }
 */
+
 .index-card {
     margin-top: -10px;
     padding-top: 20px;
@@ -851,7 +856,7 @@ article .card-image {
 article .card-image img {
     height: 220px;
     border-radius: 0.3rem;
-    opacity: .7;
+    opacity: 1;
 }
 
 article .tag-image img {
@@ -1811,8 +1816,13 @@ footer .copy-right {
     margin: -15px 0 10px 10px;
 }
 
+p.search-result-summary{
+    margin: 15px 0 0 -8px;
+}
+
 #searchResult .search-result-list {
     margin-left: -8px;
+    margin-top: 0px;
     padding-left: 0;
     color: #666;
 }

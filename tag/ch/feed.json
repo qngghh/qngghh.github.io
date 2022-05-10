@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"ch\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
+            "url": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
+            "title": "ML-DL-计算机听觉疑问",
+            "date_published": "2022-05-09T13:07:56.000Z",
+            "content_html": "<p>1.音频信息识别常用的数据集有哪些？</p>\n<p>2.音频信息提取特征中常用的梅尔频率倒谱系数的计算</p>\n<p>3.常见的音频识别算法</p>\n",
+            "tags": [
+                "深度学习",
+                "CH"
+            ]
+        }
+    ]
+}

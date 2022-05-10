@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;ch&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Mon, 09 May 2022 21:07:56 +0800</pubDate>
+        <lastBuildDate>Mon, 09 May 2022 21:07:56 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>Personal</category>
+        <category>生物学</category>
+        <category>kaggle</category>
+        <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
+        <category>data vistualtion</category>
+        <category>Noince</category>
+        <category>advance</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>微不足道的贡献</category>
+        <category>论文写作</category>
+        <category>饲养记</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</guid>
+            <title>ML-DL-计算机听觉疑问</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</link>
+            <category>深度学习</category>
+            <category>CH</category>
+            <pubDate>Mon, 09 May 2022 21:07:56 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;1.音频信息识别常用的数据集有哪些？&lt;/p&gt;
+&lt;p&gt;2.音频信息提取特征中常用的梅尔频率倒谱系数的计算&lt;/p&gt;
+&lt;p&gt;3.常见的音频识别算法&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

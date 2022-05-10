@@ -9,38 +9,40 @@
         <lastBuildDate>Fri, 15 Apr 2022 03:17:12 +0800</lastBuildDate>
         <category>日记</category>
         <category>Personal</category>
-        <category>pytorch</category>
-        <category>深度学习</category>
-        <category>机器学习</category>
+        <category>生物学</category>
         <category>kaggle</category>
+        <category>ML</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
-        <category>ML</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
         <category>RNN</category>
         <category>循环神经网络</category>
         <category>常见数据处理</category>
-        <category>SGD</category>
-        <category>RMSProp</category>
-        <category>Adam</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
         <category>data vistualtion</category>
         <category>Noince</category>
         <category>advance</category>
-        <category>DL</category>
-        <category>荒诞的故事</category>
-        <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
+        <category>微不足道的贡献</category>
+        <category>论文写作</category>
+        <category>饲养记</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
-        <category>微不足道的贡献</category>
-        <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
         <item>
@@ -50,7 +52,7 @@
             <category>ML</category>
             <category>DL</category>
             <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;k-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;K-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;create_folds&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_splits&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token comment&#34;&gt;# we create a new column called kfold and fill it with -1&lt;/span&gt;
     data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fold&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;

@@ -5,44 +5,131 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
-        <lastBuildDate>Fri, 15 Apr 2022 03:17:12 +0800</lastBuildDate>
+        <pubDate>Mon, 09 May 2022 23:05:28 +0800</pubDate>
+        <lastBuildDate>Mon, 09 May 2022 23:05:28 +0800</lastBuildDate>
         <category>日记</category>
         <category>Personal</category>
-        <category>pytorch</category>
-        <category>深度学习</category>
-        <category>机器学习</category>
+        <category>生物学</category>
         <category>kaggle</category>
+        <category>ML</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
-        <category>ML</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
         <category>RNN</category>
         <category>循环神经网络</category>
         <category>常见数据处理</category>
-        <category>SGD</category>
-        <category>RMSProp</category>
-        <category>Adam</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>荒诞的故事</category>
+        <category>Willing</category>
         <category>data vistualtion</category>
         <category>Noince</category>
         <category>advance</category>
-        <category>DL</category>
-        <category>荒诞的故事</category>
-        <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
+        <category>微不足道的贡献</category>
+        <category>论文写作</category>
+        <category>饲养记</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
-        <category>微不足道的贡献</category>
-        <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</guid>
+            <title>ML-DL-循环神经网络基础</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</link>
+            <category>RNN</category>
+            <category>循环神经网络</category>
+            <pubDate>Mon, 09 May 2022 23:05:28 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;模型的演变：&lt;/p&gt;
+&lt;p&gt;自回归—-隐变量自回归—-&lt;/p&gt;
+&lt;p&gt;一元语法，二元语法，三元语法——词元频率&lt;/p&gt;
+&lt;p&gt;困惑度&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</guid>
+            <title>ML-DL-计算机听觉疑问</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</link>
+            <category>深度学习</category>
+            <category>CH</category>
+            <pubDate>Mon, 09 May 2022 21:07:56 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;1.音频信息识别常用的数据集有哪些？&lt;/p&gt;
+&lt;p&gt;2.音频信息提取特征中常用的梅尔频率倒谱系数的计算&lt;/p&gt;
+&lt;p&gt;3.常见的音频识别算法&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</guid>
+            <title>ML-Dl-自然语言处理疑问</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</link>
+            <category>深度学习</category>
+            <category>NLP</category>
+            <pubDate>Mon, 09 May 2022 20:49:54 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;1.机器翻译任务中如何解决未登录词的翻译问题？&lt;/p&gt;
+&lt;p&gt;2.解决翻译任务中双语料不足的方法？&lt;/p&gt;
+&lt;p&gt;3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比 Transformer有什么好的新意？&lt;/p&gt;
+&lt;p&gt;4.在文本段落编码是如何结合问题信息？好处是什么？&lt;/p&gt;
+&lt;p&gt;5.如何对文本中词的位置信息进行编码？&lt;/p&gt;
+&lt;p&gt;6.语言模型的任务形式是什么？语言模型如何提升其它自然语言处理任务的效果？&lt;/p&gt;
+&lt;p&gt;7.常见的词嵌入模型？它们之间联系和区别？&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</guid>
+            <title>ML-DL-自然语言处理基础</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</link>
+            <category>深度学习</category>
+            <category>NLP</category>
+            <pubDate>Mon, 09 May 2022 20:48:15 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/</guid>
+            <title>ML-DL-前向神经网络基础</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/</link>
+            <category>深度学习</category>
+            <pubDate>Mon, 09 May 2022 20:28:36 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/</guid>
+            <title>ML-DL-循环神经网络中的部分问题</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/</link>
+            <category>深度学习</category>
+            <pubDate>Mon, 09 May 2022 19:44:48 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;1.RNN 的结构及参数更新方式？&lt;/p&gt;
+&lt;p&gt;2.使用 CNN 对序列数据建模？&lt;/p&gt;
+&lt;p&gt;3.dropout能缓解过拟合？&lt;/p&gt;
+&lt;p&gt;4.RNN 怎样去使用 dropout？&lt;/p&gt;
+&lt;p&gt;5.RNN 中出现的长期依赖状况？&lt;/p&gt;
+&lt;p&gt;6.针对长期以来问题在 RNN 实现 LSTM 功能？&lt;/p&gt;
+&lt;p&gt;7.GRU 用两个门控单元就控制了时间序列的记忆及遗忘行为？ &lt;/p&gt;
+&lt;p&gt;8.用RNN来实现 Seq2Seq 映射&lt;/p&gt;
+&lt;p&gt;9.Seq2Seq 在编码-解码中会存在信息丢失？有什么好的解决方案&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/</guid>
+            <title>ML-Dl-kaggle正确用法</title>
+            <link>https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/</link>
+            <category>Noince</category>
+            <category>advance</category>
+            <pubDate>Mon, 09 May 2022 16:19:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;想写的时候就来，不想 push 自己，没有新意&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</guid>
             <title>ML-DL-kFold验证</title>
@@ -50,7 +137,7 @@
             <category>ML</category>
             <category>DL</category>
             <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;k-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;K-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;create_folds&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_splits&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token comment&#34;&gt;# we create a new column called kfold and fill it with -1&lt;/span&gt;
     data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fold&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;
@@ -131,8 +218,8 @@ import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers
             <category>RMSProp</category>
             <category>Adam</category>
             <pubDate>Thu, 07 Apr 2022 17:14:18 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;优化算法疑问&#34;&gt;&lt;a href=&#34;#优化算法疑问&#34; class=&#34;headerlink&#34; title=&#34;优化算法疑问&#34;&gt;&lt;/a&gt;优化算法疑问&lt;/h4&gt;&lt;p&gt;前一段时间了解了用于梯度下降的优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv 会诞生出一篇新的关于使用小批量优化梯度的华丽文章&lt;/p&gt;
-&lt;p&gt;下面的算法记录和调包侠行为无异，对于有基础的道友可以跳到代码部分&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;优化算法疑问&#34;&gt;&lt;a href=&#34;#优化算法疑问&#34; class=&#34;headerlink&#34; title=&#34;优化算法疑问&#34;&gt;&lt;/a&gt;优化算法疑问&lt;/h4&gt;&lt;p&gt;前段时间了解了用于梯度下降的主流优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv 会诞生出一篇新的关于使用小批量优化梯度的华丽文章&lt;/p&gt;
+&lt;p&gt;下面的 code 记录和调包侠行为无异，对于有基础的道友可以快速浏览&lt;/p&gt;
 &lt;p&gt;1.朴素的 SGD&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;SGD&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
@@ -238,7 +325,7 @@ import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers
 
             params &lt;span class=&#34;token operator&#34;&gt;-=&lt;/span&gt; lr_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1e-7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h4&gt;&lt;p&gt;代码源自： 斋藤康毅的《深度学习进阶：自然语言处理》，有兴趣的道友可以去翻看，很好的一本书。&lt;/p&gt;
+&lt;h4 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h4&gt;&lt;p&gt;代码源自：《深度学习进阶：自然语言处理》— 斋藤康毅，有兴趣的道友可去翻看，很好的一本书。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -288,15 +375,6 @@ import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers
 &lt;p&gt;&lt;u&gt;量子计算&lt;/u&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/desireevl/awesome-quantum-computing&#34;&gt;https://github.com/desireevl/awesome-quantum-computing&lt;/a&gt;&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</guid>
-            <title>ML-DL-循环神经网络</title>
-            <link>https://www.kitx86.com/2022/03/28/ml-dl-xun-huan-shen-jing-wang-luo/</link>
-            <category>RNN</category>
-            <category>循环神经网络</category>
-            <pubDate>Mon, 28 Mar 2022 14:37:08 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/03/26/ml-dl-juan-ji-shen-jing-wang-luo/</guid>
@@ -1006,7 +1084,7 @@ submission&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;to_csv&lt;
             <category>kaggle</category>
             <category>ML</category>
             <pubDate>Thu, 17 Mar 2022 12:08:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;lt-逍遥游-gt&#34;&gt;&lt;a href=&#34;#lt-逍遥游-gt&#34; class=&#34;headerlink&#34; title=&#34;&lt;逍遥游&gt;&#34;&gt;&lt;/a&gt;&amp;lt;逍遥游&amp;gt;&lt;/h4&gt;&lt;p&gt; 在 kaggle coursea上写的一个简易模型，没有包含太多的技术水平，凉这了&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;内篇-amp-amp-逍遥游&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-逍遥游&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;逍遥游&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;逍遥游&lt;/h4&gt;&lt;p&gt; 在 kaggle coursea上写的一个简易模型，没有包含太多的技术水平，凉这了&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; numpy &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; np &lt;span class=&#34;token comment&#34;&gt;# linear algebra&lt;/span&gt;
 &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; pandas &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; pd &lt;span class=&#34;token comment&#34;&gt;# data processing, CSV file I/O (e.g. pd.read_csv)&lt;/span&gt;
 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; sklearn&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tree &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; DecisionTreeRegressor  &lt;span class=&#34;token comment&#34;&gt;# 决策树&lt;/span&gt;

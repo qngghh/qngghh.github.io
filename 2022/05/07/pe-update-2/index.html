@@ -3,11 +3,13 @@
 
 
 <head>
-
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
+
     <meta charset="utf-8">
     <meta name="keywords" content="PE-update-2, kitx86,kit,x86">
-    <meta name="description" content="小派过气画家">
+    <meta name="description" content="今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有太多太多想去做的啦。
+想建立一个工作室给大家带来快乐，想去创业建立我的时代，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,14 +17,25 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>PE-update-2 | Supernova</title>
-    <link rel="icon" type="image/gif" href="/favicon.gif">
-
     
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <style>
+        body{
+            background-image: url(https://cdn.jsdelivr.net/gh/qngghh/qngghh.github.io@latest/medias/background.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
+
+    <title>PE-update-2 | Supernova</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
@@ -30,7 +43,7 @@
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
@@ -38,48 +51,38 @@
 </head>
 
 
-
-   <style>
-    body{
-       background-image: url(https://cdn.jsdelivr.net/gh/qngghh/qngghh.github.io@latest/medias/background.jpg);
-       background-repeat:no-repeat;
-       background-size:cover;
-       background-attachment:fixed;
-    }
-</style>
-
-
-
 <body>
-
     
-    <div id="loading-box">
-        <div class="loading-left-bg"></div>
-        <div class="loading-right-bg"></div>
-        <div class="spinner-box">
-            <div class="configure-border-1">
-                <div class="configure-core"></div>
-            </div>
-            <div class="configure-border-2">
-                <div class="configure-core"></div>
-            </div>
-            <div class="loading-word">加载中...</div>
-        </div>
+  <div id="loading-box">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+      <div class="configure-border-1">
+        <div class="configure-core"></div>
+      </div>
+      <div class="configure-border-2">
+        <div class="configure-core"></div>
+      </div>
+      <div class="loading-word">加载中...</div>
     </div>
-    <script>
-        window.addEventListener('load', function(){
-            document.body.style.overflow = 'auto';
-            document.getElementById('loading-box').classList.add("loaded")
-        }, false)
-    </script>
-    
+  </div>
+  <!-- 页面加载动画 -->
+  <script>
+    $(document).ready(function () {
+      document.body.style.overflow = 'auto';
+      document.getElementById('loading-box').classList.add("loaded")
+    })
+  </script>
+
+
+
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.gif" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Supernova</span>
                 </a>
@@ -150,6 +153,15 @@
         </a>
       </li>
       
+      <li>
+        <a href="/categories/Biology">
+          
+          <i class="fas fa-crow" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Biology</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -199,7 +211,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.gif" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Supernova</div>
         <div class="logo-desc">
@@ -208,8 +220,6 @@
             
         </div>
     </div>
-
-    
 
     <ul class="menu-list mobile-menu-list">
         
@@ -276,6 +286,16 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/categories/Biology " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-crow" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Biology</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -316,7 +336,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/qngghh" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/qngghh/qngghh.github.io" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -373,7 +393,7 @@
     }
 </style>
 
-<a href="https://github.com/qngghh" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/qngghh/qngghh.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -627,7 +647,7 @@
                 <span class="reprint-info">
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    reprint polocy. If reproduced, please indicate source
+                    reprint policy. If reproduced, please indicate source
                     <a href="/about" target="_blank">藕丝泥霸</a>
                     !
                 </span>
@@ -821,6 +841,10 @@
 
     
 
+    
+
+    
+
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
@@ -849,8 +873,12 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            藕丝泥霸
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ML-DL/" class="post-category">
+                                    ML-DL
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -974,19 +1002,6 @@
             headingSelector: 'h2, h3, h4'
         });
 
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
         // Set scroll toc fixed.
         let tocHeight = parseInt($(window).height() * 0.4 - 64);
         let $tocWidget = $('.toc-widget');
@@ -1046,86 +1061,97 @@
 
 
 
-    
- 
     <footer class="page-footer bg-color">
     
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
                 <span id="year">2021-2022</span>
             
-            <span id="year">2021</span>
             <a href="/about" target="_blank">藕丝泥霸</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">18.8k</span>&nbsp;字
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">19.3k</span>
             
             
             
+                
             
             
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
             </span>
             
             
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
             </span>
             
             <br>
+
+            <!-- 运行天数提醒. -->
             
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2021";
-                    var startMonth = "10";
-                    var startDate = "17";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "10";
+                        var startDate = "17";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'en';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
                     }
-                }
-                setInterval(siteTime, 1000);
-            </script>
+
+                    calcSiteTime();
+                </script>
             
             <br>
             
@@ -1295,6 +1321,26 @@ $(function () {
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+    
+
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
@@ -1321,27 +1367,9 @@ $(function () {
     
 
     
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: "kkkeee"
-        });
-        daovoice('update');
-    </script>
-    
 
-	
+    <!--腾讯兔小巢-->
+    
     
     <script type="text/javascript" color="100,100,255"
         pointColor="0,0,255" opacity='0.7'
@@ -1370,15 +1398,3 @@ $(function () {
 
 <!--单击显示文字-->
 <script type="text/javascript" src="/js/click_show_text.js"></script>
-
-<!-- 雪花特效 --
-    
-<script type="text/javascript" src="\js\snow.js"></script>
-    >
-
-
-<!-- 数字雨 --
-<canvas id="canvas" width="1440" height="900" ></canvas>
-<script type="text/javascript" src="/js/DigitalRain.js"></script>    
-
-    >
