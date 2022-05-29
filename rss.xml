@@ -5,468 +5,246 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Tue, 10 May 2022 14:19:51 +0800</pubDate>
-        <lastBuildDate>Tue, 10 May 2022 14:19:51 +0800</lastBuildDate>
+        <pubDate>Sun, 29 May 2022 12:54:49 +0800</pubDate>
+        <lastBuildDate>Sun, 29 May 2022 12:54:49 +0800</lastBuildDate>
         <category>日记</category>
+        <category>Personal</category>
         <category>生物学</category>
         <category>kaggle</category>
         <category>ML</category>
-        <category>DL</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
+        <category>语音处理</category>
+        <category>model</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
-        <category>Personal</category>
+        <category>DL</category>
         <category>机器学习</category>
+        <category>nlp</category>
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
-        <category>深度学习</category>
         <category>RNN</category>
         <category>循环神经网络</category>
-        <category>NLP</category>
         <category>常见数据处理</category>
+        <category>NLP</category>
         <category>CH</category>
         <category>data vistualtion</category>
-        <category>Noince</category>
-        <category>advance</category>
+        <category>XGBoost</category>
+        <category>GBDT</category>
+        <category>梯度提升树</category>
+        <category>基分类器</category>
         <category>Willing</category>
-        <category>荒诞的故事</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>微不足道的贡献</category>
+        <category>思绪远方</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
+        <category>微不足道的贡献</category>
+        <category>个人成长</category>
         <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
+        <category>荒诞的故事</category>
+        <category>图像处理</category>
+        <category>图像检测</category>
+        <category>论文写作</category>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/</guid>
-            <title>BIO-初探生物学</title>
-            <link>https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/</link>
-            <category>生物学</category>
-            <pubDate>Tue, 10 May 2022 14:19:51 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;生物学也很好玩&#34;&gt;&lt;a href=&#34;#生物学也很好玩&#34; class=&#34;headerlink&#34; title=&#34;生物学也很好玩&#34;&gt;&lt;/a&gt;生物学也很好玩&lt;/h4&gt;&lt;p&gt;&lt;em&gt;术语&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;在之后的时间里我会对这些术语尽可能应用在某个方面&lt;/p&gt;
-&lt;p&gt;————————————————————&lt;/p&gt;
-&lt;p&gt;先天免疫 &lt;/p&gt;
-&lt;p&gt;负反馈&lt;/p&gt;
-&lt;p&gt;神经元学说&lt;/p&gt;
-&lt;p&gt;新陈代谢&lt;/p&gt;
-&lt;p&gt;昼夜节律&lt;/p&gt;
-&lt;p&gt;再生&lt;/p&gt;
-&lt;p&gt;细胞凋亡 细胞程序性死亡&lt;/p&gt;
-&lt;p&gt;同源和同工&lt;/p&gt;
-&lt;p&gt;炫光异构体&lt;/p&gt;
-&lt;p&gt;生物拟态&lt;/p&gt;
-&lt;p&gt;协同进化&lt;/p&gt;
-&lt;p&gt;减数分裂&lt;/p&gt;
-&lt;p&gt;有丝分裂&lt;/p&gt;
-&lt;p&gt;适应性免疫&lt;/p&gt;
-&lt;p&gt;联想学习 巴普洛夫条件反射&lt;/p&gt;
-&lt;p&gt;病毒 生命形态和化学物质 灰色地带&lt;/p&gt;
-&lt;p&gt;生态演替&lt;/p&gt;
-&lt;p&gt;印刻效应&lt;/p&gt;
-&lt;p&gt;——————————————————————&lt;/p&gt;
-&lt;p&gt;略显情形不当这个 entrous:发情期&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</guid>
-            <title>ML-DL-循环神经网络基础</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</link>
-            <category>RNN</category>
-            <category>循环神经网络</category>
-            <pubDate>Mon, 09 May 2022 23:05:28 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;模型的演变：&lt;/p&gt;
-&lt;p&gt;自回归—-隐变量自回归—-&lt;/p&gt;
-&lt;p&gt;一元语法，二元语法，三元语法——词元频率&lt;/p&gt;
-&lt;p&gt;困惑度&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</guid>
-            <title>ML-DL-计算机听觉疑问</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</link>
-            <category>深度学习</category>
-            <category>CH</category>
-            <pubDate>Mon, 09 May 2022 21:07:56 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;1.音频信息识别常用的数据集有哪些？&lt;/p&gt;
-&lt;p&gt;2.音频信息提取特征中常用的梅尔频率倒谱系数的计算&lt;/p&gt;
-&lt;p&gt;3.常见的音频识别算法&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</guid>
-            <title>ML-Dl-自然语言处理疑问</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</link>
-            <category>深度学习</category>
-            <category>NLP</category>
-            <pubDate>Mon, 09 May 2022 20:49:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;1.机器翻译任务中如何解决未登录词的翻译问题？&lt;/p&gt;
-&lt;p&gt;2.解决翻译任务中双语料不足的方法？&lt;/p&gt;
-&lt;p&gt;3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比 Transformer有什么好的新意？&lt;/p&gt;
-&lt;p&gt;4.在文本段落编码是如何结合问题信息？好处是什么？&lt;/p&gt;
-&lt;p&gt;5.如何对文本中词的位置信息进行编码？&lt;/p&gt;
-&lt;p&gt;6.语言模型的任务形式是什么？语言模型如何提升其它自然语言处理任务的效果？&lt;/p&gt;
-&lt;p&gt;7.常见的词嵌入模型？它们之间联系和区别？&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</guid>
-            <title>ML-DL-自然语言处理基础</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</link>
-            <category>深度学习</category>
-            <category>NLP</category>
-            <pubDate>Mon, 09 May 2022 20:48:15 +0800</pubDate>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/</guid>
+            <title>PE-不务专业的三两事</title>
+            <link>https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/</link>
+            <category>思绪远方</category>
+            <pubDate>Sun, 29 May 2022 12:54:49 +0800</pubDate>
             <description><![CDATA[  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/</guid>
-            <title>ML-DL-前向神经网络基础</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/</link>
-            <category>深度学习</category>
-            <pubDate>Mon, 09 May 2022 20:28:36 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/</guid>
-            <title>ML-DL-循环神经网络中的部分问题</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/</link>
-            <category>深度学习</category>
-            <pubDate>Mon, 09 May 2022 19:44:48 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;1.RNN 的结构及参数更新方式？&lt;/p&gt;
-&lt;p&gt;2.使用 CNN 对序列数据建模？&lt;/p&gt;
-&lt;p&gt;3.dropout能缓解过拟合？&lt;/p&gt;
-&lt;p&gt;4.RNN 怎样去使用 dropout？&lt;/p&gt;
-&lt;p&gt;5.RNN 中出现的长期依赖状况？&lt;/p&gt;
-&lt;p&gt;6.针对长期以来问题在 RNN 实现 LSTM 功能？&lt;/p&gt;
-&lt;p&gt;7.GRU 用两个门控单元就控制了时间序列的记忆及遗忘行为？ &lt;/p&gt;
-&lt;p&gt;8.用RNN来实现 Seq2Seq 映射&lt;/p&gt;
-&lt;p&gt;9.Seq2Seq 在编码-解码中会存在信息丢失？有什么好的解决方案&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/</guid>
-            <title>ML-Dl-kaggle正确用法</title>
-            <link>https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/</link>
-            <category>Noince</category>
-            <category>advance</category>
-            <pubDate>Mon, 09 May 2022 16:19:32 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;想写的时候就来，不想 push 自己，没有新意&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/07/pe-update-2/</guid>
-            <title>PE-update-2</title>
-            <link>https://www.kitx86.com/2022/05/07/pe-update-2/</link>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/28/pe-update-5/</guid>
+            <title>PE-update-5</title>
+            <link>https://www.kitx86.com/2022/05/28/pe-update-5/</link>
             <category>日记</category>
-            <pubDate>Sat, 07 May 2022 16:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有太多太多想去做的啦。&lt;/p&gt;
-&lt;p&gt;想建立一个工作室给大家带来快乐，想去创业建立我的时代，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究&lt;/p&gt;
+            <pubDate>Sat, 28 May 2022 21:49:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-人间世&#34;&gt;&lt;a href=&#34;#内篇-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇-人间世&#34;&gt;&lt;/a&gt;内篇-人间世&lt;/h3&gt;&lt;p&gt;现在已经是早上接近了9点，回想昨天的那个colab 内核运行过程，到现在仍然觉得不可思议，那可是一个量子级的计算啊，虽然说是模拟的环境里只需两个 qubit 就可以去用于测验，还有一套机器学习的融合，似乎有许久没有这种激动澎湃的心情了，目前所了解的机器学习，在主流方向里并没有让我有另眼刮目相看的本质内容，无论是视觉还是语言处理，又或者是语音，过几年我可能会爱上这套统计学习的理论，但不是现在，我没有那种闲工夫去研究这些没有前景的方向，至于动机是什么？那仅仅是一个被时代所唤醒的躁动不安的心。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/</guid>
-            <title>PE-鸟类饲养记</title>
-            <link>https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/</link>
-            <category>饲养记</category>
-            <pubDate>Wed, 04 May 2022 16:38:21 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;致叛逆的-Big-Bird：&#34;&gt;&lt;a href=&#34;#致叛逆的-Big-Bird：&#34; class=&#34;headerlink&#34; title=&#34;致叛逆的 Big Bird：&#34;&gt;&lt;/a&gt;致叛逆的 Big Bird：&lt;/h3&gt;&lt;p&gt;看起来似乎好活泼好动，却毫不为我所提供的六星级豪华别墅所动，满眼都崇尚外面的点滴一方世界，留不住的也会莫名的流露出一丝丝不忍心。&lt;/p&gt;
-&lt;p&gt;自私的热切关心并不会改变什么，我并不失落，因为这结果我可以预见，另一种结果是毫不留情直接炖了，依赖达尔文所说的生物进化的基础是自然选择，这并不残忍&lt;/p&gt;
-&lt;p&gt;但为什么产生了一点点空虚呢，解析不出来。&lt;/p&gt;
-&lt;p&gt;——————————————————&lt;/p&gt;
-&lt;p&gt;从一只鸟的观察联系到人际交流，关心会对一个人付出自己脆落的琉璃心，即使是孤赖调皮的人也不例外。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/IMG_20220504_155927.jpg&#34;&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/</guid>
-            <title>PE-朕之旨意</title>
-            <link>https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/</link>
-            <category>微不足道的贡献</category>
-            <pubDate>Mon, 02 May 2022 15:37:26 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-逍遥游&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-逍遥游&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;逍遥游&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;逍遥游&lt;/h3&gt;&lt;p&gt;以后尝试去写几本书&lt;/p&gt;
-&lt;p&gt;一本讲机器学习和深度学习的，一定不要写的太厚，因为对于像我这样慢性精读的人来说就非常折磨，还没到跟自己过不去的时候。&lt;/p&gt;
-&lt;p&gt;一本讲我对量子计算与信息的探索，这是个大课题，得很久啦。&lt;/p&gt;
-&lt;p&gt;最后一本是我的手绘本，想了一个比较中二的名字，[研究者的手绘本：异构认识世界]&lt;/p&gt;
-&lt;p&gt;最后的一点点是，即使有想放弃当初的部分热衷，要燃起对自己的热爱，因为还有可能，我可给以无聊的世界带来乐趣。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/05/02/pe-update-0/</guid>
-            <title>PE-update-0</title>
-            <link>https://www.kitx86.com/2022/05/02/pe-update-0/</link>
-            <category>日记</category>
-            <pubDate>Mon, 02 May 2022 00:34:01 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-人间世&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;人间世&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;人间世&lt;/h3&gt;&lt;p&gt;每天早上迷迷糊糊的起床排队抢显卡显得我很窘迫、多余，现在是早上 0.36，上线排队等 TPU中……&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/26/pe-update-1/</guid>
-            <title>PE-update-1</title>
-            <link>https://www.kitx86.com/2022/04/26/pe-update-1/</link>
-            <category>日记</category>
-            <pubDate>Tue, 26 Apr 2022 14:39:01 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;往日续谈&#34;&gt;&lt;a href=&#34;#往日续谈&#34; class=&#34;headerlink&#34; title=&#34;往日续谈&#34;&gt;&lt;/a&gt;往日续谈&lt;/h3&gt;&lt;p&gt;年轻的时候当然会觉得做 hacker 是最帅的，会写代码负荷攻击，游荡在外面危险而又迷人的神秘背影怎能不让人心动。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</guid>
-            <title>ML-DL-kFold验证</title>
-            <link>https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</link>
-            <category>ML</category>
-            <category>DL</category>
-            <pubDate>Fri, 15 Apr 2022 03:17:12 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;训练方法&#34;&gt;&lt;a href=&#34;#训练方法&#34; class=&#34;headerlink&#34; title=&#34;训练方法&#34;&gt;&lt;/a&gt;训练方法&lt;/h3&gt;&lt;p&gt;K-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;create_folds&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_splits&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# we create a new column called kfold and fill it with -1&lt;/span&gt;
-    data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;fold&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;
-    
-    &lt;span class=&#34;token comment&#34;&gt;# the next step is to randomize the rows of the data&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# data = data.sample(frac=1).reset_index(drop=True)&lt;/span&gt;
-
-    &lt;span class=&#34;token comment&#34;&gt;# calculate number of bins by Sturge&#39;s rule&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# I take the floor of the value, you can also&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# just round it&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# num_bins = int(np.floor(1 + np.log2(len(data))))&lt;/span&gt;
-    
-    &lt;span class=&#34;token comment&#34;&gt;# bin targets&lt;/span&gt;
-    data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cut&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
-        data&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;score&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; bins&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; labels&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;
-    &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&#34;token comment&#34;&gt;# initiate the kfold class from model_selection module&lt;/span&gt;
-    kf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;n_splits&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;num_splits&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; shuffle&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; random_state&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&#34;token comment&#34;&gt;# fill the new kfold column&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# note that, instead of targets, we use bins!&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; f&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;t_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; v_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;kf&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;split&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;X&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; y&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;bins&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;values&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;loc&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;v_&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;fold&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; f
-    
-    &lt;span class=&#34;token comment&#34;&gt;# drop the bins column&lt;/span&gt;
-    data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;bins&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-    &lt;span class=&#34;token comment&#34;&gt;# return dataframe with folds&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; data&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/13/hello-world/</guid>
-            <title>Hello World</title>
-            <link>https://www.kitx86.com/2022/04/13/hello-world/</link>
-            <pubDate>Wed, 13 Apr 2022 07:50:55 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo server&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo generate&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo deploy&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</guid>
-            <title>ML-DL-KaggleCompeTem</title>
-            <link>https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</link>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/</guid>
+            <title>ML-DL-nlp竞赛数据处理</title>
+            <link>https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/</link>
             <category>kaggle</category>
-            <category>竞赛模板</category>
-            <category>常用tricks</category>
-            <pubDate>Mon, 11 Apr 2022 12:24:15 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;1、The-most-common-classes-CV&#34;&gt;&lt;a href=&#34;#1、The-most-common-classes-CV&#34; class=&#34;headerlink&#34; title=&#34;1、The most common classes - CV&#34;&gt;&lt;/a&gt;1、The most common classes - CV&lt;/h2&gt;&lt;p&gt;补充细分类别&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 以USPPPM为例子&lt;/span&gt;
-&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Dataset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            <category>nlp</category>
+            <pubDate>Wed, 25 May 2022 22:11:03 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;kaggle-天池竞赛环境&#34;&gt;&lt;a href=&#34;#kaggle-天池竞赛环境&#34; class=&#34;headerlink&#34; title=&#34;kaggle/天池竞赛环境&#34;&gt;&lt;/a&gt;kaggle/天池竞赛环境&lt;/h3&gt;&lt;p&gt;1.设置一个训练、推理随机种子&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;seed_everything&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;environ&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;PYTHONHASHSEED&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;environ&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;TF_CUDNN_DETERMINISTIC&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;1&#39;&lt;/span&gt;
+    np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    tf&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
     
-    
-&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;CFG&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+seed_everything&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
-    
-    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.在nlp中大多数都是使用 deberta系列来完成训练的，很傻瓜只需要会用 model 来训练就好了&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# tokenizer 在推理时是非常重要的&lt;/span&gt;
+tokenizer &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; transformers&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;AutoTokenizer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;from_pretrained&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;config&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;model_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
 
-&lt;h2 id=&#34;2、The-second-classes-NLP&#34;&gt;&lt;a href=&#34;#2、The-second-classes-NLP&#34; class=&#34;headerlink&#34; title=&#34;2、The second classes - NLP&#34;&gt;&lt;/a&gt;2、The second classes - NLP&lt;/h2&gt;&lt;p&gt;——————————————————————&lt;/p&gt;
-&lt;p&gt;补充细分类别&lt;/p&gt;
-&lt;p&gt;——————————————————————&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;3、Machine-learning-Competitions&#34;&gt;&lt;a href=&#34;#3、Machine-learning-Competitions&#34; class=&#34;headerlink&#34; title=&#34;3、Machine learning Competitions&#34;&gt;&lt;/a&gt;3、Machine learning Competitions&lt;/h2&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/</guid>
-            <title>ML-Dl-DataVisualtion</title>
-            <link>https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/</link>
-            <category>data vistualtion</category>
-            <pubDate>Fri, 08 Apr 2022 21:30:11 +0800</pubDate>
-            <description><![CDATA[ &lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;import pandas as pd
-pd.plotting.register_matplotlib_converters()
-import matplotlib.pyplot as plt
-%matplotlib inline
-import seaborn as sns&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&#34;token comment&#34;&gt;# Context tokens. &lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;context_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;context &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;]&#39;&lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sep_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[SEP]&#39;&lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;cls_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[CLS]&#39;&lt;/span&gt;
+context_tokens &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;context_token&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;unique&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+tokenizer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;add_special_tokens&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;additional_special_tokens&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; context_tokens&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/</guid>
-            <title>ML-DL-优化算法疑问</title>
-            <link>https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/</link>
-            <category>SGD</category>
-            <category>RMSProp</category>
-            <category>Adam</category>
-            <pubDate>Thu, 07 Apr 2022 17:14:18 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;优化算法疑问&#34;&gt;&lt;a href=&#34;#优化算法疑问&#34; class=&#34;headerlink&#34; title=&#34;优化算法疑问&#34;&gt;&lt;/a&gt;优化算法疑问&lt;/h4&gt;&lt;p&gt;前段时间了解了用于梯度下降的主流优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv 会诞生出一篇新的关于使用小批量优化梯度的华丽文章&lt;/p&gt;
-&lt;p&gt;下面的 code 记录和调包侠行为无异，对于有基础的道友可以快速浏览&lt;/p&gt;
-&lt;p&gt;1.朴素的 SGD&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;SGD&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;grads &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            params&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2.物理世界的 Momentum&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Momentum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;momentum&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;momentum &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; momentum
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# v point to direct vector&lt;/span&gt;
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; param &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; params&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;momentum &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            params&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;3.不知道该怎么描述 Nesterov&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Nesterov&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token comment&#34;&gt;# 这个方法不太熟悉&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;momentum&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;momentum &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; momentum
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; param &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; params&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;momentum &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            params&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;4.大家普遍使用的 AdaGrad&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;AdaGrad&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; param &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; params&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            params&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1e-7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;5.也是大家常使用的 RMSprop&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;RMSprop&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__int__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.01&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;decay_rate&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.99&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decay_rate &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; decay_rate
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; param &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; params&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decay_rate
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decay_rate&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-                params&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;h&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1e-7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;6.还是大家常使用的 Adam &lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Adam&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;lr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.001&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;beta1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.9&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;beta2&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.999&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; lr
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; beta1
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; beta2
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
-
-    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;update&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; param &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; params&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;zeros_like&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;param&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;
-        lr_t &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lr &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta2&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta1&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;iter&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-        &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;params&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;beta2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;grads&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-
-            params &lt;span class=&#34;token operator&#34;&gt;-=&lt;/span&gt; lr_t &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;m&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sqrt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;i&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1e-7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;reference&#34;&gt;&lt;a href=&#34;#reference&#34; class=&#34;headerlink&#34; title=&#34;reference&#34;&gt;&lt;/a&gt;reference&lt;/h4&gt;&lt;p&gt;代码源自：《深度学习进阶：自然语言处理》— 斋藤康毅，有兴趣的道友可去翻看，很好的一本书。&lt;/p&gt;
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/</guid>
+            <title>ML-DL-数据降维中的PCA和LDA</title>
+            <link>https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/</link>
+            <pubDate>Tue, 17 May 2022 14:07:22 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/</guid>
+            <title>ML-DL-统计之三只松鼠</title>
+            <link>https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/</link>
+            <pubDate>Tue, 17 May 2022 14:05:35 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/</guid>
+            <title>QC-LoG边缘检测</title>
+            <link>https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/</link>
+            <category>图像处理</category>
+            <category>图像检测</category>
+            <pubDate>Tue, 17 May 2022 13:46:54 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/</guid>
+            <title>QC-衍生边缘检测算法</title>
+            <link>https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/</link>
+            <category>图像处理</category>
+            <category>图像检测</category>
+            <pubDate>Tue, 17 May 2022 13:46:23 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/</guid>
+            <title>PE-谈谈我对爱情的看法</title>
+            <link>https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/</link>
+            <category>个人成长</category>
+            <pubDate>Sun, 15 May 2022 23:47:20 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;内篇-amp-amp-逍遥游&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-逍遥游&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;逍遥游&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;逍遥游&lt;/h2&gt;&lt;p&gt;学会成长，要在自我损耗中及时制止，磨砺自己迟钝的刃片，学会爱，学会主动去爱一个人，以此摆脱人性的淡漠。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;但我始终学不会主动去喜欢一个人，甚至爱一个人，只会爱我自己，其实这是自私的一种表现，爱自己尤为严重时就难以对异性产生好感，或许这便是我没碰上命运中人的借口。&lt;br&gt;回想起对避讳不及的感情过渡是一次不成熟且狼狈的来自过往的现式表白，我想那应该是我对自己一段履历的终结，接下来的日子里我有清晰的目标，有远大的理想抱负，有对枯燥生活的热情，但之前我都需要慢慢静下来，4年来说都已经足够了。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;我没想过要无论哪种简便的爱情，太枯燥无聊了，但在缺失的名单里，理解和包容是很重要但可能也无关紧要的，我需要有人在背后支持我去做自己热爱的事情，即使我已经学会了独自建立一个王朝，而我能反馈的，或许我也琢磨不透。&lt;br&gt;这是一个来自无聊但又很有料的人的深夜遐想，没有太多假设，无需太多。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</guid>
-            <title>PE-论文写作</title>
-            <link>https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</link>
-            <category>论文写作</category>
-            <pubDate>Thu, 07 Apr 2022 08:46:47 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;论文写作要求&#34;&gt;&lt;a href=&#34;#论文写作要求&#34; class=&#34;headerlink&#34; title=&#34;论文写作要求&#34;&gt;&lt;/a&gt;论文写作要求&lt;/h2&gt;&lt;p&gt;1.标题 + 作者&lt;/p&gt;
-&lt;p&gt;2.摘要 - Abstract&lt;/p&gt;
-&lt;p&gt;3.导言 - Introduction &lt;/p&gt;
-&lt;p&gt;4.相关工作 - Related Work&lt;/p&gt;
-&lt;p&gt;Example : 5.模型 - Deep Residual Learning - 5.1 &amp;gt; 5.2 …&lt;/p&gt;
-&lt;p&gt;6.理论&lt;/p&gt;
-&lt;p&gt;7.实验 + 总结 - Experiments + Conclusion&lt;/p&gt;
-&lt;p&gt;8.评论&lt;/p&gt;
-&lt;p&gt;引用：References&lt;/p&gt;
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/15/pe-update-4/</guid>
+            <title>PE-update-4</title>
+            <link>https://www.kitx86.com/2022/05/15/pe-update-4/</link>
+            <category>日记</category>
+            <pubDate>Sun, 15 May 2022 23:46:46 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-人间世&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;人间世&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;人间世&lt;/h3&gt;&lt;p&gt;最近我想用一些时序模型去做分子生物学/遗传学的相关概念验证，很明显，在深度学习这一领域是不能再产出一个银碗了，但那句”21世纪是生物的世纪”深深吸引了我，基于生命科学，机器学习则与之相融合碰撞出更灿烂的火花，而若有幸成为其中的参与者或推动者，怎么想都是极其兴奋的一件事。&lt;br&gt;我是一个过气的业余爱好者，也是一个独立研究者，似乎有很多让我觉得很无聊，缘由我在清楚不过了，无非就是我想去创业，在青年时期闯荡自己的天地，这才是我本该做的，但我又崇尚自己所喜爱的工作，我是不是太贪心了。&lt;br&gt;我想安安静静的待在大学四年，很多人困于大势所行，做认为挥洒青春的行为，但我也弄不清楚为什么对这些毫无兴趣。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/</guid>
-            <title>ML-DL-python用法注意</title>
-            <link>https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/</link>
-            <pubDate>Mon, 04 Apr 2022 10:02:31 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Python&#34;&gt;&lt;a href=&#34;#Python&#34; class=&#34;headerlink&#34; title=&#34;Python&#34;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;h3 id=&#34;切片操作的小块解释&#34;&gt;&lt;a href=&#34;#切片操作的小块解释&#34; class=&#34;headerlink&#34; title=&#34;切片操作的小块解释&#34;&gt;&lt;/a&gt;切片操作的小块解释&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;[-1]：获取最后一个元素，类似于matlab中的end；&lt;/li&gt;
-&lt;li&gt;[:-1]：除了最后一个元素，获取其他所有的元素；&lt;/li&gt;
-&lt;li&gt;[::-1]：对第一个到最后一个元素进行倒序之后取出；&lt;/li&gt;
-&lt;li&gt;[n::-1]：对第一个到第n个元素进行倒序后取出&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;enumerate&#34;&gt;&lt;a href=&#34;#enumerate&#34; class=&#34;headerlink&#34; title=&#34;enumerate()&#34;&gt;&lt;/a&gt;enumerate()&lt;/h2&gt;&lt;p&gt;enumerate() 函数用于将一个可遍历的数据对象组合成一个索引序列，同时列出数据和数据下标&lt;/p&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;train_score &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;score&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
-&lt;span class=&#34;token keyword&#34;&gt;del&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;score&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/</guid>
+            <title>ML-DL-在RNN中添加LSTM机制来缓和梯度消失</title>
+            <link>https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/</link>
+            <pubDate>Sat, 14 May 2022 22:22:59 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/14/pe-update-3/</guid>
+            <title>PE-update-3</title>
+            <link>https://www.kitx86.com/2022/05/14/pe-update-3/</link>
+            <category>日记</category>
+            <pubDate>Sat, 14 May 2022 21:48:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-人间世&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;人间世&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;人间世&lt;/h3&gt;&lt;p&gt;我内心其实是不太喜欢看书的，想必很多人也这样，这也不需要过多的解释。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;我想懒洋洋、安心稳妥做好自己分内的事，所以我爱上了画画，绘画多简单轻松呐，握上笔在纸上挥出完美线条的那一刻，就已经放空了自己早已沉重的思绪，不管是爱因斯坦还是费曼或者是hinton，统统消失不见，画作没有派系，都是自己胡编乱造，那是一个纯粹幻想的世界，经不起推敲的事件就会自行消散，为什么要追索想象的世界，归结到底的是工科的学生都有一个通病，那就是死板的很，一套工科化的理论拿来采用却没有任何美妙的新意，这是第二层的状况，第一层是筛选器。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;我喜欢没有约束的生活，也幻想毫无压力的，这看起来是那批艺术家的生活。在工程师的位置以艺术家的角度审视他们就会觉得好无聊呐，为了一丢丢别人的看法需要去压迫，非得证明自己，却不自知会陷入泥潭，这应该是不太成熟的表现。&lt;/p&gt;
  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/</guid>
+            <title>ML-DL-不熟悉的采样方法</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/</link>
+            <pubDate>Fri, 13 May 2022 09:54:50 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;我来华丽的简单分类一下&#34;&gt;&lt;a href=&#34;#我来华丽的简单分类一下&#34; class=&#34;headerlink&#34; title=&#34;我来华丽的简单分类一下&#34;&gt;&lt;/a&gt;我来华丽的简单分类一下&lt;/h3&gt;&lt;p&gt;高斯分布采样&lt;/p&gt;
+&lt;p&gt;马尔可夫蒙特卡洛采样&lt;/p&gt;
+&lt;p&gt;贝叶斯网络采样&lt;/p&gt;
+&lt;p&gt;不均衡样本集采样&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/</guid>
+            <title>ML-DL-算法三兄贵之损失函数</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/</link>
+            <pubDate>Fri, 13 May 2022 09:53:45 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/</guid>
+            <title>ML-DL-优化算法的部分假设</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/</link>
+            <pubDate>Fri, 13 May 2022 09:52:44 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/</guid>
+            <title>ML-DL-RNN中又该如何华丽的抹上Dropout</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/</link>
+            <pubDate>Fri, 13 May 2022 09:39:57 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/</guid>
+            <title>ML-DL-随RNN权重更新时产生的长期依赖问题</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/</link>
+            <pubDate>Fri, 13 May 2022 09:37:59 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/</guid>
+            <title>ML-DL-RNN的结构及如何优美的更新权重</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/</link>
+            <pubDate>Fri, 13 May 2022 09:37:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/</guid>
+            <title>ML-DL-Dropout怎样缓解RNN过拟合</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/</link>
+            <pubDate>Fri, 13 May 2022 09:35:27 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/</guid>
+            <title>ML-DL-集成学习的那些事</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/</link>
+            <category>XGBoost</category>
+            <category>GBDT</category>
+            <category>梯度提升树</category>
+            <category>基分类器</category>
+            <pubDate>Fri, 13 May 2022 09:11:56 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/</guid>
+            <title>ML-DL-模型评估的很多事</title>
+            <link>https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/</link>
+            <pubDate>Fri, 13 May 2022 09:04:23 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
         </item>
     </channel>
 </rss>

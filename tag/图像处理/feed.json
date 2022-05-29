@@ -1,0 +1,30 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"图像处理\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/",
+            "url": "https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/",
+            "title": "QC-LoG边缘检测",
+            "date_published": "2022-05-17T05:46:54.000Z",
+            "content_html": "",
+            "tags": [
+                "图像处理",
+                "图像检测"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/",
+            "url": "https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/",
+            "title": "QC-衍生边缘检测算法",
+            "date_published": "2022-05-17T05:46:23.000Z",
+            "content_html": "",
+            "tags": [
+                "图像处理",
+                "图像检测"
+            ]
+        }
+    ]
+}

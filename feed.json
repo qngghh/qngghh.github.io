@@ -5,209 +5,187 @@
     "home_page_url": "https://www.kitx86.com",
     "items": [
         {
-            "id": "https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/",
-            "url": "https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/",
-            "title": "BIO-初探生物学",
-            "date_published": "2022-05-10T06:19:51.000Z",
-            "content_html": "<h4 id=\"生物学也很好玩\"><a href=\"#生物学也很好玩\" class=\"headerlink\" title=\"生物学也很好玩\"></a>生物学也很好玩</h4><p><em>术语</em></p>\n<p>在之后的时间里我会对这些术语尽可能应用在某个方面</p>\n<p>————————————————————</p>\n<p>先天免疫 </p>\n<p>负反馈</p>\n<p>神经元学说</p>\n<p>新陈代谢</p>\n<p>昼夜节律</p>\n<p>再生</p>\n<p>细胞凋亡 细胞程序性死亡</p>\n<p>同源和同工</p>\n<p>炫光异构体</p>\n<p>生物拟态</p>\n<p>协同进化</p>\n<p>减数分裂</p>\n<p>有丝分裂</p>\n<p>适应性免疫</p>\n<p>联想学习 巴普洛夫条件反射</p>\n<p>病毒 生命形态和化学物质 灰色地带</p>\n<p>生态演替</p>\n<p>印刻效应</p>\n<p>——————————————————————</p>\n<p>略显情形不当这个 entrous:发情期</p>\n",
-            "tags": [
-                "生物学"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/",
-            "title": "ML-DL-循环神经网络基础",
-            "date_published": "2022-05-09T15:05:28.000Z",
-            "content_html": "<h2 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h2><p>模型的演变：</p>\n<p>自回归—-隐变量自回归—-</p>\n<p>一元语法，二元语法，三元语法——词元频率</p>\n<p>困惑度</p>\n",
-            "tags": [
-                "RNN",
-                "循环神经网络"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/",
-            "title": "ML-DL-计算机听觉疑问",
-            "date_published": "2022-05-09T13:07:56.000Z",
-            "content_html": "<p>1.音频信息识别常用的数据集有哪些？</p>\n<p>2.音频信息提取特征中常用的梅尔频率倒谱系数的计算</p>\n<p>3.常见的音频识别算法</p>\n",
-            "tags": [
-                "深度学习",
-                "CH"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/",
-            "title": "ML-Dl-自然语言处理疑问",
-            "date_published": "2022-05-09T12:49:54.000Z",
-            "content_html": "<p>1.机器翻译任务中如何解决未登录词的翻译问题？</p>\n<p>2.解决翻译任务中双语料不足的方法？</p>\n<p>3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比 Transformer有什么好的新意？</p>\n<p>4.在文本段落编码是如何结合问题信息？好处是什么？</p>\n<p>5.如何对文本中词的位置信息进行编码？</p>\n<p>6.语言模型的任务形式是什么？语言模型如何提升其它自然语言处理任务的效果？</p>\n<p>7.常见的词嵌入模型？它们之间联系和区别？</p>\n",
-            "tags": [
-                "深度学习",
-                "NLP"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/",
-            "title": "ML-DL-自然语言处理基础",
-            "date_published": "2022-05-09T12:48:15.000Z",
+            "id": "https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/",
+            "url": "https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/",
+            "title": "PE-不务专业的三两事",
+            "date_published": "2022-05-29T04:54:49.000Z",
             "content_html": "",
             "tags": [
-                "深度学习",
-                "NLP"
+                "思绪远方"
             ]
         },
         {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/",
-            "title": "ML-DL-前向神经网络基础",
-            "date_published": "2022-05-09T12:28:36.000Z",
+            "id": "https://www.kitx86.com/2022/05/28/pe-update-5/",
+            "url": "https://www.kitx86.com/2022/05/28/pe-update-5/",
+            "title": "PE-update-5",
+            "date_published": "2022-05-28T13:49:32.000Z",
+            "content_html": "<h3 id=\"内篇-人间世\"><a href=\"#内篇-人间世\" class=\"headerlink\" title=\"内篇-人间世\"></a>内篇-人间世</h3><p>现在已经是早上接近了9点，回想昨天的那个colab 内核运行过程，到现在仍然觉得不可思议，那可是一个量子级的计算啊，虽然说是模拟的环境里只需两个 qubit 就可以去用于测验，还有一套机器学习的融合，似乎有许久没有这种激动澎湃的心情了，目前所了解的机器学习，在主流方向里并没有让我有另眼刮目相看的本质内容，无论是视觉还是语言处理，又或者是语音，过几年我可能会爱上这套统计学习的理论，但不是现在，我没有那种闲工夫去研究这些没有前景的方向，至于动机是什么？那仅仅是一个被时代所唤醒的躁动不安的心。</p>\n",
+            "tags": [
+                "日记"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/",
+            "url": "https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/",
+            "title": "ML-DL-nlp竞赛数据处理",
+            "date_published": "2022-05-25T14:11:03.000Z",
+            "content_html": "<h3 id=\"kaggle-天池竞赛环境\"><a href=\"#kaggle-天池竞赛环境\" class=\"headerlink\" title=\"kaggle/天池竞赛环境\"></a>kaggle/天池竞赛环境</h3><p>1.设置一个训练、推理随机种子</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">def</span> <span class=\"token function\">seed_everything</span><span class=\"token punctuation\">(</span>seed<span class=\"token operator\">=</span><span class=\"token number\">42</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n    random<span class=\"token punctuation\">.</span>seed<span class=\"token punctuation\">(</span>seed<span class=\"token punctuation\">)</span>\n    os<span class=\"token punctuation\">.</span>environ<span class=\"token punctuation\">[</span><span class=\"token string\">'PYTHONHASHSEED'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token builtin\">str</span><span class=\"token punctuation\">(</span>seed<span class=\"token punctuation\">)</span>\n    os<span class=\"token punctuation\">.</span>environ<span class=\"token punctuation\">[</span><span class=\"token string\">'TF_CUDNN_DETERMINISTIC'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token string\">'1'</span>\n    np<span class=\"token punctuation\">.</span>random<span class=\"token punctuation\">.</span>seed<span class=\"token punctuation\">(</span>seed<span class=\"token punctuation\">)</span>\n    tf<span class=\"token punctuation\">.</span>random<span class=\"token punctuation\">.</span>set_seed<span class=\"token punctuation\">(</span>seed<span class=\"token punctuation\">)</span>\n    \nseed_everything<span class=\"token punctuation\">(</span>seed<span class=\"token operator\">=</span><span class=\"token number\">42</span><span class=\"token punctuation\">)</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>2.在nlp中大多数都是使用 deberta系列来完成训练的，很傻瓜只需要会用 model 来训练就好了</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token comment\"># tokenizer 在推理时是非常重要的</span>\ntokenizer <span class=\"token operator\">=</span> transformers<span class=\"token punctuation\">.</span>AutoTokenizer<span class=\"token punctuation\">.</span>from_pretrained<span class=\"token punctuation\">(</span>config<span class=\"token punctuation\">.</span>model_name<span class=\"token punctuation\">)</span>\n\n<span class=\"token comment\"># Context tokens. </span>\ntest<span class=\"token punctuation\">[</span><span class=\"token string\">'context_token'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token string\">'['</span> <span class=\"token operator\">+</span> test<span class=\"token punctuation\">.</span>context <span class=\"token operator\">+</span> <span class=\"token string\">']'</span>\ntest<span class=\"token punctuation\">[</span><span class=\"token string\">'sep_token'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token string\">'[SEP]'</span>\ntest<span class=\"token punctuation\">[</span><span class=\"token string\">'cls_token'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token string\">'[CLS]'</span>\ncontext_tokens <span class=\"token operator\">=</span> <span class=\"token builtin\">list</span><span class=\"token punctuation\">(</span>test<span class=\"token punctuation\">.</span>context_token<span class=\"token punctuation\">.</span>unique<span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\ntokenizer<span class=\"token punctuation\">.</span>add_special_tokens<span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span><span class=\"token string\">'additional_special_tokens'</span><span class=\"token punctuation\">:</span> context_tokens<span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n",
+            "tags": [
+                "kaggle",
+                "nlp"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/",
+            "url": "https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/",
+            "title": "ML-DL-数据降维中的PCA和LDA",
+            "date_published": "2022-05-17T06:07:22.000Z",
             "content_html": "",
-            "tags": [
-                "深度学习"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/",
-            "title": "ML-DL-循环神经网络中的部分问题",
-            "date_published": "2022-05-09T11:44:48.000Z",
-            "content_html": "<p>1.RNN 的结构及参数更新方式？</p>\n<p>2.使用 CNN 对序列数据建模？</p>\n<p>3.dropout能缓解过拟合？</p>\n<p>4.RNN 怎样去使用 dropout？</p>\n<p>5.RNN 中出现的长期依赖状况？</p>\n<p>6.针对长期以来问题在 RNN 实现 LSTM 功能？</p>\n<p>7.GRU 用两个门控单元就控制了时间序列的记忆及遗忘行为？ </p>\n<p>8.用RNN来实现 Seq2Seq 映射</p>\n<p>9.Seq2Seq 在编码-解码中会存在信息丢失？有什么好的解决方案</p>\n",
-            "tags": [
-                "深度学习"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/",
-            "url": "https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/",
-            "title": "ML-Dl-kaggle正确用法",
-            "date_published": "2022-05-09T08:19:32.000Z",
-            "content_html": "<h4 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h4><p>想写的时候就来，不想 push 自己，没有新意</p>\n",
-            "tags": [
-                "Noince",
-                "advance"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/07/pe-update-2/",
-            "url": "https://www.kitx86.com/2022/05/07/pe-update-2/",
-            "title": "PE-update-2",
-            "date_published": "2022-05-07T08:35:00.000Z",
-            "content_html": "<h4 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h4><p>今天的感jo是没得什么能够拦住我，思绪飘在了固定的方向，有太多太多想去做的啦。</p>\n<p>想建立一个工作室给大家带来快乐，想去创业建立我的时代，想去和那些互联网头目碰撞，想安心在学术氛围浓厚的地方做研究</p>\n",
-            "tags": [
-                "日记"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/",
-            "url": "https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/",
-            "title": "PE-鸟类饲养记",
-            "date_published": "2022-05-04T08:38:21.000Z",
-            "content_html": "<h3 id=\"致叛逆的-Big-Bird：\"><a href=\"#致叛逆的-Big-Bird：\" class=\"headerlink\" title=\"致叛逆的 Big Bird：\"></a>致叛逆的 Big Bird：</h3><p>看起来似乎好活泼好动，却毫不为我所提供的六星级豪华别墅所动，满眼都崇尚外面的点滴一方世界，留不住的也会莫名的流露出一丝丝不忍心。</p>\n<p>自私的热切关心并不会改变什么，我并不失落，因为这结果我可以预见，另一种结果是毫不留情直接炖了，依赖达尔文所说的生物进化的基础是自然选择，这并不残忍</p>\n<p>但为什么产生了一点点空虚呢，解析不出来。</p>\n<p>——————————————————</p>\n<p>从一只鸟的观察联系到人际交流，关心会对一个人付出自己脆落的琉璃心，即使是孤赖调皮的人也不例外。</p>\n<p><img src=\"/IMG_20220504_155927.jpg\"></p>\n",
-            "tags": [
-                "饲养记"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/",
-            "url": "https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/",
-            "title": "PE-朕之旨意",
-            "date_published": "2022-05-02T07:37:26.000Z",
-            "content_html": "<h3 id=\"内篇-amp-amp-逍遥游\"><a href=\"#内篇-amp-amp-逍遥游\" class=\"headerlink\" title=\"内篇&amp;&amp;逍遥游\"></a>内篇&amp;&amp;逍遥游</h3><p>以后尝试去写几本书</p>\n<p>一本讲机器学习和深度学习的，一定不要写的太厚，因为对于像我这样慢性精读的人来说就非常折磨，还没到跟自己过不去的时候。</p>\n<p>一本讲我对量子计算与信息的探索，这是个大课题，得很久啦。</p>\n<p>最后一本是我的手绘本，想了一个比较中二的名字，[研究者的手绘本：异构认识世界]</p>\n<p>最后的一点点是，即使有想放弃当初的部分热衷，要燃起对自己的热爱，因为还有可能，我可给以无聊的世界带来乐趣。</p>\n",
-            "tags": [
-                "微不足道的贡献"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/05/02/pe-update-0/",
-            "url": "https://www.kitx86.com/2022/05/02/pe-update-0/",
-            "title": "PE-update-0",
-            "date_published": "2022-05-01T16:34:01.000Z",
-            "content_html": "<h3 id=\"内篇-amp-amp-人间世\"><a href=\"#内篇-amp-amp-人间世\" class=\"headerlink\" title=\"内篇&amp;&amp;人间世\"></a>内篇&amp;&amp;人间世</h3><p>每天早上迷迷糊糊的起床排队抢显卡显得我很窘迫、多余，现在是早上 0.36，上线排队等 TPU中……</p>\n",
-            "tags": [
-                "日记"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/04/26/pe-update-1/",
-            "url": "https://www.kitx86.com/2022/04/26/pe-update-1/",
-            "title": "PE-update-1",
-            "date_published": "2022-04-26T06:39:01.000Z",
-            "content_html": "<h3 id=\"往日续谈\"><a href=\"#往日续谈\" class=\"headerlink\" title=\"往日续谈\"></a>往日续谈</h3><p>年轻的时候当然会觉得做 hacker 是最帅的，会写代码负荷攻击，游荡在外面危险而又迷人的神秘背影怎能不让人心动。</p>\n",
-            "tags": [
-                "日记"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/",
-            "url": "https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/",
-            "title": "ML-DL-kFold验证",
-            "date_published": "2022-04-14T19:17:12.000Z",
-            "content_html": "<h3 id=\"训练方法\"><a href=\"#训练方法\" class=\"headerlink\" title=\"训练方法\"></a>训练方法</h3><p>K-fold验证是在训练模型的时候普遍使用的策略，在训练集上随机划分数个模块，一般分为5折，其中一折是验证集，另外四折是训练集，循环迭代5次，最后对做模型集成加权平均，特征工程里对于划分也有很细致的划分，但这里就不详细述说了，有基础的读者应该知道。</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">def</span> <span class=\"token function\">create_folds</span><span class=\"token punctuation\">(</span>data<span class=\"token punctuation\">,</span> num_splits<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n    <span class=\"token comment\"># we create a new column called kfold and fill it with -1</span>\n    data<span class=\"token punctuation\">[</span><span class=\"token string\">\"fold\"</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token operator\">-</span><span class=\"token number\">1</span>\n    \n    <span class=\"token comment\"># the next step is to randomize the rows of the data</span>\n    <span class=\"token comment\"># data = data.sample(frac=1).reset_index(drop=True)</span>\n\n    <span class=\"token comment\"># calculate number of bins by Sturge's rule</span>\n    <span class=\"token comment\"># I take the floor of the value, you can also</span>\n    <span class=\"token comment\"># just round it</span>\n    <span class=\"token comment\"># num_bins = int(np.floor(1 + np.log2(len(data))))</span>\n    \n    <span class=\"token comment\"># bin targets</span>\n    data<span class=\"token punctuation\">.</span>loc<span class=\"token punctuation\">[</span><span class=\"token punctuation\">:</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"bins\"</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> pd<span class=\"token punctuation\">.</span>cut<span class=\"token punctuation\">(</span>\n        data<span class=\"token punctuation\">[</span><span class=\"token string\">\"score\"</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span> bins<span class=\"token operator\">=</span><span class=\"token number\">5</span><span class=\"token punctuation\">,</span> labels<span class=\"token operator\">=</span><span class=\"token boolean\">False</span>\n    <span class=\"token punctuation\">)</span>\n    \n    <span class=\"token comment\"># initiate the kfold class from model_selection module</span>\n    kf <span class=\"token operator\">=</span> StratifiedKFold<span class=\"token punctuation\">(</span>n_splits<span class=\"token operator\">=</span>num_splits<span class=\"token punctuation\">,</span> shuffle<span class=\"token operator\">=</span><span class=\"token boolean\">True</span><span class=\"token punctuation\">,</span> random_state<span class=\"token operator\">=</span><span class=\"token number\">42</span><span class=\"token punctuation\">)</span>\n    \n    <span class=\"token comment\"># fill the new kfold column</span>\n    <span class=\"token comment\"># note that, instead of targets, we use bins!</span>\n    <span class=\"token keyword\">for</span> f<span class=\"token punctuation\">,</span> <span class=\"token punctuation\">(</span>t_<span class=\"token punctuation\">,</span> v_<span class=\"token punctuation\">)</span> <span class=\"token keyword\">in</span> <span class=\"token builtin\">enumerate</span><span class=\"token punctuation\">(</span>kf<span class=\"token punctuation\">.</span>split<span class=\"token punctuation\">(</span>X<span class=\"token operator\">=</span>data<span class=\"token punctuation\">,</span> y<span class=\"token operator\">=</span>data<span class=\"token punctuation\">.</span>bins<span class=\"token punctuation\">.</span>values<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        data<span class=\"token punctuation\">.</span>loc<span class=\"token punctuation\">[</span>v_<span class=\"token punctuation\">,</span> <span class=\"token string\">'fold'</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> f\n    \n    <span class=\"token comment\"># drop the bins column</span>\n    data <span class=\"token operator\">=</span> data<span class=\"token punctuation\">.</span>drop<span class=\"token punctuation\">(</span><span class=\"token string\">\"bins\"</span><span class=\"token punctuation\">,</span> axis<span class=\"token operator\">=</span><span class=\"token number\">1</span><span class=\"token punctuation\">)</span>\n\n    <span class=\"token comment\"># return dataframe with folds</span>\n    <span class=\"token keyword\">return</span> data<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n",
-            "tags": [
-                "ML",
-                "DL"
-            ]
-        },
-        {
-            "id": "https://www.kitx86.com/2022/04/13/hello-world/",
-            "url": "https://www.kitx86.com/2022/04/13/hello-world/",
-            "title": "Hello World",
-            "date_published": "2022-04-12T23:50:55.187Z",
-            "content_html": "<p>Welcome to <a href=\"https://hexo.io/\">Hexo</a>! This is your very first post. Check <a href=\"https://hexo.io/docs/\">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href=\"https://hexo.io/docs/troubleshooting.html\">troubleshooting</a> or you can ask me on <a href=\"https://github.com/hexojs/hexo/issues\">GitHub</a>.</p>\n<h2 id=\"Quick-Start\"><a href=\"#Quick-Start\" class=\"headerlink\" title=\"Quick Start\"></a>Quick Start</h2><h3 id=\"Create-a-new-post\"><a href=\"#Create-a-new-post\" class=\"headerlink\" title=\"Create a new post\"></a>Create a new post</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo new <span class=\"token string\">\"My New Post\"</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/writing.html\">Writing</a></p>\n<h3 id=\"Run-server\"><a href=\"#Run-server\" class=\"headerlink\" title=\"Run server\"></a>Run server</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo server<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"Generate-static-files\"><a href=\"#Generate-static-files\" class=\"headerlink\" title=\"Generate static files\"></a>Generate static files</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo generate<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"Deploy-to-remote-sites\"><a href=\"#Deploy-to-remote-sites\" class=\"headerlink\" title=\"Deploy to remote sites\"></a>Deploy to remote sites</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo deploy<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
             "tags": []
         },
         {
-            "id": "https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/",
-            "url": "https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/",
-            "title": "ML-DL-KaggleCompeTem",
-            "date_published": "2022-04-11T04:24:15.000Z",
-            "content_html": "<h2 id=\"1、The-most-common-classes-CV\"><a href=\"#1、The-most-common-classes-CV\" class=\"headerlink\" title=\"1、The most common classes - CV\"></a>1、The most common classes - CV</h2><p>补充细分类别</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token comment\"># 以USPPPM为例子</span>\n<span class=\"token keyword\">class</span> <span class=\"token class-name\">Dataset</span><span class=\"token punctuation\">:</span>\n    \n    \n<span class=\"token keyword\">class</span> <span class=\"token class-name\">CFG</span><span class=\"token punctuation\">:</span>\n\n    \n    <span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<h2 id=\"2、The-second-classes-NLP\"><a href=\"#2、The-second-classes-NLP\" class=\"headerlink\" title=\"2、The second classes - NLP\"></a>2、The second classes - NLP</h2><p>——————————————————————</p>\n<p>补充细分类别</p>\n<p>——————————————————————</p>\n<pre class=\"line-numbers language-none\"><code class=\"language-none\"><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<h2 id=\"3、Machine-learning-Competitions\"><a href=\"#3、Machine-learning-Competitions\" class=\"headerlink\" title=\"3、Machine learning Competitions\"></a>3、Machine learning Competitions</h2>",
+            "id": "https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/",
+            "url": "https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/",
+            "title": "ML-DL-统计之三只松鼠",
+            "date_published": "2022-05-17T06:05:35.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/",
+            "url": "https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/",
+            "title": "QC-LoG边缘检测",
+            "date_published": "2022-05-17T05:46:54.000Z",
+            "content_html": "",
             "tags": [
-                "kaggle",
-                "竞赛模板",
-                "常用tricks"
+                "图像处理",
+                "图像检测"
             ]
         },
         {
-            "id": "https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/",
-            "url": "https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/",
-            "title": "ML-Dl-DataVisualtion",
-            "date_published": "2022-04-08T13:30:11.000Z",
-            "content_html": "<pre class=\"line-numbers language-none\"><code class=\"language-none\">import pandas as pd\npd.plotting.register_matplotlib_converters()\nimport matplotlib.pyplot as plt\n%matplotlib inline\nimport seaborn as sns<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n",
+            "id": "https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/",
+            "url": "https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/",
+            "title": "QC-衍生边缘检测算法",
+            "date_published": "2022-05-17T05:46:23.000Z",
+            "content_html": "",
             "tags": [
-                "data vistualtion"
+                "图像处理",
+                "图像检测"
             ]
         },
         {
-            "id": "https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/",
-            "url": "https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/",
-            "title": "ML-DL-优化算法疑问",
-            "date_published": "2022-04-07T09:14:18.000Z",
-            "content_html": "<h4 id=\"优化算法疑问\"><a href=\"#优化算法疑问\" class=\"headerlink\" title=\"优化算法疑问\"></a>优化算法疑问</h4><p>前段时间了解了用于梯度下降的主流优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv 会诞生出一篇新的关于使用小批量优化梯度的华丽文章</p>\n<p>下面的 code 记录和调包侠行为无异，对于有基础的道友可以快速浏览</p>\n<p>1.朴素的 SGD</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">SGD</span><span class=\"token punctuation\">:</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__init__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.01</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>params<span class=\"token punctuation\">,</span>self<span class=\"token punctuation\">.</span>grads <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span><span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n            params<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-=</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>2.物理世界的 Momentum</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">Momentum</span><span class=\"token punctuation\">:</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__init__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.01</span><span class=\"token punctuation\">,</span>momentum<span class=\"token operator\">=</span><span class=\"token number\">0.9</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>momentum <span class=\"token operator\">=</span> momentum\n        self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">if</span> self<span class=\"token punctuation\">.</span>v <span class=\"token keyword\">is</span> <span class=\"token boolean\">None</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span> <span class=\"token comment\"># v point to direct vector</span>\n            <span class=\"token keyword\">for</span> param <span class=\"token keyword\">in</span> params<span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n\n        <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> self<span class=\"token punctuation\">.</span>momentum <span class=\"token operator\">*</span> self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span>\n            params<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>3.不知道该怎么描述 Nesterov</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">Nesterov</span><span class=\"token punctuation\">:</span>\n    <span class=\"token comment\"># 这个方法不太熟悉</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__init__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.01</span><span class=\"token punctuation\">,</span>momentum<span class=\"token operator\">=</span><span class=\"token number\">0.9</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>momentum <span class=\"token operator\">=</span> momentum\n        self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">if</span> self<span class=\"token punctuation\">.</span>v <span class=\"token keyword\">is</span> <span class=\"token boolean\">None</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span>\n            <span class=\"token keyword\">for</span> param <span class=\"token keyword\">in</span> params<span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n\n        <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> self<span class=\"token punctuation\">.</span>momentum <span class=\"token operator\">*</span> self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span>\n            params<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>4.大家普遍使用的 AdaGrad</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">AdaGrad</span><span class=\"token punctuation\">:</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__init__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.01</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>h <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">if</span> self<span class=\"token punctuation\">.</span>h <span class=\"token keyword\">is</span> <span class=\"token boolean\">None</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>h <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span>\n            <span class=\"token keyword\">for</span> param <span class=\"token keyword\">in</span> params<span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n\n        <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span>\n            params<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-=</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">/</span> <span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>sqrt<span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span> <span class=\"token operator\">+</span> <span class=\"token number\">1e-7</span><span class=\"token punctuation\">)</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>5.也是大家常使用的 RMSprop</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">RMSprop</span><span class=\"token punctuation\">:</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__int__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.01</span><span class=\"token punctuation\">,</span>decay_rate<span class=\"token operator\">=</span><span class=\"token number\">0.99</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>decay_rate <span class=\"token operator\">=</span> decay_rate\n        self<span class=\"token punctuation\">.</span>h <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">if</span> self<span class=\"token punctuation\">.</span>h <span class=\"token keyword\">is</span> <span class=\"token boolean\">None</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>h <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span>\n            <span class=\"token keyword\">for</span> param <span class=\"token keyword\">in</span> params<span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n\n            <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">*=</span> self<span class=\"token punctuation\">.</span>decay_rate\n                self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> <span class=\"token punctuation\">(</span><span class=\"token number\">1</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>decay_rate<span class=\"token punctuation\">)</span> <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span>\n                params<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-=</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">/</span> <span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>sqrt<span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">.</span>h<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span> <span class=\"token operator\">+</span> <span class=\"token number\">1e-7</span><span class=\"token punctuation\">)</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<p>6.还是大家常使用的 Adam </p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">class</span> <span class=\"token class-name\">Adam</span><span class=\"token punctuation\">:</span>\n    <span class=\"token keyword\">def</span> <span class=\"token function\">__init__</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>lr<span class=\"token operator\">=</span><span class=\"token number\">0.001</span><span class=\"token punctuation\">,</span>beta1<span class=\"token operator\">=</span><span class=\"token number\">0.9</span><span class=\"token punctuation\">,</span>beta2<span class=\"token operator\">=</span><span class=\"token number\">0.999</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">=</span> lr\n        self<span class=\"token punctuation\">.</span>beta1 <span class=\"token operator\">=</span> beta1\n        self<span class=\"token punctuation\">.</span>beta2 <span class=\"token operator\">=</span> beta2\n        self<span class=\"token punctuation\">.</span><span class=\"token builtin\">iter</span> <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n        self<span class=\"token punctuation\">.</span>m <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n        self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token boolean\">None</span>\n\n    <span class=\"token keyword\">def</span> <span class=\"token function\">update</span><span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">,</span>params<span class=\"token punctuation\">,</span>grads<span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n        <span class=\"token keyword\">if</span> self<span class=\"token punctuation\">.</span>m <span class=\"token keyword\">is</span> <span class=\"token boolean\">None</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>m<span class=\"token punctuation\">,</span> self<span class=\"token punctuation\">.</span>v <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span><span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span>\n            <span class=\"token keyword\">for</span> param <span class=\"token keyword\">in</span> params<span class=\"token punctuation\">:</span>\n                self<span class=\"token punctuation\">.</span>m<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n                self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">.</span>append<span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>zeros_like<span class=\"token punctuation\">(</span>param<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>\n\n        self<span class=\"token punctuation\">.</span><span class=\"token builtin\">iter</span> <span class=\"token operator\">+=</span> <span class=\"token number\">1</span>\n        lr_t <span class=\"token operator\">=</span> self<span class=\"token punctuation\">.</span>lr <span class=\"token operator\">*</span> np<span class=\"token punctuation\">.</span>sqrt<span class=\"token punctuation\">(</span><span class=\"token number\">1.0</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>beta2<span class=\"token operator\">**</span>self<span class=\"token punctuation\">.</span><span class=\"token builtin\">iter</span><span class=\"token punctuation\">)</span> <span class=\"token operator\">/</span> <span class=\"token punctuation\">(</span><span class=\"token number\">1.0</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>beta1<span class=\"token operator\">**</span>self<span class=\"token punctuation\">.</span><span class=\"token builtin\">iter</span><span class=\"token punctuation\">)</span>\n\n        <span class=\"token keyword\">for</span> i <span class=\"token keyword\">in</span> <span class=\"token builtin\">range</span><span class=\"token punctuation\">(</span><span class=\"token builtin\">len</span><span class=\"token punctuation\">(</span>params<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n            self<span class=\"token punctuation\">.</span>m<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> <span class=\"token punctuation\">(</span><span class=\"token number\">1</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>beta1<span class=\"token punctuation\">)</span> <span class=\"token operator\">*</span> <span class=\"token punctuation\">(</span>grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>m<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span>\n            self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">+=</span> <span class=\"token punctuation\">(</span><span class=\"token number\">1</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>beta2<span class=\"token punctuation\">)</span> <span class=\"token operator\">*</span> <span class=\"token punctuation\">(</span>grads<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token operator\">**</span><span class=\"token number\">2</span> <span class=\"token operator\">-</span> self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span>\n\n            params <span class=\"token operator\">-=</span> lr_t <span class=\"token operator\">*</span> self<span class=\"token punctuation\">.</span>m<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span> <span class=\"token operator\">/</span> <span class=\"token punctuation\">(</span>np<span class=\"token punctuation\">.</span>sqrt<span class=\"token punctuation\">(</span>self<span class=\"token punctuation\">.</span>v<span class=\"token punctuation\">[</span>i<span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span> <span class=\"token operator\">+</span> <span class=\"token number\">1e-7</span><span class=\"token punctuation\">)</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n\n<h4 id=\"reference\"><a href=\"#reference\" class=\"headerlink\" title=\"reference\"></a>reference</h4><p>代码源自：《深度学习进阶：自然语言处理》— 斋藤康毅，有兴趣的道友可去翻看，很好的一本书。</p>\n",
+            "id": "https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/",
+            "url": "https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/",
+            "title": "PE-谈谈我对爱情的看法",
+            "date_published": "2022-05-15T15:47:20.000Z",
+            "content_html": "<h2 id=\"内篇-amp-amp-逍遥游\"><a href=\"#内篇-amp-amp-逍遥游\" class=\"headerlink\" title=\"内篇&amp;&amp;逍遥游\"></a>内篇&amp;&amp;逍遥游</h2><p>学会成长，要在自我损耗中及时制止，磨砺自己迟钝的刃片，学会爱，学会主动去爱一个人，以此摆脱人性的淡漠。</p>\n<p>~~</p>\n<p>但我始终学不会主动去喜欢一个人，甚至爱一个人，只会爱我自己，其实这是自私的一种表现，爱自己尤为严重时就难以对异性产生好感，或许这便是我没碰上命运中人的借口。<br>回想起对避讳不及的感情过渡是一次不成熟且狼狈的来自过往的现式表白，我想那应该是我对自己一段履历的终结，接下来的日子里我有清晰的目标，有远大的理想抱负，有对枯燥生活的热情，但之前我都需要慢慢静下来，4年来说都已经足够了。</p>\n<p>~~</p>\n<p>我没想过要无论哪种简便的爱情，太枯燥无聊了，但在缺失的名单里，理解和包容是很重要但可能也无关紧要的，我需要有人在背后支持我去做自己热爱的事情，即使我已经学会了独自建立一个王朝，而我能反馈的，或许我也琢磨不透。<br>这是一个来自无聊但又很有料的人的深夜遐想，没有太多假设，无需太多。</p>\n",
             "tags": [
-                "SGD",
-                "RMSProp",
-                "Adam"
+                "个人成长"
             ]
         },
         {
-            "id": "https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/",
-            "url": "https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/",
-            "title": "PE-论文写作",
-            "date_published": "2022-04-07T00:46:47.000Z",
-            "content_html": "<h2 id=\"论文写作要求\"><a href=\"#论文写作要求\" class=\"headerlink\" title=\"论文写作要求\"></a>论文写作要求</h2><p>1.标题 + 作者</p>\n<p>2.摘要 - Abstract</p>\n<p>3.导言 - Introduction </p>\n<p>4.相关工作 - Related Work</p>\n<p>Example : 5.模型 - Deep Residual Learning - 5.1 &gt; 5.2 …</p>\n<p>6.理论</p>\n<p>7.实验 + 总结 - Experiments + Conclusion</p>\n<p>8.评论</p>\n<p>引用：References</p>\n",
+            "id": "https://www.kitx86.com/2022/05/15/pe-update-4/",
+            "url": "https://www.kitx86.com/2022/05/15/pe-update-4/",
+            "title": "PE-update-4",
+            "date_published": "2022-05-15T15:46:46.000Z",
+            "content_html": "<h3 id=\"内篇-amp-amp-人间世\"><a href=\"#内篇-amp-amp-人间世\" class=\"headerlink\" title=\"内篇&amp;&amp;人间世\"></a>内篇&amp;&amp;人间世</h3><p>最近我想用一些时序模型去做分子生物学/遗传学的相关概念验证，很明显，在深度学习这一领域是不能再产出一个银碗了，但那句”21世纪是生物的世纪”深深吸引了我，基于生命科学，机器学习则与之相融合碰撞出更灿烂的火花，而若有幸成为其中的参与者或推动者，怎么想都是极其兴奋的一件事。<br>我是一个过气的业余爱好者，也是一个独立研究者，似乎有很多让我觉得很无聊，缘由我在清楚不过了，无非就是我想去创业，在青年时期闯荡自己的天地，这才是我本该做的，但我又崇尚自己所喜爱的工作，我是不是太贪心了。<br>我想安安静静的待在大学四年，很多人困于大势所行，做认为挥洒青春的行为，但我也弄不清楚为什么对这些毫无兴趣。</p>\n",
             "tags": [
-                "论文写作"
+                "日记"
             ]
         },
         {
-            "id": "https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/",
-            "url": "https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/",
-            "title": "ML-DL-python用法注意",
-            "date_published": "2022-04-04T02:02:31.000Z",
-            "content_html": "<h2 id=\"Python\"><a href=\"#Python\" class=\"headerlink\" title=\"Python\"></a>Python</h2><h3 id=\"切片操作的小块解释\"><a href=\"#切片操作的小块解释\" class=\"headerlink\" title=\"切片操作的小块解释\"></a>切片操作的小块解释</h3><ul>\n<li>[-1]：获取最后一个元素，类似于matlab中的end；</li>\n<li>[:-1]：除了最后一个元素，获取其他所有的元素；</li>\n<li>[::-1]：对第一个到最后一个元素进行倒序之后取出；</li>\n<li>[n::-1]：对第一个到第n个元素进行倒序后取出</li>\n</ul>\n<h2 id=\"enumerate\"><a href=\"#enumerate\" class=\"headerlink\" title=\"enumerate()\"></a>enumerate()</h2><p>enumerate() 函数用于将一个可遍历的数据对象组合成一个索引序列，同时列出数据和数据下标</p>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\">train_score <span class=\"token operator\">=</span> train<span class=\"token punctuation\">[</span><span class=\"token string\">'score'</span><span class=\"token punctuation\">]</span>\n<span class=\"token keyword\">del</span> train<span class=\"token punctuation\">[</span><span class=\"token string\">'score'</span><span class=\"token punctuation\">]</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span></span></code></pre>\n\n",
+            "id": "https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/",
+            "url": "https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/",
+            "title": "ML-DL-在RNN中添加LSTM机制来缓和梯度消失",
+            "date_published": "2022-05-14T14:22:59.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/14/pe-update-3/",
+            "url": "https://www.kitx86.com/2022/05/14/pe-update-3/",
+            "title": "PE-update-3",
+            "date_published": "2022-05-14T13:48:11.000Z",
+            "content_html": "<h3 id=\"内篇-amp-amp-人间世\"><a href=\"#内篇-amp-amp-人间世\" class=\"headerlink\" title=\"内篇&amp;&amp;人间世\"></a>内篇&amp;&amp;人间世</h3><p>我内心其实是不太喜欢看书的，想必很多人也这样，这也不需要过多的解释。</p>\n<p>~~</p>\n<p>我想懒洋洋、安心稳妥做好自己分内的事，所以我爱上了画画，绘画多简单轻松呐，握上笔在纸上挥出完美线条的那一刻，就已经放空了自己早已沉重的思绪，不管是爱因斯坦还是费曼或者是hinton，统统消失不见，画作没有派系，都是自己胡编乱造，那是一个纯粹幻想的世界，经不起推敲的事件就会自行消散，为什么要追索想象的世界，归结到底的是工科的学生都有一个通病，那就是死板的很，一套工科化的理论拿来采用却没有任何美妙的新意，这是第二层的状况，第一层是筛选器。</p>\n<p>~~</p>\n<p>我喜欢没有约束的生活，也幻想毫无压力的，这看起来是那批艺术家的生活。在工程师的位置以艺术家的角度审视他们就会觉得好无聊呐，为了一丢丢别人的看法需要去压迫，非得证明自己，却不自知会陷入泥潭，这应该是不太成熟的表现。</p>\n",
+            "tags": [
+                "日记"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/",
+            "title": "ML-DL-不熟悉的采样方法",
+            "date_published": "2022-05-13T01:54:50.000Z",
+            "content_html": "<h3 id=\"我来华丽的简单分类一下\"><a href=\"#我来华丽的简单分类一下\" class=\"headerlink\" title=\"我来华丽的简单分类一下\"></a>我来华丽的简单分类一下</h3><p>高斯分布采样</p>\n<p>马尔可夫蒙特卡洛采样</p>\n<p>贝叶斯网络采样</p>\n<p>不均衡样本集采样</p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/",
+            "title": "ML-DL-算法三兄贵之损失函数",
+            "date_published": "2022-05-13T01:53:45.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/",
+            "title": "ML-DL-优化算法的部分假设",
+            "date_published": "2022-05-13T01:52:44.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/",
+            "title": "ML-DL-RNN中又该如何华丽的抹上Dropout",
+            "date_published": "2022-05-13T01:39:57.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/",
+            "title": "ML-DL-随RNN权重更新时产生的长期依赖问题",
+            "date_published": "2022-05-13T01:37:59.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/",
+            "title": "ML-DL-RNN的结构及如何优美的更新权重",
+            "date_published": "2022-05-13T01:37:00.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/",
+            "title": "ML-DL-Dropout怎样缓解RNN过拟合",
+            "date_published": "2022-05-13T01:35:27.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/",
+            "title": "ML-DL-集成学习的那些事",
+            "date_published": "2022-05-13T01:11:56.000Z",
+            "content_html": "",
+            "tags": [
+                "XGBoost",
+                "GBDT",
+                "梯度提升树",
+                "基分类器"
+            ]
+        },
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/",
+            "title": "ML-DL-模型评估的很多事",
+            "date_published": "2022-05-13T01:04:23.000Z",
+            "content_html": "",
             "tags": []
         }
     ]

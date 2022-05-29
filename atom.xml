@@ -6,7 +6,7 @@
   <link href="https://www.kitx86.com/atom.xml" rel="self"/>
   
   <link href="https://www.kitx86.com/"/>
-  <updated>2022-05-10T06:36:29.215Z</updated>
+  <updated>2022-05-29T05:14:07.927Z</updated>
   <id>https://www.kitx86.com/</id>
   
   <author>
@@ -17,221 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>BIO-初探生物学</title>
-    <link href="https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/"/>
-    <id>https://www.kitx86.com/2022/05/10/bio-chu-tan-sheng-wu-xue/</id>
-    <published>2022-05-10T06:19:51.000Z</published>
-    <updated>2022-05-10T06:36:29.215Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;生物学也很好玩&quot;&gt;&lt;a href=&quot;#生物学也很好玩&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <title>PE-不务专业的三两事</title>
+    <link href="https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/"/>
+    <id>https://www.kitx86.com/2022/05/29/pe-bu-wu-zhuan-ye-de-san-liang-shi/</id>
+    <published>2022-05-29T04:54:49.000Z</published>
+    <updated>2022-05-29T05:14:07.927Z</updated>
     
     
     
-    <category term="Biology" scheme="https://www.kitx86.com/categories/Biology/"/>
+    
+    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
     
     
-    <category term="生物学" scheme="https://www.kitx86.com/tags/%E7%94%9F%E7%89%A9%E5%AD%A6/"/>
+    <category term="思绪远方" scheme="https://www.kitx86.com/tags/%E6%80%9D%E7%BB%AA%E8%BF%9C%E6%96%B9/"/>
     
   </entry>
   
   <entry>
-    <title>ML-DL-循环神经网络基础</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-ji-chu/</id>
-    <published>2022-05-09T15:05:28.000Z</published>
-    <updated>2022-05-09T16:41:10.349Z</updated>
+    <title>PE-update-5</title>
+    <link href="https://www.kitx86.com/2022/05/28/pe-update-5/"/>
+    <id>https://www.kitx86.com/2022/05/28/pe-update-5/</id>
+    <published>2022-05-28T13:49:32.000Z</published>
+    <updated>2022-05-29T05:14:37.470Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="RNN" scheme="https://www.kitx86.com/tags/RNN/"/>
-    
-    <category term="循环神经网络" scheme="https://www.kitx86.com/tags/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-计算机听觉疑问</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-ji-suan-ji-ting-jue-yi-wen/</id>
-    <published>2022-05-09T13:07:56.000Z</published>
-    <updated>2022-05-09T13:11:05.399Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.音频信息识别常用的数据集有哪些？&lt;/p&gt;
-&lt;p&gt;2.音频信息提取特征中常用的梅尔频率倒谱系数的计算&lt;/p&gt;
-&lt;p&gt;3.常见的音频识别算法&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="深度学习" scheme="https://www.kitx86.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="CH" scheme="https://www.kitx86.com/tags/CH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-Dl-自然语言处理疑问</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</id>
-    <published>2022-05-09T12:49:54.000Z</published>
-    <updated>2022-05-09T13:12:45.258Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.机器翻译任务中如何解决未登录词的翻译问题？&lt;/p&gt;
-&lt;p&gt;2.解决翻译任务中双语料不足的方法？&lt;/p&gt;
-&lt;p&gt;3.如何使用 CNN 和 RNN 来解决 问题系统任务中的长距离依赖问题？ 对比</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="深度学习" scheme="https://www.kitx86.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="NLP" scheme="https://www.kitx86.com/tags/NLP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-自然语言处理基础</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-ji-chu/</id>
-    <published>2022-05-09T12:48:15.000Z</published>
-    <updated>2022-05-09T13:12:16.984Z</updated>
-    
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="深度学习" scheme="https://www.kitx86.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="NLP" scheme="https://www.kitx86.com/tags/NLP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-前向神经网络基础</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-qian-xiang-shen-jing-wang-luo-ji-chu/</id>
-    <published>2022-05-09T12:28:36.000Z</published>
-    <updated>2022-05-09T13:11:27.628Z</updated>
-    
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="深度学习" scheme="https://www.kitx86.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-循环神经网络中的部分问题</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-xun-huan-shen-jing-wang-luo-zhong-de-bu-fen-wen-ti/</id>
-    <published>2022-05-09T11:44:48.000Z</published>
-    <updated>2022-05-09T13:11:49.463Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.RNN 的结构及参数更新方式？&lt;/p&gt;
-&lt;p&gt;2.使用 CNN 对序列数据建模？&lt;/p&gt;
-&lt;p&gt;3.dropout能缓解过拟合？&lt;/p&gt;
-&lt;p&gt;4.RNN 怎样去使用 dropout？&lt;/p&gt;
-&lt;p&gt;5.RNN</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="深度学习" scheme="https://www.kitx86.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ML-Dl-kaggle正确用法</title>
-    <link href="https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/"/>
-    <id>https://www.kitx86.com/2022/05/09/ml-dl-kaggle-zheng-que-yong-fa/</id>
-    <published>2022-05-09T08:19:32.000Z</published>
-    <updated>2022-05-09T13:12:57.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;想写的时候就来，不想 push</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="Noince" scheme="https://www.kitx86.com/tags/Noince/"/>
-    
-    <category term="advance" scheme="https://www.kitx86.com/tags/advance/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PE-update-2</title>
-    <link href="https://www.kitx86.com/2022/05/07/pe-update-2/"/>
-    <id>https://www.kitx86.com/2022/05/07/pe-update-2/</id>
-    <published>2022-05-07T08:35:00.000Z</published>
-    <updated>2022-05-09T07:56:11.717Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;内篇-人间世&quot;&gt;&lt;a href=&quot;#内篇-人间世&quot; class=&quot;headerlink&quot; title=&quot;内篇-人间世&quot;&gt;&lt;/a&gt;内篇-人间世&lt;/h3&gt;&lt;p&gt;现在已经是早上接近了9点，回想昨天的那个colab</summary>
         
       
     
@@ -245,18 +59,114 @@
   </entry>
   
   <entry>
-    <title>PE-鸟类饲养记</title>
-    <link href="https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/"/>
-    <id>https://www.kitx86.com/2022/05/04/pe-niao-lei-si-yang-ji/</id>
-    <published>2022-05-04T08:38:21.000Z</published>
-    <updated>2022-05-09T07:44:39.707Z</updated>
+    <title>ML-DL-nlp竞赛数据处理</title>
+    <link href="https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/"/>
+    <id>https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/</id>
+    <published>2022-05-25T14:11:03.000Z</published>
+    <updated>2022-05-29T05:16:21.513Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;致叛逆的-Big-Bird：&quot;&gt;&lt;a href=&quot;#致叛逆的-Big-Bird：&quot; class=&quot;headerlink&quot; title=&quot;致叛逆的 Big Bird：&quot;&gt;&lt;/a&gt;致叛逆的 Big</summary>
+    <summary type="html">&lt;h3 id=&quot;kaggle-天池竞赛环境&quot;&gt;&lt;a href=&quot;#kaggle-天池竞赛环境&quot; class=&quot;headerlink&quot; title=&quot;kaggle/天池竞赛环境&quot;&gt;&lt;/a&gt;kaggle/天池竞赛环境&lt;/h3&gt;&lt;p&gt;1.设置一个训练、推理随机种子&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+    <category term="kaggle" scheme="https://www.kitx86.com/tags/kaggle/"/>
+    
+    <category term="nlp" scheme="https://www.kitx86.com/tags/nlp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-数据降维中的PCA和LDA</title>
+    <link href="https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/"/>
+    <id>https://www.kitx86.com/2022/05/17/ml-dl-shu-ju-jiang-wei-zhong-de-pca-he-lda/</id>
+    <published>2022-05-17T06:07:22.000Z</published>
+    <updated>2022-05-29T05:17:19.612Z</updated>
+    
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-统计之三只松鼠</title>
+    <link href="https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/"/>
+    <id>https://www.kitx86.com/2022/05/17/ml-dl-tong-ji-zhi-san-zhi-song-shu/</id>
+    <published>2022-05-17T06:05:35.000Z</published>
+    <updated>2022-05-29T05:17:02.266Z</updated>
+    
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QC-LoG边缘检测</title>
+    <link href="https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/"/>
+    <id>https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/</id>
+    <published>2022-05-17T05:46:54.000Z</published>
+    <updated>2022-05-29T05:15:47.559Z</updated>
+    
+    
+    
+    
+    <category term="QC" scheme="https://www.kitx86.com/categories/QC/"/>
+    
+    
+    <category term="图像处理" scheme="https://www.kitx86.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="图像检测" scheme="https://www.kitx86.com/tags/%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QC-衍生边缘检测算法</title>
+    <link href="https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/"/>
+    <id>https://www.kitx86.com/2022/05/17/qc-yan-sheng-bian-yuan-jian-ce-suan-fa/</id>
+    <published>2022-05-17T05:46:23.000Z</published>
+    <updated>2022-05-29T05:15:17.255Z</updated>
+    
+    
+    
+    
+    <category term="QC" scheme="https://www.kitx86.com/categories/QC/"/>
+    
+    
+    <category term="图像处理" scheme="https://www.kitx86.com/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="图像检测" scheme="https://www.kitx86.com/tags/%E5%9B%BE%E5%83%8F%E6%A3%80%E6%B5%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PE-谈谈我对爱情的看法</title>
+    <link href="https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/"/>
+    <id>https://www.kitx86.com/2022/05/15/pe-tan-tan-wo-dui-ai-qing-de-kan-fa/</id>
+    <published>2022-05-15T15:47:20.000Z</published>
+    <updated>2022-05-15T15:51:55.240Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;内篇-amp-amp-逍遥游&quot;&gt;&lt;a href=&quot;#内篇-amp-amp-逍遥游&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -265,41 +175,16 @@
     <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
     
     
-    <category term="饲养记" scheme="https://www.kitx86.com/tags/%E9%A5%B2%E5%85%BB%E8%AE%B0/"/>
+    <category term="个人成长" scheme="https://www.kitx86.com/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/"/>
     
   </entry>
   
   <entry>
-    <title>PE-朕之旨意</title>
-    <link href="https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/"/>
-    <id>https://www.kitx86.com/2022/05/02/pe-zhen-zhi-zhi-yi/</id>
-    <published>2022-05-02T07:37:26.000Z</published>
-    <updated>2022-05-09T13:27:38.505Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;内篇-amp-amp-逍遥游&quot;&gt;&lt;a href=&quot;#内篇-amp-amp-逍遥游&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
-    
-    
-    <category term="微不足道的贡献" scheme="https://www.kitx86.com/tags/%E5%BE%AE%E4%B8%8D%E8%B6%B3%E9%81%93%E7%9A%84%E8%B4%A1%E7%8C%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PE-update-0</title>
-    <link href="https://www.kitx86.com/2022/05/02/pe-update-0/"/>
-    <id>https://www.kitx86.com/2022/05/02/pe-update-0/</id>
-    <published>2022-05-01T16:34:01.000Z</published>
-    <updated>2022-05-09T07:51:50.432Z</updated>
+    <title>PE-update-4</title>
+    <link href="https://www.kitx86.com/2022/05/15/pe-update-4/"/>
+    <id>https://www.kitx86.com/2022/05/15/pe-update-4/</id>
+    <published>2022-05-15T15:46:46.000Z</published>
+    <updated>2022-05-15T15:58:49.324Z</updated>
     
     
       
@@ -320,18 +205,33 @@
   </entry>
   
   <entry>
-    <title>PE-update-1</title>
-    <link href="https://www.kitx86.com/2022/04/26/pe-update-1/"/>
-    <id>https://www.kitx86.com/2022/04/26/pe-update-1/</id>
-    <published>2022-04-26T06:39:01.000Z</published>
-    <updated>2022-05-09T07:55:04.608Z</updated>
+    <title>ML-DL-在RNN中添加LSTM机制来缓和梯度消失</title>
+    <link href="https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/"/>
+    <id>https://www.kitx86.com/2022/05/14/ml-dl-zai-rnn-zhong-tian-jia-lstm-ji-zhi-lai-huan-he-ti-du-xiao-shi/</id>
+    <published>2022-05-14T14:22:59.000Z</published>
+    <updated>2022-05-29T05:16:48.927Z</updated>
+    
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PE-update-3</title>
+    <link href="https://www.kitx86.com/2022/05/14/pe-update-3/"/>
+    <id>https://www.kitx86.com/2022/05/14/pe-update-3/</id>
+    <published>2022-05-14T13:48:11.000Z</published>
+    <updated>2022-05-15T15:59:04.615Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;往日续谈&quot;&gt;&lt;a href=&quot;#往日续谈&quot; class=&quot;headerlink&quot; title=&quot;往日续谈&quot;&gt;&lt;/a&gt;往日续谈&lt;/h3&gt;&lt;p&gt;年轻的时候当然会觉得做 hacker</summary>
+    <summary type="html">&lt;h3 id=&quot;内篇-amp-amp-人间世&quot;&gt;&lt;a href=&quot;#内篇-amp-amp-人间世&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -345,66 +245,18 @@
   </entry>
   
   <entry>
-    <title>ML-DL-kFold验证</title>
-    <link href="https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/"/>
-    <id>https://www.kitx86.com/2022/04/15/ml-dl-kfold-yan-zheng/</id>
-    <published>2022-04-14T19:17:12.000Z</published>
-    <updated>2022-05-09T12:47:23.725Z</updated>
+    <title>ML-DL-不熟悉的采样方法</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-bu-shou-xi-de-cai-yang-fang-fa/</id>
+    <published>2022-05-13T01:54:50.000Z</published>
+    <updated>2022-05-29T05:18:03.975Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;训练方法&quot;&gt;&lt;a href=&quot;#训练方法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
-    
-    
-    <category term="ML" scheme="https://www.kitx86.com/tags/ML/"/>
-    
-    <category term="DL" scheme="https://www.kitx86.com/tags/DL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://www.kitx86.com/2022/04/13/hello-world/"/>
-    <id>https://www.kitx86.com/2022/04/13/hello-world/</id>
-    <published>2022-04-12T23:50:55.187Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ML-DL-KaggleCompeTem</title>
-    <link href="https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/"/>
-    <id>https://www.kitx86.com/2022/04/11/ml-dl-kagglecompetem/</id>
-    <published>2022-04-11T04:24:15.000Z</published>
-    <updated>2022-04-30T04:04:08.561Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1、The-most-common-classes-CV&quot;&gt;&lt;a href=&quot;#1、The-most-common-classes-CV&quot; class=&quot;headerlink&quot; title=&quot;1、The most common classes -</summary>
+    <summary type="html">&lt;h3 id=&quot;我来华丽的简单分类一下&quot;&gt;&lt;a href=&quot;#我来华丽的简单分类一下&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -413,112 +265,128 @@
     <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
     
     
-    <category term="kaggle" scheme="https://www.kitx86.com/tags/kaggle/"/>
-    
-    <category term="竞赛模板" scheme="https://www.kitx86.com/tags/%E7%AB%9E%E8%B5%9B%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="常用tricks" scheme="https://www.kitx86.com/tags/%E5%B8%B8%E7%94%A8tricks/"/>
-    
   </entry>
   
   <entry>
-    <title>ML-Dl-DataVisualtion</title>
-    <link href="https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/"/>
-    <id>https://www.kitx86.com/2022/04/08/ml-dl-datavisualtion/</id>
-    <published>2022-04-08T13:30:11.000Z</published>
-    <updated>2022-04-30T04:03:52.313Z</updated>
+    <title>ML-DL-算法三兄贵之损失函数</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-suan-fa-san-xiong-gui-zhi-sun-shi-han-shu/</id>
+    <published>2022-05-13T01:53:45.000Z</published>
+    <updated>2022-05-29T05:17:14.522Z</updated>
     
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;import pandas as pd
-pd.plotting.register_matplotlib_converters()
-import</summary>
-        
-      
     
     
     
     <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
     
     
-    <category term="data vistualtion" scheme="https://www.kitx86.com/tags/data-vistualtion/"/>
-    
   </entry>
   
   <entry>
-    <title>ML-DL-优化算法疑问</title>
-    <link href="https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/"/>
-    <id>https://www.kitx86.com/2022/04/07/ml-dl-you-hua-suan-fa-yi-wen/</id>
-    <published>2022-04-07T09:14:18.000Z</published>
-    <updated>2022-05-09T12:46:02.516Z</updated>
+    <title>ML-DL-优化算法的部分假设</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-you-hua-suan-fa-de-bu-fen-jia-she/</id>
+    <published>2022-05-13T01:52:44.000Z</published>
+    <updated>2022-05-29T05:16:54.649Z</updated>
     
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;优化算法疑问&quot;&gt;&lt;a href=&quot;#优化算法疑问&quot; class=&quot;headerlink&quot; title=&quot;优化算法疑问&quot;&gt;&lt;/a&gt;优化算法疑问&lt;/h4&gt;&lt;p&gt;前段时间了解了用于梯度下降的主流优化算法，可惜有一些疑问没能及时记录下来，不然 arxiv</summary>
-        
-      
     
     
     
     <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
     
     
-    <category term="SGD" scheme="https://www.kitx86.com/tags/SGD/"/>
+  </entry>
+  
+  <entry>
+    <title>ML-DL-RNN中又该如何华丽的抹上Dropout</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-rnn-zhong-you-gai-ru-he-hua-li-de-mo-shang-dropout/</id>
+    <published>2022-05-13T01:39:57.000Z</published>
+    <updated>2022-05-29T05:16:04.148Z</updated>
     
-    <category term="RMSProp" scheme="https://www.kitx86.com/tags/RMSProp/"/>
     
-    <category term="Adam" scheme="https://www.kitx86.com/tags/Adam/"/>
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
     
   </entry>
   
   <entry>
-    <title>PE-论文写作</title>
-    <link href="https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/"/>
-    <id>https://www.kitx86.com/2022/04/07/pe-lun-wen-xie-zuo/</id>
-    <published>2022-04-07T00:46:47.000Z</published>
-    <updated>2022-04-26T06:32:17.636Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;论文写作要求&quot;&gt;&lt;a href=&quot;#论文写作要求&quot; class=&quot;headerlink&quot; title=&quot;论文写作要求&quot;&gt;&lt;/a&gt;论文写作要求&lt;/h2&gt;&lt;p&gt;1.标题 + 作者&lt;/p&gt;
-&lt;p&gt;2.摘要 - Abstract&lt;/p&gt;
-&lt;p&gt;3.导言 -</summary>
-        
-      
+    <title>ML-DL-随RNN权重更新时产生的长期依赖问题</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-sui-rnn-quan-chong-geng-xin-shi-chan-sheng-de-chang-qi-yi-lai-wen-ti/</id>
+    <published>2022-05-13T01:37:59.000Z</published>
+    <updated>2022-05-29T05:17:09.955Z</updated>
     
     
     
-    <category term="Personal" scheme="https://www.kitx86.com/categories/Personal/"/>
     
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
     
-    <category term="论文写作" scheme="https://www.kitx86.com/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
-    <title>ML-DL-python用法注意</title>
-    <link href="https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/"/>
-    <id>https://www.kitx86.com/2022/04/04/ml-dl-python-yong-fa-zhu-yi/</id>
-    <published>2022-04-04T02:02:31.000Z</published>
-    <updated>2022-04-30T04:04:34.642Z</updated>
+    <title>ML-DL-RNN的结构及如何优美的更新权重</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-rnn-de-jie-gou-ji-ru-he-you-mei-de-geng-xin-quan-chong/</id>
+    <published>2022-05-13T01:37:00.000Z</published>
+    <updated>2022-05-29T05:16:13.523Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h2&gt;&lt;h3 id=&quot;切片操作的小块解释&quot;&gt;&lt;a href=&quot;#切片操作的小块解释&quot;</summary>
-        
-      
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-Dropout怎样缓解RNN过拟合</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-dropout-zen-yang-huan-jie-rnn-guo-ni-he/</id>
+    <published>2022-05-13T01:35:27.000Z</published>
+    <updated>2022-05-29T05:16:32.293Z</updated>
+    
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-集成学习的那些事</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/</id>
+    <published>2022-05-13T01:11:56.000Z</published>
+    <updated>2022-05-29T05:17:32.870Z</updated>
+    
+    
+    
+    
+    <category term="ML-DL" scheme="https://www.kitx86.com/categories/ML-DL/"/>
+    
+    
+    <category term="XGBoost" scheme="https://www.kitx86.com/tags/XGBoost/"/>
+    
+    <category term="GBDT" scheme="https://www.kitx86.com/tags/GBDT/"/>
+    
+    <category term="梯度提升树" scheme="https://www.kitx86.com/tags/%E6%A2%AF%E5%BA%A6%E6%8F%90%E5%8D%87%E6%A0%91/"/>
+    
+    <category term="基分类器" scheme="https://www.kitx86.com/tags/%E5%9F%BA%E5%88%86%E7%B1%BB%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML-DL-模型评估的很多事</title>
+    <link href="https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/"/>
+    <id>https://www.kitx86.com/2022/05/13/ml-dl-mo-xing-ping-gu-de-hen-duo-shi/</id>
+    <published>2022-05-13T01:04:23.000Z</published>
+    <updated>2022-05-29T05:17:25.007Z</updated>
+    
     
     
     

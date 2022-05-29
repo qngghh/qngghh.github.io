@@ -5,46 +5,86 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Sat, 07 May 2022 16:35:00 +0800</pubDate>
-        <lastBuildDate>Sat, 07 May 2022 16:35:00 +0800</lastBuildDate>
+        <pubDate>Sat, 28 May 2022 21:49:32 +0800</pubDate>
+        <lastBuildDate>Sat, 28 May 2022 21:49:32 +0800</lastBuildDate>
         <category>日记</category>
+        <category>Personal</category>
         <category>生物学</category>
         <category>kaggle</category>
         <category>ML</category>
-        <category>DL</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
+        <category>语音处理</category>
+        <category>model</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
-        <category>Personal</category>
+        <category>DL</category>
         <category>机器学习</category>
+        <category>nlp</category>
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
-        <category>深度学习</category>
         <category>RNN</category>
         <category>循环神经网络</category>
-        <category>NLP</category>
         <category>常见数据处理</category>
+        <category>NLP</category>
         <category>CH</category>
         <category>data vistualtion</category>
-        <category>Noince</category>
-        <category>advance</category>
+        <category>XGBoost</category>
+        <category>GBDT</category>
+        <category>梯度提升树</category>
+        <category>基分类器</category>
         <category>Willing</category>
-        <category>荒诞的故事</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>微不足道的贡献</category>
+        <category>思绪远方</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
+        <category>微不足道的贡献</category>
+        <category>个人成长</category>
         <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
+        <category>荒诞的故事</category>
+        <category>图像处理</category>
+        <category>图像检测</category>
+        <category>论文写作</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/28/pe-update-5/</guid>
+            <title>PE-update-5</title>
+            <link>https://www.kitx86.com/2022/05/28/pe-update-5/</link>
+            <category>日记</category>
+            <pubDate>Sat, 28 May 2022 21:49:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-人间世&#34;&gt;&lt;a href=&#34;#内篇-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇-人间世&#34;&gt;&lt;/a&gt;内篇-人间世&lt;/h3&gt;&lt;p&gt;现在已经是早上接近了9点，回想昨天的那个colab 内核运行过程，到现在仍然觉得不可思议，那可是一个量子级的计算啊，虽然说是模拟的环境里只需两个 qubit 就可以去用于测验，还有一套机器学习的融合，似乎有许久没有这种激动澎湃的心情了，目前所了解的机器学习，在主流方向里并没有让我有另眼刮目相看的本质内容，无论是视觉还是语言处理，又或者是语音，过几年我可能会爱上这套统计学习的理论，但不是现在，我没有那种闲工夫去研究这些没有前景的方向，至于动机是什么？那仅仅是一个被时代所唤醒的躁动不安的心。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/15/pe-update-4/</guid>
+            <title>PE-update-4</title>
+            <link>https://www.kitx86.com/2022/05/15/pe-update-4/</link>
+            <category>日记</category>
+            <pubDate>Sun, 15 May 2022 23:46:46 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-人间世&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;人间世&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;人间世&lt;/h3&gt;&lt;p&gt;最近我想用一些时序模型去做分子生物学/遗传学的相关概念验证，很明显，在深度学习这一领域是不能再产出一个银碗了，但那句”21世纪是生物的世纪”深深吸引了我，基于生命科学，机器学习则与之相融合碰撞出更灿烂的火花，而若有幸成为其中的参与者或推动者，怎么想都是极其兴奋的一件事。&lt;br&gt;我是一个过气的业余爱好者，也是一个独立研究者，似乎有很多让我觉得很无聊，缘由我在清楚不过了，无非就是我想去创业，在青年时期闯荡自己的天地，这才是我本该做的，但我又崇尚自己所喜爱的工作，我是不是太贪心了。&lt;br&gt;我想安安静静的待在大学四年，很多人困于大势所行，做认为挥洒青春的行为，但我也弄不清楚为什么对这些毫无兴趣。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/14/pe-update-3/</guid>
+            <title>PE-update-3</title>
+            <link>https://www.kitx86.com/2022/05/14/pe-update-3/</link>
+            <category>日记</category>
+            <pubDate>Sat, 14 May 2022 21:48:11 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;内篇-amp-amp-人间世&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-人间世&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;人间世&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;人间世&lt;/h3&gt;&lt;p&gt;我内心其实是不太喜欢看书的，想必很多人也这样，这也不需要过多的解释。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;我想懒洋洋、安心稳妥做好自己分内的事，所以我爱上了画画，绘画多简单轻松呐，握上笔在纸上挥出完美线条的那一刻，就已经放空了自己早已沉重的思绪，不管是爱因斯坦还是费曼或者是hinton，统统消失不见，画作没有派系，都是自己胡编乱造，那是一个纯粹幻想的世界，经不起推敲的事件就会自行消散，为什么要追索想象的世界，归结到底的是工科的学生都有一个通病，那就是死板的很，一套工科化的理论拿来采用却没有任何美妙的新意，这是第二层的状况，第一层是筛选器。&lt;/p&gt;
+&lt;p&gt;~~&lt;/p&gt;
+&lt;p&gt;我喜欢没有约束的生活，也幻想毫无压力的，这看起来是那批艺术家的生活。在工程师的位置以艺术家的角度审视他们就会觉得好无聊呐，为了一丢丢别人的看法需要去压迫，非得证明自己，却不自知会陷入泥潭，这应该是不太成熟的表现。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/05/07/pe-update-2/</guid>
             <title>PE-update-2</title>

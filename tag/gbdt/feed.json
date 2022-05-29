@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Supernova • All posts by \"gbdt\" tag",
+    "description": "小派过气画家",
+    "home_page_url": "https://www.kitx86.com",
+    "items": [
+        {
+            "id": "https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/",
+            "url": "https://www.kitx86.com/2022/05/13/ml-dl-ji-cheng-xue-xi-de-na-xie-shi/",
+            "title": "ML-DL-集成学习的那些事",
+            "date_published": "2022-05-13T01:11:56.000Z",
+            "content_html": "",
+            "tags": [
+                "XGBoost",
+                "GBDT",
+                "梯度提升树",
+                "基分类器"
+            ]
+        }
+    ]
+}

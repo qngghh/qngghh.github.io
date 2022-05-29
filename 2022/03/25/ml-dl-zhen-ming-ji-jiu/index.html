@@ -7,11 +7,10 @@
 
     <meta charset="utf-8">
     <meta name="keywords" content="Ml-Dl-朕命急救, kitx86,kit,x86">
-    <meta name="description" content="一、竞赛预处理-整理的样板1、导入常见库import numpy as np  # Linear algebra
-import pandas as pd # data processing, CSV file I/O
-
-
-—————————">
+    <meta name="description" content="一、竞赛预处理-样例1、导入常见库def seed_everything(seed=42):
+    random.seed(seed)
+    os.environ[&#39;PYTHONHASHSEED&#39;] = str(seed)
+    os">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -47,9 +46,9 @@ import pandas as pd # data processing, CSV file I/O
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Supernova" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Supernova" type="application/atom+xml">
 </head>
 
 
@@ -571,7 +570,7 @@ import pandas as pd # data processing, CSV file I/O
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-05-06
+                    2022-05-25
                 </div>
                 
 
@@ -613,34 +612,62 @@ import pandas as pd # data processing, CSV file I/O
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="一、竞赛预处理-整理的样板"><a href="#一、竞赛预处理-整理的样板" class="headerlink" title="一、竞赛预处理-整理的样板"></a>一、竞赛预处理-整理的样板</h4><h5 id="1、导入常见库"><a href="#1、导入常见库" class="headerlink" title="1、导入常见库"></a>1、导入常见库</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np  <span class="token comment"># Linear algebra</span>
+                <h4 id="一、竞赛预处理-样例"><a href="#一、竞赛预处理-样例" class="headerlink" title="一、竞赛预处理-样例"></a>一、竞赛预处理-样例</h4><h5 id="1、导入常见库"><a href="#1、导入常见库" class="headerlink" title="1、导入常见库"></a>1、导入常见库</h5><pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">def seed_everything(seed=42):
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    os.environ['TF_CUDNN_DETERMINISTIC'] = '1'
+    np.random.seed(seed)
+    tf.random.set_seed(seed)
+    
+seed_everything(seed=42)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np  <span class="token comment"># Linear algebra</span>
 <span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd <span class="token comment"># data processing, CSV file I/O</span>
+————————————————————————————————————————————————————————————
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    <span class="token comment"># TPU config</span>
+    tpu <span class="token operator">=</span> tf<span class="token punctuation">.</span>distribute<span class="token punctuation">.</span>cluster_resolver<span class="token punctuation">.</span>TPUClusterResolver<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    tf<span class="token punctuation">.</span>config<span class="token punctuation">.</span>experimental_connect_to_cluster<span class="token punctuation">(</span>tpu<span class="token punctuation">)</span>
+    tf<span class="token punctuation">.</span>tpu<span class="token punctuation">.</span>experimental<span class="token punctuation">.</span>initialize_tpu_system<span class="token punctuation">(</span>tpu<span class="token punctuation">)</span>
+    strategy <span class="token operator">=</span> tf<span class="token punctuation">.</span>distribute<span class="token punctuation">.</span>experimental<span class="token punctuation">.</span>TPUStrategy<span class="token punctuation">(</span>tpu<span class="token punctuation">)</span>
+    auto <span class="token operator">=</span> tf<span class="token punctuation">.</span>data<span class="token punctuation">.</span>experimental<span class="token punctuation">.</span>AUTOTUNE
+    replicas <span class="token operator">=</span> strategy<span class="token punctuation">.</span>num_replicas_in_sync
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'TPU: </span><span class="token interpolation"><span class="token punctuation">{</span>tpu<span class="token punctuation">.</span>master<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+<span class="token keyword">except</span><span class="token punctuation">:</span>
+    strategy <span class="token operator">=</span> tf<span class="token punctuation">.</span>distribute<span class="token punctuation">.</span>get_strategy<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    auto <span class="token operator">=</span> tf<span class="token punctuation">.</span>data<span class="token punctuation">.</span>experimental<span class="token punctuation">.</span>AUTOTUNE
+    replicas <span class="token operator">=</span> strategy<span class="token punctuation">.</span>num_replicas_in_sync
+
+<span class="token comment"># XLA acceleartion</span>
+tf<span class="token punctuation">.</span>config<span class="token punctuation">.</span>optimizer<span class="token punctuation">.</span>set_jit<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Replicas: </span><span class="token interpolation"><span class="token punctuation">{</span>replicas<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+—————————————————————————————————————————————————————————————
 
 
-——————————————————————————————图像数据处理部分———————————————————————————
-<span class="token comment"># 内嵌绘图，可以省略 plt.show()</span>
+——————————————————————————图像数据处理部分—————————————————————————
 <span class="token operator">%</span>matplotlib inline 
 <span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt  
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>image <span class="token keyword">as</span> mpimg
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>image <span class="token keyword">as</span> mpimg 
 
 <span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
 plt<span class="token punctuation">.</span>style<span class="token punctuation">.</span>use<span class="token punctuation">(</span><span class="token string">'seaborn'</span><span class="token punctuation">)</span>
-<span class="token comment"># 显示风格</span>
 sns<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>style<span class="token operator">=</span><span class="token string">'white'</span><span class="token punctuation">,</span> context<span class="token operator">=</span><span class="token string">'notebook'</span><span class="token punctuation">,</span> palette<span class="token operator">=</span><span class="token string">'deep'</span><span class="token punctuation">)</span>
 
 ——————————————————————————语言token处理部分——————————————————————————
 <span class="token keyword">from</span> wordcloud <span class="token keyword">import</span> WordCloud<span class="token punctuation">,</span> STOPWORDS
 
- —————————————————————————可添加补充—————————————————————————————————    
+ —————————————————————————添加补充——————————————————————————    
 <span class="token keyword">from</span> IPython<span class="token punctuation">.</span>core<span class="token punctuation">.</span>interactiveshell <span class="token keyword">import</span> InteractiveShell <span class="token comment"># idk</span>
 InteractiveShell<span class="token punctuation">.</span>ast_node_interactivity <span class="token operator">=</span> <span class="token string">"all"</span> <span class="token comment"># idk</span>
 plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'figure.figsize'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">,</span><span class="token number">10</span>
 plt<span class="token punctuation">.</span>style<span class="token punctuation">.</span>use<span class="token punctuation">(</span><span class="token string">'fivethirtyeight'</span><span class="token punctuation">)</span>
 
-<span class="token comment"># 科学计算用的库，包含很多数学和算法的实例，吐槽~哪有这么多科学计算库</span>
+
 <span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats 
 
-<span class="token comment"># 数据集环境</span>
+
 <span class="token keyword">for</span> dirname<span class="token punctuation">,</span> _<span class="token punctuation">,</span> filenames <span class="token keyword">in</span> os<span class="token punctuation">.</span>walk<span class="token punctuation">(</span><span class="token string">'/kaggle/input'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">for</span> filenmae <span class="token keyword">in</span> filenames<span class="token punctuation">:</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>dirname<span class="token punctuation">,</span> filename<span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -650,21 +677,19 @@ plt<span class="token punctuation">.</span>style<span class="token punctuation">
 
 
 
-<span class="token comment"># 辅助工具</span>
- <span class="token comment"># 迭代进度条，只是为了好看</span>
+
 <span class="token keyword">from</span> tqdm <span class="token keyword">import</span> tqdm 
-<span class="token comment"># 看起来有点老的样子</span>
+
 <span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image 
 
         
 ————————————————————————————————————————————————————————————————————
-<span class="token comment"># 系统局部环境</span>
+
 <span class="token keyword">import</span> os
 <span class="token keyword">from</span> pathlib <span class="token keyword">import</span> Path
-<span class="token comment"># 垃圾回收机制</span>
 <span class="token keyword">import</span> gc 
 
-<span class="token comment"># 建立深度模型所需要的</span>
+
 <span class="token keyword">from</span> keras<span class="token punctuation">.</span>models <span class="token keyword">import</span> Sequential 
 <span class="token keyword">from</span> keras <span class="token keyword">import</span>  backend <span class="token keyword">as</span> K <span class="token comment"># idk</span>
 
@@ -698,7 +723,7 @@ plt<span class="token punctuation">.</span>style<span class="token punctuation">
 <span class="token keyword">import</span> warnings
 warnings<span class="token punctuation">.</span>filterwarnings<span class="token punctuation">(</span><span class="token string">'ignore'</span><span class="token punctuation">)</span>
 
-device <span class="token operator">=</span> torch<span class="token punctuation">.</span>device<span class="token punctuation">(</span><span class="token string">'cuda'</span> <span class="token keyword">if</span> torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>is_available<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token string">'cpu'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+device <span class="token operator">=</span> torch<span class="token punctuation">.</span>device<span class="token punctuation">(</span><span class="token string">'cuda'</span> <span class="token keyword">if</span> torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>is_available<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">else</span> <span class="token string">'cpu'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>2、检查环境状况</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> subprocess <span class="token keyword">import</span> check_output
@@ -804,19 +829,17 @@ plt<span class="token punctuation">.</span>title<span class="token punctuation">
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="/ML-DL-%E6%9C%95%E4%B9%8B%E5%91%BD%E9%9C%80%E6%95%91/image-20220404094416376.png"></p>
-<h6 id="3、特征标准化"><a href="#3、特征标准化" class="headerlink" title="3、特征标准化"></a>3、特征标准化</h6><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># method 1 : </span>
-mean_px <span class="token operator">=</span> X_train<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>		<span class="token comment"># 求其均值作为 np 的 float32 格式</span>
-std_px <span class="token operator">=</span> X_train<span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span> 		<span class="token comment"># 求其标准差作为 np 的 float32 格式</span>
+<h6 id="3、特征标准化"><a href="#3、特征标准化" class="headerlink" title="3、特征标准化"></a>3、特征标准化</h6><pre class="line-numbers language-python" data-language="python"><code class="language-python">mean_px <span class="token operator">=</span> X_train<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span>	
+std_px <span class="token operator">=</span> X_train<span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span>np<span class="token punctuation">.</span>float32<span class="token punctuation">)</span> 	float32 格式
 <span class="token keyword">def</span> <span class="token function">standardize</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span> 
     <span class="token keyword">return</span> <span class="token punctuation">(</span>x<span class="token operator">-</span>mean_px<span class="token punctuation">)</span><span class="token operator">/</span>std_px
 
-<span class="token comment"># method 2 : Normalize the data</span>
 X_train <span class="token operator">=</span> X_train <span class="token operator">/</span> <span class="token number">255.0</span>
 test <span class="token operator">=</span> test <span class="token operator">/</span> <span class="token number">255.0</span>
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="4、检查数据和缺失值"><a href="#4、检查数据和缺失值" class="headerlink" title="4、检查数据和缺失值"></a>4、检查数据和缺失值</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Check the data</span>
+<h5 id="4、检查数据和缺失值"><a href="#4、检查数据和缺失值" class="headerlink" title="4、检查数据和缺失值"></a>4、检查数据和缺失值</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python">
 X_train<span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">any</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span>
 test<span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">any</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
@@ -991,11 +1014,11 @@ model<span class="token punctuation">.</span>add<span class="token punctuation">
 model<span class="token punctuation">.</span>add<span class="token punctuation">(</span>Dense<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> activation <span class="token operator">=</span> <span class="token string">"softmax"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h5 id="2、后续运作步骤"><a href="#2、后续运作步骤" class="headerlink" title="2、后续运作步骤"></a>2、后续运作步骤</h5><p>一旦我们的层被添加到模型中，我们需要设置一个评分函数、一个损失函数和一个优化算法。<br>我们定义损失函数来衡量我们的模型在具有已知标签的图像上的表现有多差。它是观察到的标签和预测的标签之间的错误率。我们使用称为“categorical crossentropy”的分类分类（&gt;2 类）的特定形式。<br>最重要的功能是优化器。这个函数将迭代地改进参数（过滤核值、权重和神经元的偏差……）以最小化损失。<br>我选择了 RMSprop（带有默认值），它是一个非常有效的优化器。 RMSProp 更新以一种非常简单的方式调整 Adagrad 方法，试图降低其激进的、单调递减的学习率。我们也可以使用随机梯度下降 (‘sgd’) 优化器，但它比 RMSprop 慢。<br>度量函数“准确度”用于评估我们模型的性能。该度量函数类似于损失函数，只是在训练模型时不使用度量评估的结果（仅用于评估）。</p>
-<pre class="line-numbers language-none"><code class="language-none"># Define the optimizer
-optimizer = rmsprop_v2(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0) # 这里有一点问题，不能正常运行
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Define the optimizer</span>
+optimizer <span class="token operator">=</span> rmsprop_v2<span class="token punctuation">(</span>lr<span class="token operator">=</span><span class="token number">0.001</span><span class="token punctuation">,</span> rho<span class="token operator">=</span><span class="token number">0.9</span><span class="token punctuation">,</span> epsilon<span class="token operator">=</span><span class="token number">1e-08</span><span class="token punctuation">,</span> decay<span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">)</span> <span class="token comment"># 这里有一点问题，不能正常运行</span>
 
-# Compile the model
-model.compile(optimizer = optimizer , loss = "categorical_crossentropy", metrics=["accuracy"])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment"># Compile the model</span>
+model<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>optimizer <span class="token operator">=</span> optimizer <span class="token punctuation">,</span> loss <span class="token operator">=</span> <span class="token string">"categorical_crossentropy"</span><span class="token punctuation">,</span> metrics<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">"accuracy"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>为了使优化器更快收敛并最接近损失函数的全局最小值，我使用了学习率（LR）的退火方法。<br>LR 是优化器遍历“损失情况”的步骤。 LR越高，步数越大，收敛越快。然而，高 LR 的采样非常差，优化器可能会陷入局部最小值。<br>最好在训练期间降低学习率，以有效地达到损失函数的全局最小值。<br>为了保持高 LR 的快速计算时间的优势，我每 X 步（时期）动态降低 LR，这取决于是否有必要（当精度没有提高时）。<br>使用 Keras.callbacks 中的 ReduceLROnPlateau 函数，如果 3 个 epoch 后精度没有提高，我选择将 LR 减少一半。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Set a learning rate annealer</span>
@@ -1033,58 +1056,58 @@ history <span class="token operator">=</span> model<span class="token punctuatio
                               verbose <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> steps_per_epoch<span class="token operator">=</span>X_train<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">//</span> batch_size
                               <span class="token punctuation">,</span> callbacks<span class="token operator">=</span><span class="token punctuation">[</span>learning_rate_reduction<span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="四、评估模型"><a href="#四、评估模型" class="headerlink" title="四、评估模型"></a>四、评估模型</h4><h5 id="1、训练和验证曲线-Training-and-validation-curves"><a href="#1、训练和验证曲线-Training-and-validation-curves" class="headerlink" title="1、训练和验证曲线-Training and validation curves"></a>1、训练和验证曲线-Training and validation curves</h5><pre class="line-numbers language-none"><code class="language-none"># Plot the loss and accuracy curves for training and validation 
-fig, ax = plt.subplots(2,1)
-ax[0].plot(history.history['loss'], color='b', label="Training loss")
-ax[0].plot(history.history['val_loss'], color='r', label="validation loss",axes =ax[0])
-legend = ax[0].legend(loc='best', shadow=True)
+<h4 id="四、评估模型"><a href="#四、评估模型" class="headerlink" title="四、评估模型"></a>四、评估模型</h4><h5 id="1、训练和验证曲线-Training-and-validation-curves"><a href="#1、训练和验证曲线-Training-and-validation-curves" class="headerlink" title="1、训练和验证曲线-Training and validation curves"></a>1、训练和验证曲线-Training and validation curves</h5><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Plot the loss and accuracy curves for training and validation </span>
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>history<span class="token punctuation">.</span>history<span class="token punctuation">[</span><span class="token string">'loss'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'b'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">"Training loss"</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>history<span class="token punctuation">.</span>history<span class="token punctuation">[</span><span class="token string">'val_loss'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">"validation loss"</span><span class="token punctuation">,</span>axes <span class="token operator">=</span>ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+legend <span class="token operator">=</span> ax<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'best'</span><span class="token punctuation">,</span> shadow<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 
-ax[1].plot(history.history['acc'], color='b', label="Training accuracy")
-ax[1].plot(history.history['val_acc'], color='r',label="Validation accuracy")
-legend = ax[1].legend(loc='best', shadow=True)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ax<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>history<span class="token punctuation">.</span>history<span class="token punctuation">[</span><span class="token string">'acc'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'b'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">"Training accuracy"</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>history<span class="token punctuation">.</span>history<span class="token punctuation">[</span><span class="token string">'val_acc'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">"Validation accuracy"</span><span class="token punctuation">)</span>
+legend <span class="token operator">=</span> ax<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'best'</span><span class="token punctuation">,</span> shadow<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>2.混淆矩阵</p>
 <p>混淆矩阵对于查看您的模型缺陷非常有帮助。<br>我绘制了验证结果的混淆矩阵。</p>
-<pre class="line-numbers language-none"><code class="language-none"># Look at confusion matrix 
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Look at confusion matrix </span>
 
-def plot_confusion_matrix(cm, classes,
-                          normalize=False,
-                          title='Confusion matrix',
-                          cmap=plt.cm.Blues):
-    """
+<span class="token keyword">def</span> <span class="token function">plot_confusion_matrix</span><span class="token punctuation">(</span>cm<span class="token punctuation">,</span> classes<span class="token punctuation">,</span>
+                          normalize<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span>
+                          title<span class="token operator">=</span><span class="token string">'Confusion matrix'</span><span class="token punctuation">,</span>
+                          cmap<span class="token operator">=</span>plt<span class="token punctuation">.</span>cm<span class="token punctuation">.</span>Blues<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
-    """
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
-    tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    """</span>
+    plt<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>cm<span class="token punctuation">,</span> interpolation<span class="token operator">=</span><span class="token string">'nearest'</span><span class="token punctuation">,</span> cmap<span class="token operator">=</span>cmap<span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span>title<span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    tick_marks <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>classes<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>xticks<span class="token punctuation">(</span>tick_marks<span class="token punctuation">,</span> classes<span class="token punctuation">,</span> rotation<span class="token operator">=</span><span class="token number">45</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>yticks<span class="token punctuation">(</span>tick_marks<span class="token punctuation">,</span> classes<span class="token punctuation">)</span>
 
-    if normalize:
-        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+    <span class="token keyword">if</span> normalize<span class="token punctuation">:</span>
+        cm <span class="token operator">=</span> cm<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'float'</span><span class="token punctuation">)</span> <span class="token operator">/</span> cm<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> np<span class="token punctuation">.</span>newaxis<span class="token punctuation">]</span>
 
-    thresh = cm.max() / 2.
-    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, cm[i, j],
-                 horizontalalignment="center",
-                 color="white" if cm[i, j] &gt; thresh else "black")
+    thresh <span class="token operator">=</span> cm<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2.</span>
+    <span class="token keyword">for</span> i<span class="token punctuation">,</span> j <span class="token keyword">in</span> itertools<span class="token punctuation">.</span>product<span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span>cm<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span>cm<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        plt<span class="token punctuation">.</span>text<span class="token punctuation">(</span>j<span class="token punctuation">,</span> i<span class="token punctuation">,</span> cm<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span><span class="token punctuation">,</span>
+                 horizontalalignment<span class="token operator">=</span><span class="token string">"center"</span><span class="token punctuation">,</span>
+                 color<span class="token operator">=</span><span class="token string">"white"</span> <span class="token keyword">if</span> cm<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">&gt;</span> thresh <span class="token keyword">else</span> <span class="token string">"black"</span><span class="token punctuation">)</span>
 
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt<span class="token punctuation">.</span>tight_layout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'True label'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Predicted label'</span><span class="token punctuation">)</span>
 
-# Predict the values from the validation dataset
-Y_pred = model.predict(X_val)
-# Convert predictions classes to one hot vectors 
-Y_pred_classes = np.argmax(Y_pred,axis = 1) 
-# Convert validation observations to one hot vectors
-Y_true = np.argmax(Y_val,axis = 1) 
-# compute the confusion matrix
-confusion_mtx = confusion_matrix(Y_true, Y_pred_classes) 
-# plot the confusion matrix
-plot_confusion_matrix(confusion_mtx, classes = range(10)) <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment"># Predict the values from the validation dataset</span>
+Y_pred <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_val<span class="token punctuation">)</span>
+<span class="token comment"># Convert predictions classes to one hot vectors </span>
+Y_pred_classes <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>Y_pred<span class="token punctuation">,</span>axis <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> 
+<span class="token comment"># Convert validation observations to one hot vectors</span>
+Y_true <span class="token operator">=</span> np<span class="token punctuation">.</span>argmax<span class="token punctuation">(</span>Y_val<span class="token punctuation">,</span>axis <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> 
+<span class="token comment"># compute the confusion matrix</span>
+confusion_mtx <span class="token operator">=</span> confusion_matrix<span class="token punctuation">(</span>Y_true<span class="token punctuation">,</span> Y_pred_classes<span class="token punctuation">)</span> 
+<span class="token comment"># plot the confusion matrix</span>
+plot_confusion_matrix<span class="token punctuation">(</span>confusion_mtx<span class="token punctuation">,</span> classes <span class="token operator">=</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>在这里我们可以看到，考虑到验证集（4200 张图像）的大小，我们的 CNN 在所有数字上的表现都非常好，几乎没有错误。<br>但是，我们的 CNN 似乎在 4 位上有一些小问题，嘿嘿被误分类为 9。有时当曲线平滑时很难捕捉到 4 和 9 之间的差异。</p>
 <p>让我们调查一下错误。<br>我想看看最重要的错误。为此，我需要得到结果中实际值概率与预测值概率之间的差异。</p>
@@ -1618,7 +1641,7 @@ submission<span class="token punctuation">.</span>to_csv<span class="token punct
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">19.3k</span>
+                        class="white-color">22.2k</span>
             
             
             

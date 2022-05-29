@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Supernova • Posts by &#34;model&#34; tag</title>
+        <link>https://www.kitx86.com</link>
+        <description>小派过气画家</description>
+        <language>en</language>
+        <pubDate>Wed, 11 May 2022 08:55:26 +0800</pubDate>
+        <lastBuildDate>Wed, 11 May 2022 08:55:26 +0800</lastBuildDate>
+        <category>日记</category>
+        <category>Personal</category>
+        <category>生物学</category>
+        <category>kaggle</category>
+        <category>ML</category>
+        <category>竞赛模板</category>
+        <category>常用tricks</category>
+        <category>语音处理</category>
+        <category>model</category>
+        <category>paper</category>
+        <category>deep learning</category>
+        <category>neural network</category>
+        <category>DL</category>
+        <category>机器学习</category>
+        <category>nlp</category>
+        <category>SGD</category>
+        <category>RMSProp</category>
+        <category>Adam</category>
+        <category>深度学习</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
+        <category>RNN</category>
+        <category>循环神经网络</category>
+        <category>常见数据处理</category>
+        <category>NLP</category>
+        <category>CH</category>
+        <category>data vistualtion</category>
+        <category>XGBoost</category>
+        <category>GBDT</category>
+        <category>梯度提升树</category>
+        <category>基分类器</category>
+        <category>Willing</category>
+        <category>游戏制作</category>
+        <category>音游跑酷</category>
+        <category>独立自制</category>
+        <category>思绪远方</category>
+        <category>MSRA</category>
+        <category>微软亚洲研究院</category>
+        <category>微不足道的贡献</category>
+        <category>个人成长</category>
+        <category>饲养记</category>
+        <category>QCQI</category>
+        <category>data</category>
+        <category>荒诞的故事</category>
+        <category>图像处理</category>
+        <category>图像检测</category>
+        <category>论文写作</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/11/ml-dl-audio-de-na-xie-shi/</guid>
+            <title>ML-DL-audio的那些事</title>
+            <link>https://www.kitx86.com/2022/05/11/ml-dl-audio-de-na-xie-shi/</link>
+            <category>语音处理</category>
+            <category>model</category>
+            <pubDate>Wed, 11 May 2022 08:55:26 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;内篇-amp-amp-齐物论&#34;&gt;&lt;a href=&#34;#内篇-amp-amp-齐物论&#34; class=&#34;headerlink&#34; title=&#34;内篇&amp;amp;&amp;amp;齐物论&#34;&gt;&lt;/a&gt;内篇&amp;amp;&amp;amp;齐物论&lt;/h4&gt;&lt;p&gt;源址：&lt;a href=&#34;https://gitee.com/mindspore/models/tree/master/research/audio&#34;&gt;https://gitee.com/mindspore/models/tree/master/research/audio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下面的几个模型是列在 gitee / audio上面的，我拿来看了前面几个&lt;/p&gt;
+&lt;h3 id=&#34;1-FastSpeech&#34;&gt;&lt;a href=&#34;#1-FastSpeech&#34; class=&#34;headerlink&#34; title=&#34;1.FastSpeech&#34;&gt;&lt;/a&gt;1.FastSpeech&lt;/h3&gt;&lt;h4 id=&#34;描述&#34;&gt;&lt;a href=&#34;#描述&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;基于神经网络的端到端文本到语音（TTS）显着提高了合成语音的质量。 TTS 方法通常首先从文本生成梅尔谱图，然后使用声码器（如 WaveNet（该工作中的 WaveGlow））从梅尔谱图合成语音。与传统的连接和统计参数方法相比，基于神经网络的端到端模型推理速度慢，合成语音通常鲁棒性不强（即某些单词被跳过或重复）和缺乏可控性（语音速度或韵律控制）。在这项工作中，我们使用基于 Transformer 的前馈网络为 TTS 并行生成梅尔谱图。具体来说，我们使用先前从基于编码器-解码器的教师模型中提取的注意力对齐来进行音素持续时间预测，长度调节器使用该模型来扩展源音素序列以匹配并行梅尔谱图的目标梅尔谱图序列的长度一代。在 LJSpeech 数据集上的实验表明，并行模型在语音质量方面与自回归模型相匹配，在特别困难的情况下几乎消除了跳字和重复的问题，并且可以平滑地调整语音速度。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构&#34;&gt;&lt;a href=&#34;#模型架构&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;FastSpeech 的架构是基于 Transformer 中的自注意力和一维卷积的前馈结构。这种结构称为前馈变压器（FFT）。 Feed-Forward Transformer 堆叠多个 FFT 块用于音素到 mel 谱图的转换，音素侧有 N 个块，mel 谱图侧有 N 个块，中间有一个长度调节器来弥合音素和 mel 之间的长度差距-频谱图序列。每个 FFT 块由一个自注意力和一维卷积网络组成。自注意力网络由一个多头注意力组成，用于提取交叉位置信息。与 Transformer 中的 2 层密集网络不同，FastSpeech 使用带有 ReLU 激活的 2 层 1D 卷积网络。动机是相邻的隐藏状态在语音任务中的字符/音素和梅尔谱图序列中更密切相关。&lt;/p&gt;
+&lt;h3 id=&#34;2-ctcmodel&#34;&gt;&lt;a href=&#34;#2-ctcmodel&#34; class=&#34;headerlink&#34; title=&#34;2.ctcmodel&#34;&gt;&lt;/a&gt;2.ctcmodel&lt;/h3&gt;&lt;h4 id=&#34;描述-1&#34;&gt;&lt;a href=&#34;#描述-1&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;CTCModel利用CTC准则训练RNN模型，完成语素标记任务。CTC 的全称是Connectionist Temporal Classification，中文名称是“连接时序分类”，这个方法主要是解决神经网络label 和output 不对齐的问题，其优点是不用强制对齐标签且标签可变长，仅需输入序列和监督标签序列即可进行训练。 CTC被广泛的应用在语音识别，OCR等任务上，取得了显著的效果&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-1&#34;&gt;&lt;a href=&#34;#模型架构-1&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;一个两层的双向LSTM模型，输入维度为39，即提取出的语音特征的维度&lt;br&gt;一个全连接层，输出维度为62,标签数+1,61代表空白符号&lt;/p&gt;
+&lt;h3 id=&#34;3-deepspeech2&#34;&gt;&lt;a href=&#34;#3-deepspeech2&#34; class=&#34;headerlink&#34; title=&#34;3.deepspeech2&#34;&gt;&lt;/a&gt;3.deepspeech2&lt;/h3&gt;&lt;h4 id=&#34;描述-2&#34;&gt;&lt;a href=&#34;#描述-2&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;DeepSpeech2是一个使用 CTC 损失训练的语音识别模型。它用神经网络取代了整个手工设计的管道，可以处理各种各样的语音，包括嘈杂的环境、口音和不同的语言。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-2&#34;&gt;&lt;a href=&#34;#模型架构-2&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;两个卷积层:&lt;ul&gt;
+&lt;li&gt;通道数为 32，内核大小为 41, 11 ，步长为 2, 2&lt;/li&gt;
+&lt;li&gt;通道数为 32，内核大小为 41, 11 ，步长为 2, 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;五个双向 LSTM 层（大小为 1024）&lt;/li&gt;
+&lt;li&gt;一个投影层【大小为字符数加 1（为CTC空白符号)，29】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-dscnn&#34;&gt;&lt;a href=&#34;#4-dscnn&#34; class=&#34;headerlink&#34; title=&#34;4.dscnn&#34;&gt;&lt;/a&gt;4.dscnn&lt;/h3&gt;&lt;h4 id=&#34;描述-3&#34;&gt;&lt;a href=&#34;#描述-3&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;DS-CNN 是深度可分离的卷积神经网络，于 2017 年首次用于关键字识别。KWS 应用具有高度受限的功率预算，通常在内存和计算能力有限的微型微控制器上运行。深度可分离卷积在参数数量和操作方面都更有效，这使得即使在资源受限的微控制器设备中也可以实现更深、更宽的架构。&lt;/p&gt;
+&lt;h3 id=&#34;5-fcn-4&#34;&gt;&lt;a href=&#34;#5-fcn-4&#34; class=&#34;headerlink&#34; title=&#34;5.fcn-4&#34;&gt;&lt;/a&gt;5.fcn-4&lt;/h3&gt;&lt;h4 id=&#34;描述-4&#34;&gt;&lt;a href=&#34;#描述-4&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;这个存储库提供了一个脚本和配方来训练 FCN-4 模型以实现最先进的准确性。&lt;br&gt;论文：“Keunwoo Choi、George Fazekas 和 Mark Sandler，“使用深度卷积神经网络进行自动标记”，国际音乐协会信息检索会议。ISMIR，2016 年。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-3&#34;&gt;&lt;a href=&#34;#模型架构-3&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;FCN-4 是一种卷积神经网络架构，它的名称 FCN-4 来自于它有 4 层的事实。它的层由卷积层、最大池化层、激活层、全连接层组成。&lt;/p&gt;
+&lt;h3 id=&#34;6-speech-transformer&#34;&gt;&lt;a href=&#34;#6-speech-transformer&#34; class=&#34;headerlink&#34; title=&#34;6.speech_transformer&#34;&gt;&lt;/a&gt;6.speech_transformer&lt;/h3&gt;&lt;h4 id=&#34;描述-5&#34;&gt;&lt;a href=&#34;#描述-5&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;标准的transformer sequence2sequence（编码器，解码器）模型架构用于解决speech2text问题。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-4&#34;&gt;&lt;a href=&#34;#模型架构-4&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;具体来说，Transformer 包含六个编码器模块和六个解码器模块。每个编码器模块由一个自注意力层和一个前馈层组成，每个解码器模块由一个自注意力层、一个编码器-解码器-注意力层和一个前馈层组成。&lt;/p&gt;
+&lt;h3 id=&#34;7-tacotron2&#34;&gt;&lt;a href=&#34;#7-tacotron2&#34; class=&#34;headerlink&#34; title=&#34;7.tacotron2&#34;&gt;&lt;/a&gt;7.tacotron2&lt;/h3&gt;&lt;h4 id=&#34;描述-6&#34;&gt;&lt;a href=&#34;#描述-6&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;Tacotron2 是一款 TTS 机型。它包含两个阶段，在第一阶段它使用序列到序列方法从文本序列中预测梅尔频谱图，在第二阶段它应用 WaveNet 作为声码器将梅尔频谱图转换为波形。我们支持在 Ascend 平台上训练和评估 tacotron2 模型。&lt;br&gt;论文：乔纳森等人。通过在梅尔谱图预测上调节 WaveNet 进行自然 TTS 合成。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-5&#34;&gt;&lt;a href=&#34;#模型架构-5&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;Tacotron2本质上是一个包含编码器和解码器的序列到序列模型，编码器由三个conv层和一个BiLSTM层实现，解码器使用两个LSTM层来解码下一个状态，在编码器之间应用位置感知注意力和解码器，然后将解码后的状态输入到由五个卷积层实现的 postnet 来预测梅尔谱图，最后将预测的梅尔谱图特征输入到 WaveNet 声码器以合成语音信号。&lt;/p&gt;
+&lt;h3 id=&#34;8-wavenet&#34;&gt;&lt;a href=&#34;#8-wavenet&#34; class=&#34;headerlink&#34; title=&#34;8.wavenet&#34;&gt;&lt;/a&gt;8.wavenet&lt;/h3&gt;&lt;h4 id=&#34;描述-7&#34;&gt;&lt;a href=&#34;#描述-7&#34; class=&#34;headerlink&#34; title=&#34;描述&#34;&gt;&lt;/a&gt;描述&lt;/h4&gt;&lt;p&gt;WaveNet 是一种用于生成原始音频波形的深度神经网络。该模型是完全概率和自回归的，每个音频样本的预测分布都以所有先前的样本为条件。我们支持在 Ascend、GPU 和 CPU 上进行训练和评估。&lt;/p&gt;
+&lt;h4 id=&#34;模型架构-6&#34;&gt;&lt;a href=&#34;#模型架构-6&#34; class=&#34;headerlink&#34; title=&#34;模型架构&#34;&gt;&lt;/a&gt;模型架构&lt;/h4&gt;&lt;p&gt;当前模型包括一个预卷积层，然后是几个残差块，这些残差块具有与门控激活单元的残差和跳跃连接。最后，添加后卷积层来预测分布。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

@@ -5,46 +5,85 @@
         <link>https://www.kitx86.com</link>
         <description>小派过气画家</description>
         <language>en</language>
-        <pubDate>Mon, 09 May 2022 20:49:54 +0800</pubDate>
-        <lastBuildDate>Mon, 09 May 2022 20:49:54 +0800</lastBuildDate>
+        <pubDate>Wed, 25 May 2022 22:11:03 +0800</pubDate>
+        <lastBuildDate>Wed, 25 May 2022 22:11:03 +0800</lastBuildDate>
         <category>日记</category>
+        <category>Personal</category>
         <category>生物学</category>
         <category>kaggle</category>
         <category>ML</category>
-        <category>DL</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
+        <category>语音处理</category>
+        <category>model</category>
         <category>paper</category>
         <category>deep learning</category>
         <category>neural network</category>
-        <category>Personal</category>
+        <category>DL</category>
         <category>机器学习</category>
+        <category>nlp</category>
         <category>SGD</category>
         <category>RMSProp</category>
         <category>Adam</category>
+        <category>深度学习</category>
         <category>CNN</category>
         <category>卷积神经网络</category>
-        <category>深度学习</category>
         <category>RNN</category>
         <category>循环神经网络</category>
-        <category>NLP</category>
         <category>常见数据处理</category>
+        <category>NLP</category>
         <category>CH</category>
         <category>data vistualtion</category>
-        <category>Noince</category>
-        <category>advance</category>
+        <category>XGBoost</category>
+        <category>GBDT</category>
+        <category>梯度提升树</category>
+        <category>基分类器</category>
         <category>Willing</category>
-        <category>荒诞的故事</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>微不足道的贡献</category>
+        <category>思绪远方</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
-        <category>论文写作</category>
+        <category>微不足道的贡献</category>
+        <category>个人成长</category>
         <category>饲养记</category>
         <category>QCQI</category>
         <category>data</category>
+        <category>荒诞的故事</category>
+        <category>图像处理</category>
+        <category>图像检测</category>
+        <category>论文写作</category>
+        <item>
+            <guid isPermalink="true">https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/</guid>
+            <title>ML-DL-nlp竞赛数据处理</title>
+            <link>https://www.kitx86.com/2022/05/25/ml-dl-nlp-jing-sai-shu-ju-chu-li/</link>
+            <category>kaggle</category>
+            <category>nlp</category>
+            <pubDate>Wed, 25 May 2022 22:11:03 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;kaggle-天池竞赛环境&#34;&gt;&lt;a href=&#34;#kaggle-天池竞赛环境&#34; class=&#34;headerlink&#34; title=&#34;kaggle/天池竞赛环境&#34;&gt;&lt;/a&gt;kaggle/天池竞赛环境&lt;/h3&gt;&lt;p&gt;1.设置一个训练、推理随机种子&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;seed_everything&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;environ&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;PYTHONHASHSEED&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;environ&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;TF_CUDNN_DETERMINISTIC&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;1&#39;&lt;/span&gt;
+    np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    tf&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;random&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_seed&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    
+seed_everything&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;seed&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.在nlp中大多数都是使用 deberta系列来完成训练的，很傻瓜只需要会用 model 来训练就好了&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# tokenizer 在推理时是非常重要的&lt;/span&gt;
+tokenizer &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; transformers&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;AutoTokenizer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;from_pretrained&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;config&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;model_name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# Context tokens. &lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;context_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;context &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;]&#39;&lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sep_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[SEP]&#39;&lt;/span&gt;
+test&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;cls_token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;[CLS]&#39;&lt;/span&gt;
+context_tokens &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;list&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;context_token&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;unique&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+tokenizer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;add_special_tokens&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;additional_special_tokens&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; context_tokens&lt;span class=&#34;token punctuation&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/05/09/ml-dl-zi-ran-yu-yan-chu-li-yi-wen/</guid>
             <title>ML-Dl-自然语言处理疑问</title>
