@@ -7,13 +7,13 @@
         <language>en</language>
         <pubDate>Fri, 25 Mar 2022 18:35:26 +0800</pubDate>
         <lastBuildDate>Fri, 25 Mar 2022 18:35:26 +0800</lastBuildDate>
-        <category>日记</category>
         <category>Personal</category>
         <category>生物学</category>
+        <category>日记</category>
         <category>kaggle</category>
-        <category>ML</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
+        <category>ML</category>
         <category>语音处理</category>
         <category>model</category>
         <category>paper</category>
@@ -26,37 +26,37 @@
         <category>RMSProp</category>
         <category>Adam</category>
         <category>深度学习</category>
-        <category>CNN</category>
-        <category>卷积神经网络</category>
         <category>RNN</category>
         <category>循环神经网络</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
         <category>常见数据处理</category>
-        <category>NLP</category>
         <category>CH</category>
-        <category>data vistualtion</category>
         <category>XGBoost</category>
         <category>GBDT</category>
         <category>梯度提升树</category>
         <category>基分类器</category>
+        <category>NLP</category>
+        <category>data vistualtion</category>
+        <category>荒诞的故事</category>
         <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>思绪远方</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
+        <category>思绪远方</category>
         <category>微不足道的贡献</category>
-        <category>个人成长</category>
+        <category>论文写作</category>
         <category>饲养记</category>
+        <category>个人成长</category>
         <category>QCQI</category>
         <category>data</category>
-        <category>荒诞的故事</category>
         <category>图像处理</category>
         <category>图像检测</category>
-        <category>论文写作</category>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/</guid>
-            <title>Ml-Dl-朕命急救</title>
+            <title>Ml-DL-朕命急救</title>
             <link>https://www.kitx86.com/2022/03/25/ml-dl-zhen-ming-ji-jiu/</link>
             <category>kaggle</category>
             <category>常见数据处理</category>
@@ -67,10 +67,8 @@
     os.environ[&#39;TF_CUDNN_DETERMINISTIC&#39;] = &#39;1&#39;
     np.random.seed(seed)
     tf.random.set_seed(seed)
-    
+
 seed_everything(seed=42)&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
 
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; numpy &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; np  &lt;span class=&#34;token comment&#34;&gt;# Linear algebra&lt;/span&gt;
 &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; pandas &lt;span class=&#34;token keyword&#34;&gt;as&lt;/span&gt; pd &lt;span class=&#34;token comment&#34;&gt;# data processing, CSV file I/O&lt;/span&gt;
@@ -120,7 +118,7 @@ plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;style&lt;span cla
 &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; dirname&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; _&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; filenames &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;walk&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;/kaggle/input&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; filenmae &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; filenames&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
         &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;dirname&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; filename&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
-              
+
 &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;highlight_max&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; props &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;where&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;nanmax&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;s&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;values&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; props&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# idk&lt;/span&gt;
 
@@ -131,7 +129,7 @@ plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;style&lt;span cla
 
 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PIL &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Image 
 
-        
+
 ————————————————————————————————————————————————————————————————————
 
 &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; os
@@ -278,8 +276,8 @@ plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;title&lt;span cla
 plt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;/ML-DL-%E6%9C%95%E4%B9%8B%E5%91%BD%E9%9C%80%E6%95%91/image-20220404094416376.png&#34;&gt;&lt;/p&gt;
-&lt;h6 id=&#34;3、特征标准化&#34;&gt;&lt;a href=&#34;#3、特征标准化&#34; class=&#34;headerlink&#34; title=&#34;3、特征标准化&#34;&gt;&lt;/a&gt;3、特征标准化&lt;/h6&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;mean_px &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; X_train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;mean&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;astype&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;float32&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;	
-std_px &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; X_train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;std&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;astype&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;float32&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; 	float32 格式
+&lt;h6 id=&#34;3、特征标准化&#34;&gt;&lt;a href=&#34;#3、特征标准化&#34; class=&#34;headerlink&#34; title=&#34;3、特征标准化&#34;&gt;&lt;/a&gt;3、特征标准化&lt;/h6&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;mean_px &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; X_train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;mean&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;astype&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;float32&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;    
+std_px &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; X_train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;std&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;astype&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;float32&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;     float32 格式
 &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;standardize&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; 
     &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;mean_px&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;std_px
 
@@ -295,8 +293,6 @@ test&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isnull&lt;span c
 &lt;span class=&#34;token comment&#34;&gt;# Encode labels to one hot vectors (ex : 2 -&amp;gt; [0,0,1,0,0,0,0,0,0,0])&lt;/span&gt;
 &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; keras&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;utils&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;np_utils &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; to_categorica
 Y_train &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; to_categorical&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Y_train&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; num_classes &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
 
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# Set the random seed&lt;/span&gt;
 random_seed &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
@@ -328,10 +324,6 @@ skf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt
 
 &lt;h5 id=&#34;7-添加数据标签&#34;&gt;&lt;a href=&#34;#7-添加数据标签&#34; class=&#34;headerlink&#34; title=&#34;7.添加数据标签&#34;&gt;&lt;/a&gt;7.添加数据标签&lt;/h5&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;title&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;context&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;df_cpc&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;set_index&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;code&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;title&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lower&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
 &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
-
-
 
 &lt;h3 id=&#34;我认为比较重要的数据集类&#34;&gt;&lt;a href=&#34;#我认为比较重要的数据集类&#34; class=&#34;headerlink&#34; title=&#34;我认为比较重要的数据集类&#34;&gt;&lt;/a&gt;我认为比较重要的数据集类&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Dataset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;torch&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;utils&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;data&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Dataset&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
     &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
@@ -376,7 +368,7 @@ skf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt
         nsep &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
         nsep &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
-        
+
     data &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
     &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; r &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; train&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;iterrows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
         text &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; r&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pn_history
@@ -393,7 +385,7 @@ skf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt
 
         input_ids &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;array&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;o&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;input_ids&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; dtype&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
         &lt;span class=&#34;token keyword&#34;&gt;assert&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;input_ids &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; sep&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; nsep  &lt;span class=&#34;token comment&#34;&gt;# text and feature_text seperated by [SEP]; sep sep for roberta&lt;/span&gt;
-        
+
         &lt;span class=&#34;token comment&#34;&gt;# Attention mask&lt;/span&gt;
         attention_mask &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;array&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;o&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;attention_mask&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
         &lt;span class=&#34;token keyword&#34;&gt;assert&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;all&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;attention_mask &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
@@ -435,8 +427,6 @@ skf &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; StratifiedKFold&lt
         x &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fc&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
 
         &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; x&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-
 
 &lt;h4 id=&#34;三、建立模型（CNN、&#34;&gt;&lt;a href=&#34;#三、建立模型（CNN、&#34; class=&#34;headerlink&#34; title=&#34;三、建立模型（CNN、)&#34;&gt;&lt;/a&gt;三、建立模型（CNN、)&lt;/h4&gt;&lt;h5 id=&#34;1、model&#34;&gt;&lt;a href=&#34;#1、model&#34; class=&#34;headerlink&#34; title=&#34;1、model&#34;&gt;&lt;/a&gt;1、model&lt;/h5&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# A CNN model example&lt;/span&gt;
 model &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Sequential&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
@@ -613,7 +603,6 @@ results &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span cla
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;submission &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;concat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;pd&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Series&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;28001&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;ImageId&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;results&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;axis &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
 
 submission&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;to_csv&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;cnn_mnist_datagen.csv&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;index&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
  ]]></description>
         </item>
     </channel>

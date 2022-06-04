@@ -7,13 +7,13 @@
         <language>en</language>
         <pubDate>Tue, 17 May 2022 13:46:54 +0800</pubDate>
         <lastBuildDate>Tue, 17 May 2022 13:46:54 +0800</lastBuildDate>
-        <category>日记</category>
         <category>Personal</category>
         <category>生物学</category>
+        <category>日记</category>
         <category>kaggle</category>
-        <category>ML</category>
         <category>竞赛模板</category>
         <category>常用tricks</category>
+        <category>ML</category>
         <category>语音处理</category>
         <category>model</category>
         <category>paper</category>
@@ -26,34 +26,34 @@
         <category>RMSProp</category>
         <category>Adam</category>
         <category>深度学习</category>
-        <category>CNN</category>
-        <category>卷积神经网络</category>
         <category>RNN</category>
         <category>循环神经网络</category>
+        <category>CNN</category>
+        <category>卷积神经网络</category>
         <category>常见数据处理</category>
-        <category>NLP</category>
         <category>CH</category>
-        <category>data vistualtion</category>
         <category>XGBoost</category>
         <category>GBDT</category>
         <category>梯度提升树</category>
         <category>基分类器</category>
+        <category>NLP</category>
+        <category>data vistualtion</category>
+        <category>荒诞的故事</category>
         <category>Willing</category>
         <category>游戏制作</category>
         <category>音游跑酷</category>
         <category>独立自制</category>
-        <category>思绪远方</category>
         <category>MSRA</category>
         <category>微软亚洲研究院</category>
+        <category>思绪远方</category>
         <category>微不足道的贡献</category>
-        <category>个人成长</category>
+        <category>论文写作</category>
         <category>饲养记</category>
+        <category>个人成长</category>
         <category>QCQI</category>
         <category>data</category>
-        <category>荒诞的故事</category>
         <category>图像处理</category>
         <category>图像检测</category>
-        <category>论文写作</category>
         <item>
             <guid isPermalink="true">https://www.kitx86.com/2022/05/17/qc-log-bian-yuan-jian-ce/</guid>
             <title>QC-LoG边缘检测</title>
